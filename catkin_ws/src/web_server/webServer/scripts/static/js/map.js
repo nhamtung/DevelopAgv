@@ -11,6 +11,8 @@ var app = new Vue({
         mapViewer: null,
         mapGridClient: null,
         interval: null,
+
+        dataShow: 0,
     },
     // helper methods to connect to ROS
     methods: {
@@ -39,7 +41,8 @@ var app = new Vue({
                 // Scale the canvas to fit to the map
                 this.mapGridClient.on('change', () => {
                     this.mapViewer.scaleToDimensions(this.mapGridClient.currentGrid.width, this.mapGridClient.currentGrid.height);
-                    this.mapViewer.shift(this.mapGridClient.currentGrid.pose.position.x, this.mapGridClient.currentGrid.pose.position.y)
+                    this.mapViewer.shift(-10, this.mapGridClient.currentGrid.pose.position.y);
+                    this.dataShow = this.mapGridClient.currentGrid.pose.position.y
                 })
 
             })
