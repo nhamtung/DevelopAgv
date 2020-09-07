@@ -788,9 +788,7 @@ ROS2D.PolygonMarker.prototype.addPoint = function(pos) {
 
 ROS2D.PolygonMarker.prototype.addPointPath = function(pos) {
   console.log("ros2d.js-790-addPointPath");
-	var point = this.createPointShape(pos);
-	this.pointContainer.addChild(point);
-	var numPoints = this.pointContainer.getNumChildren();
+  var numPoints = this.pointContainer.getNumChildren();
 	
 	// 0 points -> 1 point, 0 lines
 	// 1 point  -> 2 points, lines: add line between previous and new point, add line between new point and first point
@@ -798,13 +796,20 @@ ROS2D.PolygonMarker.prototype.addPointPath = function(pos) {
 	// 3 points -> 4 points, 4 lines: change last line, add line between new point and first point
 	// etc
 	
-	if (numPoints < 2) {
-		// Now 1 point
+	if (numPoints < 1) {  
+    var position = new ROSLIB.Vector3();
+    position.x = 0;
+    position.y = 0;
+    var point = this.createPointShape(position);
+    this.pointContainer.addChild(point);
 	}
+  var point = this.createPointShape(pos);
+  this.pointContainer.addChild(point);
+  var numPoints = this.pointContainer.getNumChildren();
+
   // Now 2 points: add line between previous and new point
   var line = this.createLineShape(this.pointContainer.getChildAt(numPoints-2), point);
   this.lineContainer.addChild(line);
-
 	
 	this.drawFill();
 };

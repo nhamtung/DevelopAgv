@@ -219,8 +219,8 @@ var app = new Vue({
                             else if (mapViewer.scene.mouseInBounds === true && clickedPolygon === false) {
                                 polygon.addPointPath(startPos);
                                 // Add the polygon to the viewer
-                                mapViewer.scene.addChild(polygon)
-                                mapViewer.scene.addChild(goalPolygon)			
+                                mapViewer.scene.addChild(goalPolygon)
+                                mapViewer.scene.addChild(polygon)			
                             }
                             clickedPolygon = false;
                         }

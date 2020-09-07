@@ -27,6 +27,10 @@ def joystick():
 def testDraw():
   return render_template('testDraw.html')
 
+@app.route('/testContinuous')
+def testContinuous():
+  return render_template('testContinuous.html')
+
 
 if __name__ == '__main__':	
    app.run(host='0.0.0.0', port=5000, debug=True)
