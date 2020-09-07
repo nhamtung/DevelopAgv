@@ -25,10 +25,11 @@ var app = new Vue({
             })
 
             // Setup mouse event handlers
-            // this.mouseDown = false
+            this.mouseDown = false
             zoomKey = false
             panKey = false
-            startPos = new ROSLIB.Vector3()
+            var startPos = new ROSLIB.Vector3()
+            var endPos = new ROSLIB.Vector3()
             
 
             this.ros.on('connection', () => {
@@ -45,6 +46,40 @@ var app = new Vue({
                 this.center = new ROSLIB.Vector3()
                 this.startShift = new ROSLIB.Vector3()
                 this.startScale = new ROSLIB.Vector3()
+
+                //////////////////////////////////////////////////////////////////////
+                // Callback functions when there is mouse interaction with the polygon
+                var clickedPolygon = false
+                var selectedPointIndex = null
+                var pointCallBack = function(type, event, index) {
+                    if (type === 'mousedown') {
+                        if (event.nativeEvent.shiftKey === true) {
+                            polygon.remPoint(index);
+                        }
+                        else {
+                            selectedPointIndex = index;
+                        }
+                    }
+                    clickedPolygon = true;
+                }
+                var lineCallBack = function(type, event, index) {
+                    if (type === 'mousedown') {
+                        if (event.nativeEvent.ctrlKey === true) {
+                            polygon.splitLine(index);
+                        }
+                    }
+                    clickedPolygon = true;
+                }
+                // Create the polygon
+                var polygon = new ROS2D.PolygonMarker({
+                    lineColor : createjs.Graphics.getRGB(100, 100, 255, 1),
+                    pointCallBack : pointCallBack,
+                    lineCallBack : lineCallBack
+                })
+                // Event listeners for mouse interaction with the stage
+                mapViewer.scene.mouseMoveOutside = false // doesn't seem to work
+                
+                /////////////////////////////////////////////////////////////////////////////
                 // Add zoom to the viewer.
                 var zoomView = new ROS2D.ZoomView({
                     rootObject: mapViewer.scene
@@ -53,40 +88,42 @@ var app = new Vue({
                 var panView = new ROS2D.PanView({
                     rootObject: mapViewer.scene
                 })
-                    // Add planned path
-                // var plannedPath = new ROS2D.NavPath({
-                //     ros: this.ros,
-                //     rootObject: mapViewer.scene,
-                //     pathTopic: '/plan'
-                // })
-                    // Add robot pose and trace
-                // var robotTrace = new ROS2D.PoseAndTrace({
-                //     ros: this.ros,
-                //     rootObject: mapViewer.scene,
-                //     poseTopic: '/robot_pose',
-                //     withTrace: true,
-                //     maxTraceLength : 200
-                // })
-                    // Add navigRation goal
-                // var navGoal = new ROS2D.NavGoal({
-                //     ros: this.ros,
-                //     rootObject : mapViewer.scene,
-                //     actionTopic : '/move_base'
-                // })
 
+                //////////////////////////////////////////////////////////////////////////////
+                // Add planned path
+                var plannedPath = new ROS2D.NavPath({
+                    ros: this.ros,
+                    rootObject: mapViewer.scene,
+                    pathTopic: '/plan'
+                })
+                // Add robot pose and trace
+                var robotTrace = new ROS2D.PoseAndTrace({
+                    ros: this.ros,
+                    rootObject: mapViewer.scene,
+                    poseTopic: '/robot_pose',
+                    withTrace: true,
+                    maxTraceLength : 200
+                })
+                // Add navigRation goal
+                var navGoal = new ROS2D.NavGoal({
+                    ros: this.ros,
+                    rootObject : mapViewer.scene,
+                    actionTopic : '/move_base'
+                })
+
+                ///////////////////////////////////////////////////////////
                 // Setup the map client.
                 this.mapGridClient = new ROS2D.OccupancyGridClient({
                     ros: this.ros,
                     rootObject: mapViewer.scene,
                     continuous: true
                 })
-        
                 // Scale the canvas to fit to the map
                 this.mapGridClient.on('change', () => {
                     gridWidth = this.mapGridClient.currentGrid.width/13;
                     gridHeigh = this.mapGridClient.currentGrid.height/13;
-                    // this.dataShow1 = gridWidth;
-                    // this.dataShow2 = gridHeigh;
+                    this.dataShow1 = gridWidth;
+                    this.dataShow2 = gridHeigh;
                     mapViewer.scaleToDimensions(gridWidth, gridHeigh);
 
                     grid_pose_x = this.mapGridClient.currentGrid.pose.position.x/16;
@@ -98,9 +135,10 @@ var app = new Vue({
                     // plannedPath.initScale();
                     // robotTrace.initScale();
                     // navGoal.initScale();
-                    // registerMouseHandlers();
                 })
 
+                ////////////////////////////////////////////////////////////////////////////////////////
+                // EVENT: Mouse DOWN
                 mapViewer.scene.addEventListener('stagemousedown', function(event) {
                     if (event.nativeEvent.ctrlKey === true) {
                         console.log("Ctrl + Mouse");
@@ -115,7 +153,9 @@ var app = new Vue({
                     else {
                         console.log("Mouse");
                         var pos = mapViewer.scene.globalToRos(event.stageX, event.stageY);
-                        // navGoal.startGoalSelection(pos);
+                        console.log("x: " + pos.x);
+                        console.log("y: " + pos.y);
+                        navGoal.startGoalSelection(pos);
                     }
 
                     startPos.x = event.stageX;
@@ -125,7 +165,7 @@ var app = new Vue({
                     
                     this.mouseDown = true;
                 })
-    
+                // EVENT: Mouse MOVE
                 mapViewer.scene.addEventListener('stagemousemove', function(event) {
                     if (this.mouseDown === true) {
                         if (zoomKey === true) {
@@ -140,11 +180,17 @@ var app = new Vue({
                         }
                         else {
                             var pos = mapViewer.scene.globalToRos(event.stageX, event.stageY);
-                            // navGoal.orientGoalSelection(pos);
+                            navGoal.orientGoalSelection(pos);
+
+                            // Move point when it's dragged
+                            if (selectedPointIndex !== null) {
+                                var pos = mapViewer.scene.globalToRos(event.stageX, event.stageY);
+                                polygon.movePoint(selectedPointIndex, pos);
+                            }
                         }
                     }
                 })
-    
+                // EVENT: Mouse UP
                 mapViewer.scene.addEventListener('stagemouseup', function(event) {
                     if (this.mouseDown === true) {
                         if (zoomKey === true) {
@@ -155,8 +201,28 @@ var app = new Vue({
                         }
                         else {
                             var pos = mapViewer.scene.globalToRos(event.stageX, event.stageY);
-                            // var goalPose = navGoal.endGoalSelection(pos);
-                            // navGoal.sendGoal(goalPose);
+                            var goalPose = navGoal.endGoalSelection(pos);
+                            var goalPolygon = navGoal.goalOrientationMarker;
+                            
+                            startPos.x = goalPose.position.x;
+                            startPos.y = goalPose.position.y;
+                            console.log("startPos.x: " + startPos.x);
+                            console.log("startPos.y: " + startPos.y);
+                            console.log("goalPose.orientation.z: " + goalPose.orientation.z);
+                            console.log("goalPose.orientation.w: " + goalPose.orientation.w);
+                            navGoal.sendGoal(goalPose);
+
+                            // Add point when not clicked on the polygon
+                            if (selectedPointIndex !== null) {
+                                selectedPointIndex = null;
+                            }
+                            else if (mapViewer.scene.mouseInBounds === true && clickedPolygon === false) {
+                                polygon.addPointPath(startPos);
+                                // Add the polygon to the viewer
+                                mapViewer.scene.addChild(polygon)
+                                mapViewer.scene.addChild(goalPolygon)			
+                            }
+                            clickedPolygon = false;
                         }
                         this.mouseDown = false;
                     }

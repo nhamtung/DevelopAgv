@@ -23,6 +23,10 @@ def map():
 def joystick():
   return render_template('joystick.html')
 
+@app.route('/testDraw')
+def testDraw():
+  return render_template('testDraw.html')
+
 
 if __name__ == '__main__':	
    app.run(host='0.0.0.0', port=5000, debug=True)
