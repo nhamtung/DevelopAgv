@@ -102,7 +102,15 @@ var app = new Vue({
                 var navGoal = new ROS2D.NavGoal({
                     ros: this.ros,
                     rootObject : mapViewer.scene,
+                    actionMsgType: 'move_base_msgs/MoveBaseAction',
                     actionTopic : '/move_base'
+                })
+                // Add Pose Estimate
+                let topicPoseEstimate = new ROSLIB.Topic({
+                    ros: this.ros,
+                    rootObject : mapViewer.scene,
+                    name: '/initialpose',
+                    messageType: 'geometry_msgs/PoseWithCovarianceStamped'
                 })
 
                 ///////////////////////////////////////////////////////////
@@ -122,8 +130,6 @@ var app = new Vue({
 
                     grid_pose_x = this.mapGridClient.currentGrid.pose.position.x/16;
                     grid_pose_y = this.mapGridClient.currentGrid.pose.position.y/8;
-                    // this.dataShow1 = grid_pose_x;
-                    // this.dataShow2 = grid_pose_y;
                     mapViewer.shift(grid_pose_x, grid_pose_y);
 
                     plannedPath.initScale();
@@ -151,15 +157,18 @@ var app = new Vue({
                         panView.startPan(event.stageX, event.stageY);
                     }
                     else {
-                        if (event.nativeEvent.altKey === true){
-                            console.log("Alt + Mouse");
-                            isPoseEstimated = true;
-                        }
-                        console.log("Mouse");
                         var pos = mapViewer.scene.globalToRos(event.stageX, event.stageY);
                         console.log("x: " + pos.x);
                         console.log("y: " + pos.y);
-                        navGoal.startGoalSelection(pos);
+                        if (event.nativeEvent.altKey === true){
+                            console.log("Alt + Mouse");
+                            navGoal.startGoalSelection(pos);
+                            isPoseEstimated = true;
+                        }
+                        else{
+                            console.log("Mouse");
+                            navGoal.startGoalSelection(pos);
+                        }
                     }
 
                     startPos.x = event.stageX;
@@ -205,29 +214,43 @@ var app = new Vue({
                         }
                         else {
                             var pos = mapViewer.scene.globalToRos(event.stageX, event.stageY);
-                            var goalPose = navGoal.endGoalSelection(pos);
-                            var goalPolygon = navGoal.goalOrientationMarker;
-                            
-                            startPos.x = goalPose.position.x;
-                            startPos.y = goalPose.position.y;
-                            console.log("startPos.x: " + startPos.x);
-                            console.log("startPos.y: " + startPos.y);
-                            console.log("goalPose.orientation.z: " + goalPose.orientation.z);
-                            console.log("goalPose.orientation.w: " + goalPose.orientation.w);
-                            navGoal.sendGoal(goalPose);
 
                             // Add point when not clicked on the polygon
                             if (selectedPointIndex !== null) {
                                 selectedPointIndex = null;
                             }
                             else if (mapViewer.scene.mouseInBounds === true && clickedPolygon === false) {
+                                var goalPose = navGoal.endGoalSelection(pos);
+                                var goalPolygon = navGoal.goalOrientationMarker;
+                                
+                                startPos.x = goalPose.position.x;
+                                startPos.y = goalPose.position.y;
+                                console.log("startPos.x: " + startPos.x);
+                                console.log("startPos.y: " + startPos.y);
+                                console.log("goalPose.orientation.z: " + goalPose.orientation.z);
+                                console.log("goalPose.orientation.w: " + goalPose.orientation.w);
+
                                 if(isPoseEstimated === true){
-                                    console.log("map.js-225-Pose Estimate!");
-                                    // polygon.remPoint(polygon);
+                                    console.log("map.js-228-Pose Estimate!");
+                                    var covariance;
+                                    let msgPoseEstimate = new ROSLIB.Message({
+                                        header: { seq: 1, stamp: 0, frame_id: 'map', },
+                                        pose: { 
+                                            pose: {
+                                                position: {x: startPos.x, y: startPos.y, z: 0,},
+                                                orientation: {x:0, y:0, z: goalPose.orientation.z, w: goalPose.orientation.w,},
+                                            },
+                                            covariance: covariance,
+                                         },
+                                    });
+                                    topicPoseEstimate.publish(msgPoseEstimate);
+
                                     mapViewer.scene.addChild(goalPolygon);
                                     isPoseEstimated = false;
                                 }else{
-                                    console.log("map.js-228-Nav Goal!");
+                                    console.log("map.js-243-Nav Goal!");
+                                    navGoal.sendGoal(goalPose);
+
                                     polygon.addPointPath(startPos);
                                     // Add the polygon to the viewer
                                     mapViewer.scene.addChild(goalPolygon);
