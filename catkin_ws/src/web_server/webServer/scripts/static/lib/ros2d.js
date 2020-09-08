@@ -786,7 +786,7 @@ ROS2D.PolygonMarker.prototype.addPoint = function(pos) {
 	this.drawFill();
 };
 
-ROS2D.PolygonMarker.prototype.addPointPath = function(pos) {
+ROS2D.PolygonMarker.prototype.addPointPath = function(robotPose, pos) {
   console.log("ros2d.js-790-addPointPath");
   var numPoints = this.pointContainer.getNumChildren();
 	
@@ -797,10 +797,10 @@ ROS2D.PolygonMarker.prototype.addPointPath = function(pos) {
 	// etc
 	
 	if (numPoints < 1) {  
-    var position = new ROSLIB.Vector3();
-    position.x = 0;
-    position.y = 0;
-    var point = this.createPointShape(position);
+    // var p = new ROSLIB.Vector3();
+    // p.x = robotPose.position.x;
+    // p.y = robotPose.position.y;
+    var point = this.createPointShape(robotPose);
     this.pointContainer.addChild(point);
 	}
   var point = this.createPointShape(pos);

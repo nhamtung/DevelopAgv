@@ -13,6 +13,7 @@ var app = new Vue({
         interval: null,
 
         isStartRobot: false,
+        robotPos: null,
 
         dataShow1: 0,
         dataShow2: 0,
@@ -36,6 +37,7 @@ var app = new Vue({
                     width: 1300,
                     height: 800
                 })
+                // this.mapViewer = mapViewer
 
                 //////////////////////////////////////////////////////////////////////
                 // Callback functions when there is mouse interaction with the polygon
@@ -68,6 +70,7 @@ var app = new Vue({
                 })
                 // Event listeners for mouse interaction with the stage
                 mapViewer.scene.mouseMoveOutside = false // doesn't seem to work
+                /////////////////////////////////////////////////////////////////////////////
                 
                 /////////////////////////////////////////////////////////////////////////////
                 // Add zoom to the viewer.
@@ -78,6 +81,7 @@ var app = new Vue({
                 var panView = new ROS2D.PanView({
                     rootObject: mapViewer.scene
                 })
+                //////////////////////////////////////////////////////////////////////////////
 
                 //////////////////////////////////////////////////////////////////////////////
                 // Add planned path
@@ -86,17 +90,32 @@ var app = new Vue({
                     rootObject: mapViewer.scene,
                     pathTopic: '/plan'
                 })
+
+                //////////////////////////////////////////////////////////////////////////////
                 // Add robot pose and trace
+                var robotPos = new ROSLIB.Vector3()
                 var robotTrace = new ROS2D.PoseAndTrace({
                     ros: this.ros,
                     rootObject: mapViewer.scene,
-                    poseTopic: '/robot_pose',
-                    messageType: 'geometry_msgs/Pose',
-                    // poseTopic: '/odom',
-                    // messageType: 'nav_msgs/Odometry',
                     withTrace: true,
-                    maxTraceLength : 200
+                    maxTraceLength : 200    
+                })                
+                let poseListener = new ROSLIB.Topic({
+                    ros: this.ros,
+                    name: '/robot_pose',
+                    messageType: 'geometry_msgs/Pose',
+                    throttle_rate : 100
                 })
+                poseListener.subscribe((msgPose) => {
+                    robotPos.x = msgPose.position.x
+                    robotPos.y = msgPose.position.y
+                    robotTrace.updatePose(msgPose)
+                    var trace = robotTrace.trace
+                    var robotMarker = robotTrace.robotMarker
+                    mapViewer.scene.addChild(trace);
+                    mapViewer.scene.addChild(robotMarker);		
+                })
+                ///////////////////////////////////////////////////////////////////////////////
 
                 ////////////////////////////////////////////////////////////////////////////////
                 // Add navigRation goal
@@ -136,25 +155,8 @@ var app = new Vue({
                     plannedPath.initScale();
                     robotTrace.initScale();
                     navGoal.initScale();
-                })
-                                
+                })        
                 //////////////////////////////////////////////////////////////////////////////
-                // Subscriber Odom
-                // var posRobot = {position:{x:0, y:0, z:0},
-                //                 orientation:{x:0, y:0, z:0, w:0},}
-                // let topicOdom = new ROSLIB.Topic({
-                //     ros: this.ros,
-                //     name: '/odom',
-                //     messageType: 'nav_msgs/Odometry'
-                // })
-                // topicOdom.subscribe((msgOdom) => {
-                //     posRobot.x = msgOdom.pose.pose.position.x
-                //     posRobot.y = msgOdom.pose.pose.position.y
-                //     console.log("Position Robot x: " + posRobot.x)
-                //     console.log("Position Robot y: " + posRobot.y)
-
-                //     robotTrace.updatePose(posRobot)
-                // })
 
                 ////////////////////////////////////////////////////////////////////////////////////////
                 // Setup mouse event handlers
@@ -270,7 +272,7 @@ var app = new Vue({
                                     console.log("map.js-243-Nav Goal!");
                                     navGoal.sendGoal(goalPose);
 
-                                    polygon.addPointPath(startPos);
+                                    polygon.addPointPath(robotPos, startPos);
                                     // Add the polygon to the viewer
                                     mapViewer.scene.addChild(goalPolygon);
                                     mapViewer.scene.addChild(polygon);			

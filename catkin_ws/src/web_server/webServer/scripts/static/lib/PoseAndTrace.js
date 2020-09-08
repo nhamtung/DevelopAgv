@@ -24,15 +24,15 @@ ROS2D.PoseAndTrace = function(options) {
 	options = options || {};
 	var ros = options.ros;
 	this.rootObject = options.rootObject || new createjs.Container();
-	var poseTopic = options.poseTopic || '/robot_pose';
-	var messageType = options.options || 'geometry_msgs/Pose';
+	// var poseTopic = options.poseTopic || '/robot_pose';
+	// var messageType = options.options || 'geometry_msgs/Pose';
 	this.withTrace = options.withTrace || true;
 
 	this.maxTraceLength = options.maxTraceLength || 100;
 	var traceColor = options.traceColor || createjs.Graphics.getRGB(0, 150, 0, 0.66);
 	var traceSize = options.traceSize || 1.5;
 	var robotColor = options.robotColor || createjs.Graphics.getRGB(255, 0, 0, 0.66);
-	var robotSize = options.robotSize || 15;
+	var robotSize = options.robotSize || 50;
 	this.robotMarker = options.robotShape || null;
 
 	// get a handle to the stage
@@ -48,7 +48,6 @@ ROS2D.PoseAndTrace = function(options) {
 		strokeColor : traceColor,
 		maxPoses : this.maxTraceLength
 	});
-	// this.trace.visible = false;
 	this.trace.visible = true;
 	this.rootObject.addChild(this.trace);
 
@@ -62,27 +61,26 @@ ROS2D.PoseAndTrace = function(options) {
 			pulse : true
 		});
 	}
-	// this.robotMarker.visible = false;
 	this.robotMarker.visible = true;
 	this.rootObject.addChild(this.robotMarker);
 
 	this.initScaleSet = false;
 
 	// setup a listener for the robot pose
-	var poseListener = new ROSLIB.Topic({
-		ros : ros,
-		name : poseTopic,
-		messageType : messageType,
-		throttle_rate : 100
-	});
-	poseListener.subscribe(this.updatePose.bind(this));
+	// var poseListener = new ROSLIB.Topic({
+	// 	ros : ros,
+	// 	name : poseTopic,
+	// 	messageType : messageType,
+	// 	throttle_rate : 100
+	// });
+	// poseListener.subscribe(this.updatePose.bind(this));
 };
 
 /**
  * Initialize scale, current scale will be used for the goal markers
  */
 ROS2D.PoseAndTrace.prototype.initScale = function() {
-	console.log("PoseAndTrace.js-81-initScale");
+	console.log("PoseAndTrace.js-83-initScale");
 	if (this.initScaleSet) {
 		console.log('Warning: scale has already been initialized!');
 		// TODO: reinit
@@ -101,7 +99,7 @@ ROS2D.PoseAndTrace.prototype.initScale = function() {
  */
 ROS2D.PoseAndTrace.prototype.updatePose = function(pose) {
 	// update the robot's position and rotation on the map
-	console.log("PoseAndTrace.js-100-updatePose");
+	console.log("PoseAndTrace.js-102-updatePose");
 	this.robotMarker.x = pose.position.x;
 	this.robotMarker.y = -pose.position.y;
 	this.robotMarker.rotation = this.stage.rosQuaternionToGlobalTheta(pose.orientation);
@@ -113,8 +111,7 @@ ROS2D.PoseAndTrace.prototype.updatePose = function(pose) {
 	}
 	// Draw trace
 	if (this.withTrace === true && this.initScaleSet === true) {
-		console.log("PoseAndTrace.js-110-Draw trace");
+		console.log("PoseAndTrace.js-114-Draw trace");
 		this.trace.addPose(pose);
-		this.trace.visible = true;
 	}
 };
