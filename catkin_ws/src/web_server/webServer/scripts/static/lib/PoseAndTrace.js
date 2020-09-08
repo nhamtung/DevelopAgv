@@ -25,7 +25,9 @@ ROS2D.PoseAndTrace = function(options) {
 	var ros = options.ros;
 	this.rootObject = options.rootObject || new createjs.Container();
 	var poseTopic = options.poseTopic || '/robot_pose';
+	var messageType = options.options || 'geometry_msgs/Pose';
 	this.withTrace = options.withTrace || true;
+
 	this.maxTraceLength = options.maxTraceLength || 100;
 	var traceColor = options.traceColor || createjs.Graphics.getRGB(0, 150, 0, 0.66);
 	var traceSize = options.traceSize || 1.5;
@@ -46,7 +48,8 @@ ROS2D.PoseAndTrace = function(options) {
 		strokeColor : traceColor,
 		maxPoses : this.maxTraceLength
 	});
-	this.trace.visible = false;
+	// this.trace.visible = false;
+	this.trace.visible = true;
 	this.rootObject.addChild(this.trace);
 
 	// marker for the robot
@@ -59,7 +62,8 @@ ROS2D.PoseAndTrace = function(options) {
 			pulse : true
 		});
 	}
-	this.robotMarker.visible = false;
+	// this.robotMarker.visible = false;
+	this.robotMarker.visible = true;
 	this.rootObject.addChild(this.robotMarker);
 
 	this.initScaleSet = false;
@@ -68,7 +72,7 @@ ROS2D.PoseAndTrace = function(options) {
 	var poseListener = new ROSLIB.Topic({
 		ros : ros,
 		name : poseTopic,
-		messageType : 'geometry_msgs/Pose',
+		messageType : messageType,
 		throttle_rate : 100
 	});
 	poseListener.subscribe(this.updatePose.bind(this));
@@ -101,12 +105,15 @@ ROS2D.PoseAndTrace.prototype.updatePose = function(pose) {
 	this.robotMarker.x = pose.position.x;
 	this.robotMarker.y = -pose.position.y;
 	this.robotMarker.rotation = this.stage.rosQuaternionToGlobalTheta(pose.orientation);
+	console.log("PoseAndTrace.js-106-Robot x: " + this.robotMarker.x);
+	console.log("PoseAndTrace.js-107-Robot y: " + this.robotMarker.y);
+	
 	if (this.initScaleSet) {
 		this.robotMarker.visible = true;
 	}
-
 	// Draw trace
 	if (this.withTrace === true && this.initScaleSet === true) {
+		console.log("PoseAndTrace.js-110-Draw trace");
 		this.trace.addPose(pose);
 		this.trace.visible = true;
 	}

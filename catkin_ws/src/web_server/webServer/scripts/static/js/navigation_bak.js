@@ -37,6 +37,10 @@ var app = new Vue({
                     height: 800
                 })
 
+                // this.center = new ROSLIB.Vector3()
+                // this.startShift = new ROSLIB.Vector3()
+                // this.startScale = new ROSLIB.Vector3()
+
                 //////////////////////////////////////////////////////////////////////
                 // Callback functions when there is mouse interaction with the polygon
                 var clickedPolygon = false
@@ -91,14 +95,9 @@ var app = new Vue({
                     ros: this.ros,
                     rootObject: mapViewer.scene,
                     poseTopic: '/robot_pose',
-                    messageType: 'geometry_msgs/Pose',
-                    // poseTopic: '/odom',
-                    // messageType: 'nav_msgs/Odometry',
                     withTrace: true,
                     maxTraceLength : 200
                 })
-
-                ////////////////////////////////////////////////////////////////////////////////
                 // Add navigRation goal
                 var navGoal = new ROS2D.NavGoal({
                     ros: this.ros,
@@ -106,7 +105,7 @@ var app = new Vue({
                     actionMsgType: 'move_base_msgs/MoveBaseAction',
                     actionTopic : '/move_base'
                 })
-                // Add Pose Estimate topic
+                // Add Pose Estimate
                 let topicPoseEstimate = new ROSLIB.Topic({
                     ros: this.ros,
                     rootObject : mapViewer.scene,
@@ -137,24 +136,6 @@ var app = new Vue({
                     robotTrace.initScale();
                     navGoal.initScale();
                 })
-                                
-                //////////////////////////////////////////////////////////////////////////////
-                // Subscriber Odom
-                // var posRobot = {position:{x:0, y:0, z:0},
-                //                 orientation:{x:0, y:0, z:0, w:0},}
-                // let topicOdom = new ROSLIB.Topic({
-                //     ros: this.ros,
-                //     name: '/odom',
-                //     messageType: 'nav_msgs/Odometry'
-                // })
-                // topicOdom.subscribe((msgOdom) => {
-                //     posRobot.x = msgOdom.pose.pose.position.x
-                //     posRobot.y = msgOdom.pose.pose.position.y
-                //     console.log("Position Robot x: " + posRobot.x)
-                //     console.log("Position Robot y: " + posRobot.y)
-
-                //     robotTrace.updatePose(posRobot)
-                // })
 
                 ////////////////////////////////////////////////////////////////////////////////////////
                 // Setup mouse event handlers
