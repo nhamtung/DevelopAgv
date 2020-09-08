@@ -22,34 +22,41 @@
 </head>
 
 <body>
-    <div id="app" class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-6 text-center">
-                <h3>Connection status</h3>
-                <p class="text-danger" v-if="!connected">Not connected!</p>
-                <p class="text-success" v-if="connected">Connected!</p>
-                <label>ROSBridge address</label>
-                <br>
-                <input type="text" v-model="rosbridge_address" />
-                <br><br>
-                <button :disabled="loading" class="btn btn-danger" @click="disconnect"
-                    v-if="connected">Disconnect!</button>
-                <button :disabled="loading" class="btn btn-success" @click="connect" v-else>Connect!</button>
-            </div>
-            <div class="col-md-12 col-sm-6" style="overflow:auto;">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <span>dataShow: </span>
+    <div id="app" class="container" style="padding-left: 0px;padding-right: 0px;margin-left: 0px;margin-right: 0px;">
+        <div class="row" style="margin-left: -0px;margin-right: -0px;">
+            <div class="col-md-3">
+                <div class="col-md-12 col-sm-6 text-left">
+                    <br><br>
+                    <label>ROSBridge address: </label>
+                    <input type="text" v-model="rosbridge_address" />
+                    <br><br>
+                    <button :disabled="loading" class="btn btn-danger" @click="disconnect" v-if="connected">Connected!</button>
+                    <button :disabled="loading" class="btn btn-success" @click="connect" v-else>Connect!</button>
+                    <p class="text-danger" v-if="!connected">Not connected!</p>
+                    <p class="text-success" v-if="connected">Connected!</p>
+
+                    <div>
+                        <label>dataShow1: </lable>
                         <input type="text" v-model="dataShow1" />
-                        <span>dataShow: </span>
+                        <br>
+                        <label>dataShow2: </lable>
                         <input type="text" v-model="dataShow2" />
                     </div>
-
-                    <!-- 1st row -->
-                    <div class="col-md-12 text-center my-2">
-                        <div id="map"></div>
-                    </div>
                 </div>
+                <div>
+                    <button class="btn btn-danger" @click="RobotStart" v-if="isStartRobot">Stop Robot</button>
+                    <button class="btn btn-success" @click="RobotStop" v-else>Start Move</button>
+                </div>
+            </div>
+            <div class="col-md-8" >
+                <span class="col-md-6 col-sm-6" style="overflow:auto;">
+                    <div class="row">
+                        <!-- 1st row -->
+                        <div class="col-md-12 text-center my-2">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </span>
             </div>
         </div>
     </div>

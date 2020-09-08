@@ -27,9 +27,9 @@ def joystick():
 def testDraw():
   return render_template('testDraw.html')
 
-@app.route('/testContinuous')
-def testContinuous():
-  return render_template('testContinuous.html')
+@app.route('/testNavigation')
+def testNavigation():
+  return render_template('testNavigation.html')
 
 
 if __name__ == '__main__':	

@@ -12,6 +12,8 @@ var app = new Vue({
         mapGridClient: null,
         interval: null,
 
+        isStartRobot: false,
+
         dataShow1: 0,
         dataShow2: 0,
     },
@@ -24,14 +26,6 @@ var app = new Vue({
                 url: this.rosbridge_address
             })
 
-            // Setup mouse event handlers
-            this.mouseDown = false
-            zoomKey = false
-            panKey = false
-            var startPos = new ROSLIB.Vector3()
-            var endPos = new ROSLIB.Vector3()
-            
-
             this.ros.on('connection', () => {
                 this.logs.unshift((new Date()).toTimeString() + ' - Connected!')
                 this.connected = true
@@ -39,13 +33,13 @@ var app = new Vue({
 
                 var mapViewer = new ROS2D.Viewer({
                     divID: 'map',
-                    width: 550,
-                    height: 550
+                    width: 1300,
+                    height: 800
                 })
 
-                this.center = new ROSLIB.Vector3()
-                this.startShift = new ROSLIB.Vector3()
-                this.startScale = new ROSLIB.Vector3()
+                // this.center = new ROSLIB.Vector3()
+                // this.startShift = new ROSLIB.Vector3()
+                // this.startScale = new ROSLIB.Vector3()
 
                 //////////////////////////////////////////////////////////////////////
                 // Callback functions when there is mouse interaction with the polygon
@@ -132,12 +126,18 @@ var app = new Vue({
                     // this.dataShow2 = grid_pose_y;
                     mapViewer.shift(grid_pose_x, grid_pose_y);
 
-                    // plannedPath.initScale();
-                    // robotTrace.initScale();
-                    // navGoal.initScale();
+                    plannedPath.initScale();
+                    robotTrace.initScale();
+                    navGoal.initScale();
                 })
 
                 ////////////////////////////////////////////////////////////////////////////////////////
+                // Setup mouse event handlers
+                this.mouseDown = false
+                var zoomKey = false
+                var panKey = false
+                var isPoseEstimated = false
+                var startPos = new ROSLIB.Vector3()
                 // EVENT: Mouse DOWN
                 mapViewer.scene.addEventListener('stagemousedown', function(event) {
                     if (event.nativeEvent.ctrlKey === true) {
@@ -151,6 +151,10 @@ var app = new Vue({
                         panView.startPan(event.stageX, event.stageY);
                     }
                     else {
+                        if (event.nativeEvent.altKey === true){
+                            console.log("Alt + Mouse");
+                            isPoseEstimated = true;
+                        }
                         console.log("Mouse");
                         var pos = mapViewer.scene.globalToRos(event.stageX, event.stageY);
                         console.log("x: " + pos.x);
@@ -217,10 +221,18 @@ var app = new Vue({
                                 selectedPointIndex = null;
                             }
                             else if (mapViewer.scene.mouseInBounds === true && clickedPolygon === false) {
-                                polygon.addPointPath(startPos);
-                                // Add the polygon to the viewer
-                                mapViewer.scene.addChild(goalPolygon)
-                                mapViewer.scene.addChild(polygon)			
+                                if(isPoseEstimated === true){
+                                    console.log("map.js-225-Pose Estimate!");
+                                    // polygon.remPoint(polygon);
+                                    mapViewer.scene.addChild(goalPolygon);
+                                    isPoseEstimated = false;
+                                }else{
+                                    console.log("map.js-228-Nav Goal!");
+                                    polygon.addPointPath(startPos);
+                                    // Add the polygon to the viewer
+                                    mapViewer.scene.addChild(goalPolygon);
+                                    mapViewer.scene.addChild(polygon);			
+                                }
                             }
                             clickedPolygon = false;
                         }
@@ -233,6 +245,7 @@ var app = new Vue({
                 this.logs.unshift((new Date()).toTimeString() + ` - Error: ${error}`)
             })
             this.ros.on('close', () => {
+                console.log("map.js-246-close")
                 this.logs.unshift((new Date()).toTimeString() + ' - Disconnected!')
                 this.connected = false
                 this.loading = false
@@ -243,7 +256,15 @@ var app = new Vue({
         disconnect: function () {
             this.ros.close()
         },
-        
+
+        RobotStart() {
+            this.isStartRobot = false;
+            console.log("isStartRobot: " + this.isStartRobot);
+        },
+        RobotStop(){
+            this.isStartRobot = true;
+            console.log("isStartRobot: " + this.isStartRobot);
+        },
     },
 
     mounted() {
@@ -254,3 +275,4 @@ var app = new Vue({
         }, 10000)
     },
 })
+  
