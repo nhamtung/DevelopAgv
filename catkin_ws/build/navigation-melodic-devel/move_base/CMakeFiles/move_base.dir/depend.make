@@ -175,6 +175,7 @@ navigation-melodic-devel/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o:
 navigation-melodic-devel/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/melodic/include/ros/wall_timer_options.h
 navigation-melodic-devel/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
 navigation-melodic-devel/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/melodic/include/std_msgs/Header.h
+navigation-melodic-devel/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/melodic/include/std_msgs/Int32.h
 navigation-melodic-devel/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/melodic/include/std_srvs/Empty.h
 navigation-melodic-devel/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/melodic/include/std_srvs/EmptyRequest.h
 navigation-melodic-devel/move_base/CMakeFiles/move_base.dir/src/move_base.cpp.o: /opt/ros/melodic/include/std_srvs/EmptyResponse.h

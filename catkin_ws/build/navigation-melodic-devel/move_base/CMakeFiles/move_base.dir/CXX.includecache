@@ -367,6 +367,8 @@ dynamic_reconfigure/server.h
 -
 move_base/MoveBaseConfig.h
 /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/include/move_base/move_base/MoveBaseConfig.h
+std_msgs/Int32.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/include/move_base/std_msgs/Int32.h
 
 /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/src/move_base.cpp
 move_base/move_base.h
@@ -380,6 +382,16 @@ boost/thread.hpp
 geometry_msgs/Twist.h
 -
 tf2_geometry_msgs/tf2_geometry_msgs.h
+-
+std_msgs/Int32.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/src/std_msgs/Int32.h
+ros/ros.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/src/ros/ros.h
+iterator
+-
+iostream
+-
+array
 -
 
 /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core/include/nav_core/base_global_planner.h
@@ -2359,6 +2371,22 @@ ros/forwards.h
 /opt/ros/melodic/include/rosconsole/macros_generated.h
 
 /opt/ros/melodic/include/std_msgs/Header.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/opt/ros/melodic/include/std_msgs/Int32.h
 string
 -
 vector

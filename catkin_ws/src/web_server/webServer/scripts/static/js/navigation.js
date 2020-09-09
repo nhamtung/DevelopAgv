@@ -123,12 +123,16 @@ var app = new Vue({
                 ///////////////////////////////////////////////////////////////////////////////
 
                 ///////////////////////////////////////////////////////////////////////////////
-                // Add navigRation goal
-                var navGoal = new ROS2D.NavGoal({
+                // Add Simple Goal topic
+                let topicSimpleGoal = new ROSLIB.Topic({
                     ros: this.ros,
                     rootObject : mapViewer.scene,
-                    actionMsgType: 'move_base_msgs/MoveBaseAction',
-                    actionTopic : '/move_base'
+                    name: "/move_base_simple/goal",
+                    messageType: 'geometry_msgs/PoseStamped'
+                })
+                var navGoal = new ROS2D.NavGoal({
+                    ros: this.ros,
+                    rootObject : mapViewer.scene
                 })
                 this.navGoal = navGoal
                 goalPose = new ROSLIB.Pose()
@@ -264,12 +268,9 @@ var app = new Vue({
                                     console.log("map.js-228-Pose Estimate!");
                                     var covariance;
                                     let msgPoseEstimate = new ROSLIB.Message({
-                                        header: { seq: 1, stamp: 0, frame_id: 'map', },
+                                        header: { seq: 0, stamp: 0, frame_id: 'map', },
                                         pose: { 
-                                            pose: {
-                                                position: {x: startPos.x, y: startPos.y, z: 0,},
-                                                orientation: {x:0, y:0, z: goalPose.orientation.z, w: goalPose.orientation.w,},
-                                            },
+                                            pose: goalPose,
                                             covariance: covariance,
                                          },
                                     });
@@ -279,8 +280,13 @@ var app = new Vue({
                                     mapViewer.scene.addChild(goalPolygon);
                                     isPoseEstimated = false;
                                 }else{
-                                    console.log("map.js-243-Nav Goal!");
-                                    navGoal.sendGoal(goalPose);
+                                    console.log("map.js-243-Nav Simple Goal!");
+                                    let msgSimpleGoal = new ROSLIB.Message({
+                                        header: { seq: 0, stamp: 0, frame_id: 'map'},
+                                        pose: goalPose
+                                    });
+                                    topicSimpleGoal.publish(msgSimpleGoal);
+                                    navGoal.goalMarker(goalPose);
 
                                     polygon.addPointPath(robotPos, startPos);
                                     // Add the polygon to the viewer
@@ -323,22 +329,22 @@ var app = new Vue({
 
         RobotStart() {
             this.isStartRobot = false;
-            this.mode = 1;
-            let msgSendMode = new ROSLIB.Message({
-                data: this.mode
-            });
-            this.topicSendMode.publish(msgSendMode);
-            this.navGoal.sendGoal(this.goalPose);
-            console.log("isStartRobot: " + this.isStartRobot);
-        },
-        RobotStop(){
-            this.isStartRobot = true;
             this.mode = 0;
             let msgSendMode = new ROSLIB.Message({
                 data: this.mode
             });
             this.topicSendMode.publish(msgSendMode);
-            this.navGoal.sendGoal(this.goalPose);
+            // this.navGoal.sendGoal(this.goalPose);
+            console.log("isStartRobot: " + this.isStartRobot);
+        },
+        RobotStop(){
+            this.isStartRobot = true;
+            this.mode = 1;
+            let msgSendMode = new ROSLIB.Message({
+                data: this.mode
+            });
+            this.topicSendMode.publish(msgSendMode);
+            // this.navGoal.sendGoal(this.goalPose);
             console.log("isStartRobot: " + this.isStartRobot);
         },
     },

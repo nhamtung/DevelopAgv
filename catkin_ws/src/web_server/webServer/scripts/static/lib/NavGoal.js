@@ -17,15 +17,17 @@ ROS2D.NavGoal = function(options) {
 	console.log("NavGoal.js-17-NavGoal");
 	var that = this;
 	options = options || {};
-	var ros = options.ros;
+	this.ros = options.ros;
 	this.rootObject = options.rootObject || new createjs.Container();
 	var actionTopic = options.actionTopic || '/move_base';
 	var actionMsgType = options.actionMsgType || 'move_base_msgs/MoveBaseAction';
-	this.mapFrame = options.mapFrame || '/map';
+	this.mapFrame = options.mapFrame || 'map';
 
+	console.log("NavGoal.js-26-actionTopic: " + actionTopic);
+	console.log("NavGoal.js-27-actionMsgType: " + actionMsgType);
 	// setup the actionlib client
 	this.actionClient = new ROSLIB.ActionClient({
-		ros : ros,
+		ros : this.ros,
 		actionName : actionMsgType,
 		serverName : actionTopic
 	});
@@ -141,7 +143,7 @@ ROS2D.NavGoal.prototype.endGoalSelection = function() {
 ROS2D.NavGoal.prototype.sendGoal = function(pose) {
 	console.log("NavGoal.js-140-sendGoal");
 	// create a goal
-	var goal = new ROSLIB.Goal({
+	goal = new ROSLIB.Goal({
 		actionClient : this.actionClient,
 		goalMessage : {
 			target_pose : {
@@ -172,4 +174,25 @@ ROS2D.NavGoal.prototype.sendGoal = function(pose) {
 	goal.on('result', function() {
 		that.container.removeChild(goalMarker);
 	});
+};
+ROS2D.NavGoal.prototype.goalMarker = function(pose) {
+	console.log("NavGoal.js-179-goalMarker");
+	// create a marker for the goal
+	var goalMarker = new ROS2D.ArrowShape({
+		size : 10,
+		strokeSize : 1,
+		fillColor : createjs.Graphics.getRGB(255, 64, 128, 0.66),
+		pulse : true
+	});
+	goalMarker.x = pose.position.x;
+	goalMarker.y = -pose.position.y;
+	goalMarker.rotation = this.stage.rosQuaternionToGlobalTheta(pose.orientation);
+	goalMarker.scaleX = this.initScaleX;
+	goalMarker.scaleY = this.initScaleY;
+	this.container.addChild(goalMarker);
+
+	var that = this;
+	// goal.on('result', function() {
+	// 	that.container.removeChild(goalMarker);
+	// });
 };

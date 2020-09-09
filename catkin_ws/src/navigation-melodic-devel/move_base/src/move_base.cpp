@@ -37,19 +37,20 @@
 *********************************************************************/
 #include <move_base/move_base.h>
 #include <cmath>
-
 #include <boost/algorithm/string.hpp>
 #include <boost/thread.hpp>
-
 #include <geometry_msgs/Twist.h>
-
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include "std_msgs/Int32.h"
+#include "ros/ros.h"
+#include <iterator>
+#include <iostream>
+#include <array>
 
 namespace move_base {
 
   MoveBase::MoveBase(tf2_ros::Buffer& tf) :
-    tf_(tf),
-    as_(NULL),
+    tf_(tf), as_(NULL),
     planner_costmap_ros_(NULL), controller_costmap_ros_(NULL),
     bgp_loader_("nav_core", "nav_core::BaseGlobalPlanner"),
     blp_loader_("nav_core", "nav_core::BaseLocalPlanner"), 
@@ -61,9 +62,9 @@ namespace move_base {
     ROS_INFO("TungNV-move_base-61-MoveBase");
 
     // as_ = new MoveBaseActionServer(ros::NodeHandle(), "move_base", boost::bind(&MoveBase::executeCb, this, _1), false);
+    as_ = new MoveBaseActionServer(ros::NodeHandle(), "move_base", boost::bind(&MoveBase::myExecute, this, _1), false);  //TungNV
 
-    ////// Add by TungNV
-    as_ = new MoveBaseActionServer(ros::NodeHandle(), "move_base", boost::bind(&MoveBase::myExecute, this, _1), false);
+    ////// Add by TungNV  ////////////////////////////////////////////////////////////////////////////////////////////////
     // double yaw;
     // yaw = GetOrientation(1, 1, 3, 3);
     // geometry_msgs::Quaternion q = GetQuaternion(yaw, 0, 0);
@@ -72,7 +73,12 @@ namespace move_base {
     // ROS_INFO("TungNV-move_base-69-yaw: %0.3f", yaw);
     // yaw = GetYaw(0, 0, 0.383, 0.924);
     // ROS_INFO("TungNV-move_base-71-yaw: %0.3f", yaw);
-    /////////////////////
+
+    ros::NodeHandle n("");
+    //Subscribe the topic /client_count
+    mode_ = n.subscribe<std_msgs::Int32>("client_count", 1, boost::bind(&MoveBase::getMode, this, _1));
+    ROS_INFO("move_base.cpp-77-Subscriber topic /client_count");
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     ros::NodeHandle private_nh("~");
     ros::NodeHandle nh;
@@ -117,9 +123,12 @@ namespace move_base {
     //we'll provide a mechanism for some people to send goals as PoseStamped messages over a topic
     //they won't get any useful information back about its status, but this is useful for tools
     //like nav_view and rviz
-    ros::NodeHandle simple_nh("move_base_simple");
+    // ros::NodeHandle simple_nh("move_base_simple");
     //Subscribe the /move_base/goal topic
-    goal_sub_ = simple_nh.subscribe<geometry_msgs::PoseStamped>("goal", 1, boost::bind(&MoveBase::goalCB, this, _1));
+    // goal_sub_ = simple_nh.subscribe<geometry_msgs::PoseStamped>("goal", 1, boost::bind(&MoveBase::goalCB, this, _1));
+
+    ros::NodeHandle simple_nh("move_base_simple");
+    goal_sub_ = simple_nh.subscribe<geometry_msgs::PoseStamped>("goal", 1, boost::bind(&MoveBase::goalPos, this, _1));  //TungNV
 
     //we'll assume the radius of the robot to be consistent with what's specified for the costmaps
     private_nh.param("local_costmap/inscribed_radius", inscribed_radius_, 0.325);
@@ -839,7 +848,40 @@ namespace move_base {
 
 
 
-// Add by TungNV
+  // Add by TungNV
+  void MoveBase::getMode(const std_msgs::Int32::ConstPtr& msgMode){
+    ROS_INFO("move_base.cpp-857-getMode");
+    int32_t mode = msgMode->data;
+    ROS_INFO("move_base.cpp-858-Mode: %d", mode);
+    if(mode == 1)
+    {
+      move_base_msgs::MoveBaseActionGoal action_goal;
+      listActionGoal.reverse();  // reverse the list
+      int sizeofListActionGoal = listActionGoal.size();
+      ROS_INFO("move_base.cpp-858-sizeofListActionGoal: %d", sizeofListActionGoal);
+      for (auto goal=listActionGoal.begin(); goal!=listActionGoal.end(); ++goal) {
+        action_goal = *goal;
+        ROS_INFO("move_base.cpp-858-action_goal.x: %f", action_goal.goal.target_pose.pose.position.x);
+        ROS_INFO("move_base.cpp-858-action_goal.y: %f", action_goal.goal.target_pose.pose.position.y);
+        action_goal_pub_.publish(action_goal);  //publish the action_goal, call myExecute()
+        ROS_INFO("move_base.cpp-858- Publish action_goal");
+      }
+    }else{
+      publishZeroVelocity();
+    }
+  }
+  void MoveBase::goalPos(const geometry_msgs::PoseStamped::ConstPtr& goal){
+    ROS_INFO("move_base.cpp-865-goalPos");
+    
+    move_base_msgs::MoveBaseActionGoal action_goal;
+    action_goal.header.stamp = ros::Time::now();
+    action_goal.goal.target_pose = *goal;
+    ROS_INFO("move_base.cpp-858-action_goal.x: %f", action_goal.goal.target_pose.pose.position.x);
+    ROS_INFO("move_base.cpp-858-action_goal.y: %f", action_goal.goal.target_pose.pose.position.y);
+    
+    listActionGoal.insert(listActionGoal.begin(), action_goal);
+    ROS_INFO("move_base.cpp-858- Add action_goal to listActionGoal");
+  }
   void MoveBase::myExecute(const move_base_msgs::MoveBaseGoalConstPtr& move_base_goal)
   {
     ROS_INFO("TungNV-move_base-841-myExecute");
@@ -1068,7 +1110,7 @@ namespace move_base {
     as_->setAborted(move_base_msgs::MoveBaseResult(), "Aborting on the goal because the node has been killed");  
     return;  
   }
-///////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   double MoveBase::distance(const geometry_msgs::PoseStamped& p1, const geometry_msgs::PoseStamped& p2)
   {

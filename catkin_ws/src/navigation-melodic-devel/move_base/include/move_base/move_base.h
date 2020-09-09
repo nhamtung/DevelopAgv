@@ -58,6 +58,7 @@
 
 #include <dynamic_reconfigure/server.h>
 #include "move_base/MoveBaseConfig.h"
+#include "std_msgs/Int32.h"
 
 namespace move_base {
   //typedefs to help us out with the action server so that we don't hace to type so much
@@ -163,6 +164,10 @@ namespace move_base {
       void executeCb(const move_base_msgs::MoveBaseGoalConstPtr& move_base_goal);
 
 ////// Add by TungNV
+      ros::Subscriber mode_;
+      void getMode(const std_msgs::Int32::ConstPtr& msgMode);
+      std::list<move_base_msgs::MoveBaseActionGoal> listActionGoal;
+      void goalPos(const geometry_msgs::PoseStamped::ConstPtr& goal);
       void myExecute(const move_base_msgs::MoveBaseGoalConstPtr& move_base_goal);
       double GetOrientation(double current_x, double current_y, double goal_x, double goal_y);
       geometry_msgs::Quaternion GetQuaternion(double yaw, double pitch, double roll);
