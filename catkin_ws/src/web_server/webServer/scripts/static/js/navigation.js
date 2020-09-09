@@ -14,6 +14,10 @@ var app = new Vue({
 
         isStartRobot: false,
         robotPos: null,
+        navGoal: null,
+        goalPose: null,
+        topicSendMode: null,
+        mode: 0,
 
         dataShow1: 0,
         dataShow2: 0,
@@ -23,9 +27,10 @@ var app = new Vue({
     methods: {
         connect: function () {
             this.loading = true
-            this.ros = new ROSLIB.Ros({
+            var ros = new ROSLIB.Ros({
                 url: this.rosbridge_address
             })
+            this.ros = ros
 
             this.ros.on('connection', () => {
                 this.logs.unshift((new Date()).toTimeString() + ' - Connected!')
@@ -37,9 +42,8 @@ var app = new Vue({
                     width: 1300,
                     height: 800
                 })
-                // this.mapViewer = mapViewer
 
-                //////////////////////////////////////////////////////////////////////
+                /////////////////////////////////////////////////////////////////////////////
                 // Callback functions when there is mouse interaction with the polygon
                 var clickedPolygon = false
                 var selectedPointIndex = null
@@ -90,6 +94,7 @@ var app = new Vue({
                     rootObject: mapViewer.scene,
                     pathTopic: '/plan'
                 })
+                //////////////////////////////////////////////////////////////////////////////
 
                 //////////////////////////////////////////////////////////////////////////////
                 // Add robot pose and trace
@@ -117,7 +122,7 @@ var app = new Vue({
                 })
                 ///////////////////////////////////////////////////////////////////////////////
 
-                ////////////////////////////////////////////////////////////////////////////////
+                ///////////////////////////////////////////////////////////////////////////////
                 // Add navigRation goal
                 var navGoal = new ROS2D.NavGoal({
                     ros: this.ros,
@@ -125,6 +130,9 @@ var app = new Vue({
                     actionMsgType: 'move_base_msgs/MoveBaseAction',
                     actionTopic : '/move_base'
                 })
+                this.navGoal = navGoal
+                goalPose = new ROSLIB.Pose()
+                this.goalPose = goalPose
                 // Add Pose Estimate topic
                 let topicPoseEstimate = new ROSLIB.Topic({
                     ros: this.ros,
@@ -132,6 +140,7 @@ var app = new Vue({
                     name: '/initialpose',
                     messageType: 'geometry_msgs/PoseWithCovarianceStamped'
                 })
+                //////////////////////////////////////////////////////////////////////////////
 
                 ///////////////////////////////////////////////////////////
                 // Setup the map client.
@@ -158,7 +167,7 @@ var app = new Vue({
                 })        
                 //////////////////////////////////////////////////////////////////////////////
 
-                ////////////////////////////////////////////////////////////////////////////////////////
+                //////////////////////////////////////////////////////////////////////////////
                 // Setup mouse event handlers
                 this.mouseDown = false
                 var zoomKey = false
@@ -241,7 +250,7 @@ var app = new Vue({
                                 selectedPointIndex = null;
                             }
                             else if (mapViewer.scene.mouseInBounds === true && clickedPolygon === false) {
-                                var goalPose = navGoal.endGoalSelection(pos);
+                                goalPose = navGoal.endGoalSelection(pos);
                                 var goalPolygon = navGoal.goalOrientationMarker;
                                 
                                 startPos.x = goalPose.position.x;
@@ -265,7 +274,8 @@ var app = new Vue({
                                          },
                                     });
                                     topicPoseEstimate.publish(msgPoseEstimate);
-
+                                    polygon.removeAllPoint(polygon);
+                                    mapViewer.scene.addChild(polygon);	
                                     mapViewer.scene.addChild(goalPolygon);
                                     isPoseEstimated = false;
                                 }else{
@@ -283,7 +293,17 @@ var app = new Vue({
                         this.mouseDown = false;
                     }
                 })
+                //////////////////////////////////////////////////////////////////////////////
 
+                //////////////////////////////////////////////////////////////////////////////
+                let topicSendMode = new ROSLIB.Topic({
+                    ros: this.ros,
+                    rootObject : mapViewer.scene,
+                    name: '/client_count',
+                    messageType: 'std_msgs/Int32'
+                })
+                this.topicSendMode = topicSendMode
+                ///////////////////////////////////////////////////////////////////////////////
             })
             this.ros.on('error', (error) => {
                 this.logs.unshift((new Date()).toTimeString() + ` - Error: ${error}`)
@@ -303,10 +323,22 @@ var app = new Vue({
 
         RobotStart() {
             this.isStartRobot = false;
+            this.mode = 1;
+            let msgSendMode = new ROSLIB.Message({
+                data: this.mode
+            });
+            this.topicSendMode.publish(msgSendMode);
+            this.navGoal.sendGoal(this.goalPose);
             console.log("isStartRobot: " + this.isStartRobot);
         },
         RobotStop(){
             this.isStartRobot = true;
+            this.mode = 0;
+            let msgSendMode = new ROSLIB.Message({
+                data: this.mode
+            });
+            this.topicSendMode.publish(msgSendMode);
+            this.navGoal.sendGoal(this.goalPose);
             console.log("isStartRobot: " + this.isStartRobot);
         },
     },

@@ -862,6 +862,27 @@ ROS2D.PolygonMarker.prototype.remPoint = function(obj) {
 	
 	this.drawFill();
 };
+ROS2D.PolygonMarker.prototype.removeAllPoint = function(obj) {
+  console.log("ros2d.js-866-removeAllPoint");
+	var index;
+//	var point;
+	if (obj instanceof createjs.Shape) {
+		index = this.pointContainer.getChildIndex(obj);
+//		point = obj;
+	}
+	else {
+		index = obj;
+//		point = this.pointContainer.getChildAt(index);
+	}
+	
+	var numPoints = this.pointContainer.getNumChildren();
+  console.log("ros2d.js-886-numPoints: " + numPoints);
+  
+  this.lineContainer.removeAllChildren();
+	this.pointContainer.removeAllChildren();
+	
+	this.drawFill();
+};
 
 /**
  * Moves a point of the polygon

@@ -15,10 +15,6 @@ def main_web():
 def button():
   return render_template('button.html')
 
-@app.route('/navigation')
-def navigation():
-  return render_template('navigation.html')
-
 @app.route('/joystick')
 def joystick():
   return render_template('joystick.html')
@@ -30,6 +26,10 @@ def testDraw():
 @app.route('/testNavigation')
 def testNavigation():
   return render_template('testNavigation.html')
+
+@app.route('/navigation')
+def navigation():
+  return render_template('navigation.html')
 
 
 if __name__ == '__main__':	
