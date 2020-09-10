@@ -383,7 +383,6 @@ namespace move_base {
     return true;
   }
 
-
   bool MoveBase::planService(nav_msgs::GetPlan::Request &req, nav_msgs::GetPlan::Response &resp){
     ROS_INFO("TungNV-move_base-375-planService");
     if(as_->isActive()){
@@ -543,7 +542,7 @@ namespace move_base {
   }
 
   void MoveBase::publishZeroVelocity(){
-    ROS_INFO("TungNV-move_base-533-publishZeroVelocity");
+    ROS_INFO("TungNV-move_base-545-publishZeroVelocity: STOP ROBOT!");
     geometry_msgs::Twist cmd_vel;
     cmd_vel.linear.x = 0.0;
     cmd_vel.linear.y = 0.0;
@@ -848,7 +847,7 @@ namespace move_base {
 
 
 
-  // Add by TungNV
+  // Add by TungNV   ////////////////////////////////////////////////////////////////////////////////////////////////////
   void MoveBase::getMode(const std_msgs::Int32::ConstPtr& msgMode){
     ROS_INFO("move_base.cpp-857-getMode");
     int32_t mode = msgMode->data;
@@ -859,13 +858,20 @@ namespace move_base {
       listActionGoal.reverse();  // reverse the list
       int sizeofListActionGoal = listActionGoal.size();
       ROS_INFO("move_base.cpp-858-sizeofListActionGoal: %d", sizeofListActionGoal);
+
+      isReachGoal = true;
       for (auto goal=listActionGoal.begin(); goal!=listActionGoal.end(); ++goal) {
         action_goal = *goal;
         ROS_INFO("move_base.cpp-858-action_goal.x: %f", action_goal.goal.target_pose.pose.position.x);
         ROS_INFO("move_base.cpp-858-action_goal.y: %f", action_goal.goal.target_pose.pose.position.y);
-        action_goal_pub_.publish(action_goal);  //publish the action_goal, call myExecute()
+        if(isReachGoal){
+          action_goal_pub_.publish(action_goal);  //publish the action_goal, call myExecute()]
+          isReachGoal = false;
+          while(!isReachGoal);
+        }
         ROS_INFO("move_base.cpp-858- Publish action_goal");
       }
+      RemoveAllList(listActionGoal);
     }else{
       publishZeroVelocity();
     }
@@ -961,6 +967,15 @@ namespace move_base {
   double MoveBase::DegreeToRad (double angle){
     ROS_INFO("TungNV-move_base-916-DegreeToRad");
     return (M_PI*angle)/180;
+  }
+  void MoveBase::RemoveAllList(std::list<move_base_msgs::MoveBaseActionGoal> list){
+    // ROS_INFO("move_base.cpp-966-RemoveAllList");
+    list.erase (list.begin(), list.end());
+    if(!list.size()){
+      ROS_INFO("move_base.cpp-969-RemoveAllList Success");
+    }else{
+      ROS_WARN("move_base.cpp-972-RemoveAllList Failed");
+    }
   }
   void MoveBase::execute(geometry_msgs::PoseStamped goal)
   {
@@ -1085,7 +1100,8 @@ namespace move_base {
       //if we're done, then we'll return from execute
       if(done)
       {
-        ROS_INFO("TungNV-move_base-1031-While done");
+        ROS_INFO("TungNV-move_base-1031-While done: REACH Goal");
+        isReachGoal = true;
         return;
       }
 

@@ -165,6 +165,7 @@ namespace move_base {
 
 ////// Add by TungNV
       ros::Subscriber mode_;
+      bool isReachGoal;
       void getMode(const std_msgs::Int32::ConstPtr& msgMode);
       std::list<move_base_msgs::MoveBaseActionGoal> listActionGoal;
       void goalPos(const geometry_msgs::PoseStamped::ConstPtr& goal);
@@ -174,6 +175,7 @@ namespace move_base {
       double GetYaw(double x, double y, double z, double w);
       double RadToDegree (double angle);
       double DegreeToRad (double angle);
+      void RemoveAllList(std::list<move_base_msgs::MoveBaseActionGoal> list);
       void execute(geometry_msgs::PoseStamped goal);
 ////////////////////////////////////////////////////////////////////////
 
