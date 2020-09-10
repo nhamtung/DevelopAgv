@@ -98,7 +98,7 @@ var app = new Vue({
 
                 //////////////////////////////////////////////////////////////////////////////
                 // Add robot pose and trace
-                var robotPos = new ROSLIB.Vector3()
+                var robotPos = new ROSLIB.Pose()
                 var robotTrace = new ROS2D.PoseAndTrace({
                     ros: this.ros,
                     rootObject: mapViewer.scene,
@@ -107,14 +107,20 @@ var app = new Vue({
                 })                
                 let poseListener = new ROSLIB.Topic({
                     ros: this.ros,
-                    name: '/robot_pose',
-                    messageType: 'geometry_msgs/Pose',
+                    // name: '/robot_pose',
+                    // messageType: 'geometry_msgs/Pose',
+                    name: '/amcl_pose',
+                    messageType: 'geometry_msgs/PoseWithCovarianceStamped',
                     throttle_rate : 100
                 })
                 poseListener.subscribe((msgPose) => {
-                    robotPos.x = msgPose.position.x
-                    robotPos.y = msgPose.position.y
-                    robotTrace.updatePose(msgPose)
+
+                    robotPos.position.x = msgPose.pose.pose.position.x
+                    robotPos.position.y = msgPose.pose.pose.position.y
+                    robotPos.orientation.z = msgPose.pose.pose.orientation.z
+                    robotPos.orientation.w = msgPose.pose.pose.orientation.w
+
+                    robotTrace.updatePose(robotPos)
                     var trace = robotTrace.trace
                     var robotMarker = robotTrace.robotMarker
                     mapViewer.scene.addChild(trace);

@@ -64,7 +64,7 @@ namespace move_base {
     // as_ = new MoveBaseActionServer(ros::NodeHandle(), "move_base", boost::bind(&MoveBase::executeCb, this, _1), false);
     as_ = new MoveBaseActionServer(ros::NodeHandle(), "move_base", boost::bind(&MoveBase::myExecute, this, _1), false);  //TungNV
 
-    ////// Add by TungNV  ////////////////////////////////////////////////////////////////////////////////////////////////
+    ////// Add by TungNV ////////////////////////////////////////////////////////////////////////////////////////////////
     // double yaw;
     // yaw = GetOrientation(1, 1, 3, 3);
     // geometry_msgs::Quaternion q = GetQuaternion(yaw, 0, 0);
