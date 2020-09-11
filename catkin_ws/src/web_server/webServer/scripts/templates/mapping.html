@@ -49,7 +49,10 @@
                     </div>
                 </div>
                 <div>
+                    <label>Map Name: </lable>
+                    <input type="text" v-model="mapName"/>
                     <button class="btn btn-success" @click="SaveMap">Save Map</button>
+                    <p class="text-success" v-if="isSaved">Saved Map!</p>
                 </div>
             </div>
             <div class="col-md-8" >

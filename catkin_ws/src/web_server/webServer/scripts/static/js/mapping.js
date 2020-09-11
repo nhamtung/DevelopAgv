@@ -18,6 +18,8 @@ var app = new Vue({
 
         dataShow1: 0,
         dataShow2: 0,
+        mapName: "mapName",
+        isSaved: false,
     },
 
     // helper methods to connect to ROS
@@ -64,15 +66,15 @@ var app = new Vue({
                 })                
                 let poseListener = new ROSLIB.Topic({
                     ros: this.ros,
-                    name: '/amcl_pose',
-                    messageType: 'geometry_msgs/PoseWithCovarianceStamped',
+                    name: '/slam_out_pose',
+                    messageType: 'geometry_msgs/PoseStamped',
                     throttle_rate : 100
                 })
                 poseListener.subscribe((msgPose) => {
-                    robotPos.position.x = msgPose.pose.pose.position.x
-                    robotPos.position.y = msgPose.pose.pose.position.y
-                    robotPos.orientation.z = msgPose.pose.pose.orientation.z
-                    robotPos.orientation.w = msgPose.pose.pose.orientation.w
+                    robotPos.position.x = msgPose.pose.position.x
+                    robotPos.position.y = msgPose.pose.position.y
+                    robotPos.orientation.z = msgPose.pose.orientation.z
+                    robotPos.orientation.w = msgPose.pose.orientation.w
 
                     robotTrace.updatePose(robotPos)
                     var trace = robotTrace.trace
@@ -212,6 +214,7 @@ var app = new Vue({
         },
 
         SaveMap() {
+            this.isSaved = true;
         },
     },
 
