@@ -5325,6 +5325,24 @@ kit_agv_navigation/preinstall:
 .PHONY : kit_agv_navigation/preinstall
 
 #=============================================================================
+# Directory level rules for directory kit_agv_slam
+
+# Convenience name for "all" pass in the directory.
+kit_agv_slam/all:
+
+.PHONY : kit_agv_slam/all
+
+# Convenience name for "clean" pass in the directory.
+kit_agv_slam/clean:
+
+.PHONY : kit_agv_slam/clean
+
+# Convenience name for "preinstall" pass in the directory.
+kit_agv_slam/preinstall:
+
+.PHONY : kit_agv_slam/preinstall
+
+#=============================================================================
 # Directory level rules for directory kit_agv_teleop
 
 # Convenience name for "all" pass in the directory.

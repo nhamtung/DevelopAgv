@@ -943,6 +943,12 @@ kit_agv_navigation_BINARY_DIR:STATIC=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/
 kit_agv_navigation_SOURCE_DIR:STATIC=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/kit_agv_navigation
 
 //Value Computed by CMake
+kit_agv_slam_BINARY_DIR:STATIC=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/kit_agv_slam
+
+//Value Computed by CMake
+kit_agv_slam_SOURCE_DIR:STATIC=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/kit_agv_slam
+
+//Value Computed by CMake
 kit_agv_teleop_BINARY_DIR:STATIC=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/kit_agv_teleop
 
 //Value Computed by CMake
@@ -1547,7 +1553,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=56
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=57
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -2110,5 +2116,5 @@ csm_csm_INCLUDEDIR:INTERNAL=
 csm_csm_LIBDIR:INTERNAL=
 csm_csm_PREFIX:INTERNAL=
 csm_csm_VERSION:INTERNAL=
-prefix_result:INTERNAL=/opt/ros/melodic/lib
+prefix_result:INTERNAL=
 

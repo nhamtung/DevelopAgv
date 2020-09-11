@@ -9,8 +9,16 @@ var ROS2D = ROS2D || {
 // convert the given global Stage coordinates to ROS coordinates
 createjs.Stage.prototype.globalToRos = function(x, y) {
   console.log("ros2d.js-11-globalToRos");
+  console.log("ros2d.js-12-x: " + x);
+  console.log("ros2d.js-14-y: " + y);
+  console.log("ros2d.js-15-this.x: " + this.x);
+  console.log("ros2d.js-16-this.y: " + this.y);
+  console.log("ros2d.js-17-this.scaleX: " + this.scaleX);
+  console.log("ros2d.js-18-this.scaleY: " + this.scaleY);
   var rosX = (x - this.x) / this.scaleX;
   var rosY = (this.y - y) / this.scaleY;
+  console.log("ros2d.js-20-rosX: " + rosX);
+  console.log("ros2d.js-21-rosY: " + rosY);
   return new ROSLIB.Vector3({
     x : rosX,
     y : rosY
@@ -1183,7 +1191,10 @@ ROS2D.Viewer.prototype.addObject = function(object) {
  * @param height - the height to scale to in meters
  */
 ROS2D.Viewer.prototype.scaleToDimensions = function(width, height) {
-  console.log("ros2d.js-1137-scaleToDimensions");
+  console.log("ros2d.js-1186-scaleToDimensions");
+  // console.log("ros2d.js-1187-Map width: " + width + " (m)");
+  // console.log("ros2d.js-1188-Map height: " + height + " (m)");
+
   // restore to values before shifting, if ocurred
   this.scene.x = typeof this.scene.x_prev_shift !== 'undefined' ? this.scene.x_prev_shift : this.scene.x;
   this.scene.y = typeof this.scene.y_prev_shift !== 'undefined' ? this.scene.y_prev_shift : this.scene.y;
@@ -1191,6 +1202,8 @@ ROS2D.Viewer.prototype.scaleToDimensions = function(width, height) {
   // save scene scaling
   this.scene.scaleX = this.width / width;
   this.scene.scaleY = this.height / height;
+  console.log("ros2d.js-1194-scaleX: " + this.scene.scaleX);
+  console.log("ros2d.js-1194-scaleY: " + this.scene.scaleY);
 };
 
 /**
@@ -1201,7 +1214,10 @@ ROS2D.Viewer.prototype.scaleToDimensions = function(width, height) {
  * @param y - the amount to shift by in the y direction in meters
  */
 ROS2D.Viewer.prototype.shift = function(x, y) {
-  console.log("ros2d.js-1155-shift");
+  console.log("ros2d.js-1204-shift");
+  console.log("ros2d.js-1205-shift X: " + x);
+  console.log("ros2d.js-1206-shift Y: " + y);
+
   // save current offset
   this.scene.x_prev_shift = this.scene.x;
   this.scene.y_prev_shift = this.scene.y;
@@ -1265,8 +1281,12 @@ ROS2D.ZoomView.prototype.zoom = function(zoom) {
 	
 	this.stage.scaleX = this.startScale.x*zoom;
 	this.stage.scaleY = this.startScale.y*zoom;
+  // console.log("ros2d.js-1284-this.stage.scaleX: " + this.stage.scaleX);
+  // console.log("ros2d.js-1285-this.stage.scaleY: " + this.stage.scaleY);
 	
 	this.stage.x = this.startShift.x - (this.center.x-this.startShift.x) * (this.stage.scaleX/this.startScale.x - 1);
 	this.stage.y = this.startShift.y - (this.center.y-this.startShift.y) * (this.stage.scaleY/this.startScale.y - 1);
+  console.log("ros2d.js-1289-this.stage.x: " + this.stage.x);
+  console.log("ros2d.js-1290-this.stage.y: " + this.stage.y);
 };
 

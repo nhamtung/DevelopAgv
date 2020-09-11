@@ -27,6 +27,10 @@ def testDraw():
 def testNavigation():
   return render_template('testNavigation.html')
 
+@app.route('/mapping')
+def mapping():
+  return render_template('mapping.html')
+
 @app.route('/navigation')
 def navigation():
   return render_template('navigation.html')
