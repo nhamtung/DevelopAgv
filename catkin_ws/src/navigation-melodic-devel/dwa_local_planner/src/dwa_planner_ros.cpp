@@ -150,7 +150,7 @@ namespace dwa_local_planner {
   }
 
   bool DWAPlannerROS::isGoalReached() {
-    ROS_INFO("TungNV-dwa_planner_ros-154-isGoalReached");
+    ROS_INFO("dwa_planner_ros.cpp-153-isGoalReached");
     if (! isInitialized()) {
       ROS_ERROR("This planner has not been initialized, please call initialize() before using this planner");
       return false;

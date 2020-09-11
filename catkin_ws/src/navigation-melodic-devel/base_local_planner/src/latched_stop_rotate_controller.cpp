@@ -66,6 +66,7 @@ bool LatchedStopRotateController::isPositionReached(LocalPlannerUtil* planner_ut
 bool LatchedStopRotateController::isGoalReached(LocalPlannerUtil* planner_util,
     OdometryHelperRos& odom_helper,
     const geometry_msgs::PoseStamped& global_pose) {
+  ROS_INFO("latched_stop_rotate_controller.cpp-69-isGoalReached");
   double xy_goal_tolerance = planner_util->getCurrentLimits().xy_goal_tolerance;
   double theta_stopped_vel = planner_util->getCurrentLimits().theta_stopped_vel;
   double trans_stopped_vel = planner_util->getCurrentLimits().trans_stopped_vel;

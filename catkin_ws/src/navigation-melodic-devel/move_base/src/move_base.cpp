@@ -866,10 +866,10 @@ namespace move_base {
         ROS_INFO("move_base.cpp-858-action_goal.y: %f", action_goal.goal.target_pose.pose.position.y);
         if(isReachGoal){
           action_goal_pub_.publish(action_goal);  //publish the action_goal, call myExecute()]
+          ROS_INFO("move_base.cpp-869- Publish action_goal");
           isReachGoal = false;
           while(!isReachGoal);
         }
-        ROS_INFO("move_base.cpp-858- Publish action_goal");
       }
       RemoveAllList(listActionGoal);
     }else{
@@ -1065,7 +1065,7 @@ namespace move_base {
 
       //we also want to check if we've changed global frames because we need to transform our goal pose
       if(goal.header.frame_id != planner_costmap_ros_->getGlobalFrameID()){
-        ROS_INFO("TungNV-move_base-1007-getGlobalFrameID");
+        ROS_INFO("move_base.cpp-1007-getGlobalFrameID");
         goal = goalToGlobalFrame(goal);
 
         //we want to go back to the planning state for the next execution cycle
@@ -1250,7 +1250,7 @@ namespace move_base {
         }
         
         {
-         boost::unique_lock<costmap_2d::Costmap2D::mutex_t> lock(*(controller_costmap_ros_->getCostmap()->getMutex()));
+        boost::unique_lock<costmap_2d::Costmap2D::mutex_t> lock(*(controller_costmap_ros_->getCostmap()->getMutex()));
 
         if(tc_->computeVelocityCommands(cmd_vel)){
           ROS_DEBUG_NAMED( "move_base", "Got a valid command from the local planner:  %.3lf, %.3lf, %.3lf", cmd_vel.linear.x, cmd_vel.linear.y, cmd_vel.angular.z);
