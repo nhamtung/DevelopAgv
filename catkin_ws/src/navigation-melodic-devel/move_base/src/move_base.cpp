@@ -123,12 +123,11 @@ namespace move_base {
     //we'll provide a mechanism for some people to send goals as PoseStamped messages over a topic
     //they won't get any useful information back about its status, but this is useful for tools
     //like nav_view and rviz
-    // ros::NodeHandle simple_nh("move_base_simple");
-    //Subscribe the /move_base/goal topic
-    // goal_sub_ = simple_nh.subscribe<geometry_msgs::PoseStamped>("goal", 1, boost::bind(&MoveBase::goalCB, this, _1));
-
     ros::NodeHandle simple_nh("move_base_simple");
-    goal_sub_ = simple_nh.subscribe<geometry_msgs::PoseStamped>("goal", 1, boost::bind(&MoveBase::goalPos, this, _1));  //TungNV
+    //Subscribe the /move_base/goal topic
+    goal_sub_ = simple_nh.subscribe<geometry_msgs::PoseStamped>("goal", 1, boost::bind(&MoveBase::goalCB, this, _1));
+    // ros::NodeHandle simple_nh("move_base_simple");
+    // goal_sub_ = simple_nh.subscribe<geometry_msgs::PoseStamped>("goal", 1, boost::bind(&MoveBase::goalPos, this, _1));  //TungNV
 
     //we'll assume the radius of the robot to be consistent with what's specified for the costmaps
     private_nh.param("local_costmap/inscribed_radius", inscribed_radius_, 0.325);
@@ -864,12 +863,12 @@ namespace move_base {
         action_goal = *goal;
         ROS_INFO("move_base.cpp-858-action_goal.x: %f", action_goal.goal.target_pose.pose.position.x);
         ROS_INFO("move_base.cpp-858-action_goal.y: %f", action_goal.goal.target_pose.pose.position.y);
-        if(isReachGoal){
+        // if(isReachGoal){
           action_goal_pub_.publish(action_goal);  //publish the action_goal, call myExecute()]
           ROS_INFO("move_base.cpp-869- Publish action_goal");
-          isReachGoal = false;
-          while(!isReachGoal);
-        }
+        //   isReachGoal = false;
+        //   while(!isReachGoal);
+        // }
       }
       RemoveAllList(listActionGoal);
     }else{

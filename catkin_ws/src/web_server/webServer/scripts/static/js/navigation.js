@@ -6,6 +6,7 @@ var app = new Vue({
         ros: null,
         logs: [],
         loading: false,
+        // rosbridge_address: 'ws://localhost:9090',
         rosbridge_address: 'ws://localhost:9090',
         port: '9090',
         mapViewer: null,
@@ -39,7 +40,7 @@ var app = new Vue({
 
                 var mapViewer = new ROS2D.Viewer({
                     divID: 'map',
-                    width: 1300,
+                    width: 800,
                     height: 800
                 })
 
@@ -167,8 +168,8 @@ var app = new Vue({
                     this.dataShow2 = gridHeigh;
                     mapViewer.scaleToDimensions(gridWidth, gridHeigh);
 
-                    grid_pose_x = this.mapGridClient.currentGrid.pose.position.x/16;
-                    grid_pose_y = this.mapGridClient.currentGrid.pose.position.y/8;
+                    grid_pose_x = this.mapGridClient.currentGrid.pose.position.x/32;
+                    grid_pose_y = this.mapGridClient.currentGrid.pose.position.y/16;
                     mapViewer.shift(grid_pose_x, grid_pose_y);
 
                     plannedPath.initScale();
