@@ -1,8 +1,8 @@
-# Install script for directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navigation
+# Install script for directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navigation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robotics/TungNV/DevelopAgv/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navigation" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navigation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navigation" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navigation/package.xml")
 endif()
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_splitter
+# Install script for directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_splitter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robotics/TungNV/DevelopAgv/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_splitter/catkin_generated/installspace/laser_scan_splitter.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_splitter/catkin_generated/installspace/laser_scan_splitter.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/laser_scan_splitter/cmake" TYPE FILE FILES
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_splitter/catkin_generated/installspace/laser_scan_splitterConfig.cmake"
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_splitter/catkin_generated/installspace/laser_scan_splitterConfig-version.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_splitter/catkin_generated/installspace/laser_scan_splitterConfig.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_splitter/catkin_generated/installspace/laser_scan_splitterConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/laser_scan_splitter" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_splitter/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/laser_scan_splitter" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_splitter/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liblaser_scan_splitter.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_splitter.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_splitter.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liblaser_scan_splitter.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liblaser_scan_splitter.so")
     file(RPATH_CHANGE
@@ -79,12 +79,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liblaser_scan_splitter_nodelet.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_splitter_nodelet.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_splitter_nodelet.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liblaser_scan_splitter_nodelet.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liblaser_scan_splitter_nodelet.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liblaser_scan_splitter_nodelet.so"
-         OLD_RPATH "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
+         OLD_RPATH "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liblaser_scan_splitter_nodelet.so")
@@ -93,7 +93,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/laser_scan_splitter" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_splitter/include/laser_scan_splitter/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/laser_scan_splitter" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_splitter/include/laser_scan_splitter/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -103,12 +103,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/laser_scan_splitter/laser_scan_splitter_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/laser_scan_splitter" TYPE EXECUTABLE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_splitter/laser_scan_splitter_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/laser_scan_splitter" TYPE EXECUTABLE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_splitter/laser_scan_splitter_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/laser_scan_splitter/laser_scan_splitter_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/laser_scan_splitter/laser_scan_splitter_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/laser_scan_splitter/laser_scan_splitter_node"
-         OLD_RPATH "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
+         OLD_RPATH "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/laser_scan_splitter/laser_scan_splitter_node")
@@ -117,10 +117,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/laser_scan_splitter" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_splitter/laser_scan_splitter_nodelet.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/laser_scan_splitter" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_splitter/laser_scan_splitter_nodelet.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/laser_scan_splitter" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_splitter/demo")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/laser_scan_splitter" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_splitter/demo")
 endif()
 

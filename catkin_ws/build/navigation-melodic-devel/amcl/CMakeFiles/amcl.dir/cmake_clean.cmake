@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/amcl.dir/src/amcl_node.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/amcl/amcl.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/amcl/amcl"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/amcl/amcl.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/amcl/amcl"
 )
 
 # Per-language clean rules from dependency scanning.

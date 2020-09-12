@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosauth_generate_messages_cpp"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/rosauth/Authentication.h"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/rosauth/Authentication.h"
 )
 
 # Per-language clean rules from dependency scanning.

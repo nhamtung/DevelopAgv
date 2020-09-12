@@ -61,8 +61,8 @@ namespace move_base {
     {
     ROS_INFO("TungNV-move_base-61-MoveBase");
 
-    // as_ = new MoveBaseActionServer(ros::NodeHandle(), "move_base", boost::bind(&MoveBase::executeCb, this, _1), false);
-    as_ = new MoveBaseActionServer(ros::NodeHandle(), "move_base", boost::bind(&MoveBase::myExecute, this, _1), false);  //TungNV
+    as_ = new MoveBaseActionServer(ros::NodeHandle(), "move_base", boost::bind(&MoveBase::executeCb, this, _1), false);
+    // as_ = new MoveBaseActionServer(ros::NodeHandle(), "move_base", boost::bind(&MoveBase::myExecute, this, _1), false);  //TungNV
 
     ////// Add by TungNV ////////////////////////////////////////////////////////////////////////////////////////////////
     // double yaw;

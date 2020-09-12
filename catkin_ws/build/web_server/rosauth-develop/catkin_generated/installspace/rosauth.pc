@@ -1,4 +1,4 @@
-prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install
+prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/install
 
 Name: rosauth
 Description: Description of rosauth

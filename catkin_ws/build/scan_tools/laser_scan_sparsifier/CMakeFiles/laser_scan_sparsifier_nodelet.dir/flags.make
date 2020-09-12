@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"laser_scan_sparsifier\" -Dlaser_scan_sparsifier_nodelet_EXPORTS
 
-CXX_INCLUDES = -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

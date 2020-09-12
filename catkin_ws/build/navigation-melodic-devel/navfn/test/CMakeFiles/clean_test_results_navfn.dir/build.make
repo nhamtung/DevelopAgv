@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build
+CMAKE_BINARY_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/build
 
 # Utility rule file for clean_test_results_navfn.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build
 include navigation-melodic-devel/navfn/test/CMakeFiles/clean_test_results_navfn.dir/progress.make
 
 navigation-melodic-devel/navfn/test/CMakeFiles/clean_test_results_navfn:
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/test && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/test_results/navfn
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/test && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/robotics/TungNV/DevelopAgv/catkin_ws/build/test_results/navfn
 
 clean_test_results_navfn: navigation-melodic-devel/navfn/test/CMakeFiles/clean_test_results_navfn
 clean_test_results_navfn: navigation-melodic-devel/navfn/test/CMakeFiles/clean_test_results_navfn.dir/build.make
@@ -67,10 +67,10 @@ navigation-melodic-devel/navfn/test/CMakeFiles/clean_test_results_navfn.dir/buil
 .PHONY : navigation-melodic-devel/navfn/test/CMakeFiles/clean_test_results_navfn.dir/build
 
 navigation-melodic-devel/navfn/test/CMakeFiles/clean_test_results_navfn.dir/clean:
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/test && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_navfn.dir/cmake_clean.cmake
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/test && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_navfn.dir/cmake_clean.cmake
 .PHONY : navigation-melodic-devel/navfn/test/CMakeFiles/clean_test_results_navfn.dir/clean
 
 navigation-melodic-devel/navfn/test/CMakeFiles/clean_test_results_navfn.dir/depend:
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/test /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/test /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/test/CMakeFiles/clean_test_results_navfn.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotics/TungNV/DevelopAgv/catkin_ws/src /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/test /home/robotics/TungNV/DevelopAgv/catkin_ws/build /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/test /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/test/CMakeFiles/clean_test_results_navfn.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : navigation-melodic-devel/navfn/test/CMakeFiles/clean_test_results_navfn.dir/depend
 

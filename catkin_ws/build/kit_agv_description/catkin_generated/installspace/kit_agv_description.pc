@@ -1,4 +1,4 @@
-prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install
+prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/install
 
 Name: kit_agv_description
 Description: Description of kit_agv_description

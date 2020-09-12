@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tf2_ros_buffer_server.dir/src/buffer_server_main.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/tf2_ros/buffer_server.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/tf2_ros/buffer_server"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/tf2_ros/buffer_server.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/tf2_ros/buffer_server"
 )
 
 # Per-language clean rules from dependency scanning.

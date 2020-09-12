@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosauth_generate_messages_nodejs"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/gennodejs/ros/rosauth/srv/Authentication.js"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/gennodejs/ros/rosauth/srv/Authentication.js"
 )
 
 # Per-language clean rules from dependency scanning.

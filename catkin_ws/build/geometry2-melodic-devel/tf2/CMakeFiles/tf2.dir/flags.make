@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dtf2_EXPORTS
 
-CXX_INCLUDES = -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_msgs/include -I/opt/ros/melodic/include 
+CXX_INCLUDES = -I/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include -I/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include -I/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_msgs/include -I/opt/ros/melodic/include 
 

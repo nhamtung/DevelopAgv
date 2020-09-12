@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/map_server_utest.dir/test/utest.cpp.o"
   "CMakeFiles/map_server_utest.dir/test/test_constants.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/map_server/map_server_utest.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/map_server/map_server_utest"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/map_server/map_server_utest.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/map_server/map_server_utest"
 )
 
 # Per-language clean rules from dependency scanning.

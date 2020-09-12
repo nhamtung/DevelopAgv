@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src
-# Build directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build
+# Source directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src
+# Build directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
@@ -11,6 +11,7 @@ subdirs("navigation-melodic-devel/navigation")
 subdirs("web_server/rosbridge_suite-master/rosapi")
 subdirs("web_server/rosbridge_suite-master/rosbridge_suite")
 subdirs("scan_tools/scan_tools")
+subdirs("navigation_msgs-jade-devel/move_base_msgs")
 subdirs("web_server/rosbridge_suite-master/rosbridge_msgs")
 subdirs("geometry2-melodic-devel/tf2_msgs")
 subdirs("geometry2-melodic-devel/tf2")
@@ -29,6 +30,7 @@ subdirs("web_server/rosbridge_suite-master/rosbridge_server")
 subdirs("geometry2-melodic-devel/tf2_py")
 subdirs("scan_tools/laser_scan_sparsifier")
 subdirs("scan_tools/laser_scan_splitter")
+subdirs("navigation_msgs-jade-devel/map_msgs")
 subdirs("sick_safetyscanners-master")
 subdirs("web_server/rosbridge_suite-master/rosbridge_library")
 subdirs("geometry2-melodic-devel/tf2_ros")

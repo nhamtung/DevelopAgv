@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/psm_node.dir/src/psm_node.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/polar_scan_matcher/psm_node.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/polar_scan_matcher/psm_node"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/polar_scan_matcher/psm_node.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/polar_scan_matcher/psm_node"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,4 +1,4 @@
-prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel
+prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/devel
 
 Name: kit_agv_teleop
 Description: Description of kit_agv_teleop

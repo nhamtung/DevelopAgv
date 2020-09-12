@@ -1,8 +1,8 @@
-prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel
+prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/devel
 
 Name: tf2_bullet
 Description: Description of tf2_bullet
 Version: 0.6.7
-Cflags: -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_bullet/include -I/usr/include/bullet
+Cflags: -I/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_bullet/include -I/usr/include/bullet
 Libs: -L${prefix}/lib 
 Requires: 

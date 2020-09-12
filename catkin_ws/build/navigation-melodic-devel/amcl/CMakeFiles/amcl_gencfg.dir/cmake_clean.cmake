@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/amcl_gencfg"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/amcl/AMCLConfig.h"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/amcl/docs/AMCLConfig.dox"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/amcl/docs/AMCLConfig-usage.dox"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/amcl/cfg/AMCLConfig.py"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/amcl/docs/AMCLConfig.wikidoc"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/amcl/AMCLConfig.h"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/amcl/docs/AMCLConfig.dox"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/amcl/docs/AMCLConfig-usage.dox"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/amcl/cfg/AMCLConfig.py"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/amcl/docs/AMCLConfig.wikidoc"
 )
 
 # Per-language clean rules from dependency scanning.
