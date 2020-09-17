@@ -1,4 +1,4 @@
-image: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/kit_agv_navigation/maps/map_709a1.pgm
+image: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/kit_agv_navigation/maps/map_709a1.pgm
 resolution: 0.050000
 origin: [-51.224998, -51.224998, 0.000000]
 negate: 0
