@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ros_mac_authentication_test.dir/test/ros_mac_authentication_test.cpp.o"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/rosauth/ros_mac_authentication_test.pdb"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/rosauth/ros_mac_authentication_test"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/rosauth/ros_mac_authentication_test.pdb"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/rosauth/ros_mac_authentication_test"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
-# Install script for directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/webServer
+# Install script for directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/webServer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robotics/TungNV/DevelopAgv/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/webServer/catkin_generated/installspace/webServer.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/webServer/catkin_generated/installspace/webServer.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/webServer/cmake" TYPE FILE FILES
-    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/webServer/catkin_generated/installspace/webServerConfig.cmake"
-    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/webServer/catkin_generated/installspace/webServerConfig-version.cmake"
+    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/webServer/catkin_generated/installspace/webServerConfig.cmake"
+    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/webServer/catkin_generated/installspace/webServerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/webServer" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/webServer/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/webServer" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/webServer/package.xml")
 endif()
 

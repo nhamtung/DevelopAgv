@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/laser_scan_splitter_node.dir/src/laser_scan_splitter_node.cpp.o"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_splitter/laser_scan_splitter_node.pdb"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_splitter/laser_scan_splitter_node"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_splitter/laser_scan_splitter_node.pdb"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_splitter/laser_scan_splitter_node"
 )
 
 # Per-language clean rules from dependency scanning.

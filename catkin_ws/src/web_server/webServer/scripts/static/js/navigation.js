@@ -7,7 +7,7 @@ var app = new Vue({
         logs: [],
         loading: false,
         // rosbridge_address: 'ws://localhost:9090',
-        rosbridge_address: 'ws://localhost:9090',
+        rosbridge_address: 'ws://192.168.1.10:9090',
         port: '9090',
         mapViewer: null,
         mapGridClient: null,

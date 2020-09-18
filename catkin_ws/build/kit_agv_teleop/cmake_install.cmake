@@ -1,8 +1,8 @@
-# Install script for directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/kit_agv_teleop
+# Install script for directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/kit_agv_teleop
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robotics/TungNV/DevelopAgv/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/kit_agv_teleop/catkin_generated/installspace/kit_agv_teleop.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/kit_agv_teleop/catkin_generated/installspace/kit_agv_teleop.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kit_agv_teleop/cmake" TYPE FILE FILES
-    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/kit_agv_teleop/catkin_generated/installspace/kit_agv_teleopConfig.cmake"
-    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/kit_agv_teleop/catkin_generated/installspace/kit_agv_teleopConfig-version.cmake"
+    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/kit_agv_teleop/catkin_generated/installspace/kit_agv_teleopConfig.cmake"
+    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/kit_agv_teleop/catkin_generated/installspace/kit_agv_teleopConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kit_agv_teleop" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/kit_agv_teleop/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kit_agv_teleop" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/kit_agv_teleop/package.xml")
 endif()
 

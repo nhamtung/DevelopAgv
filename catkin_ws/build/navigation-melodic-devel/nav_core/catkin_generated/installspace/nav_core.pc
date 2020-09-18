@@ -1,4 +1,4 @@
-prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/install
+prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install
 
 Name: nav_core
 Description: Description of nav_core

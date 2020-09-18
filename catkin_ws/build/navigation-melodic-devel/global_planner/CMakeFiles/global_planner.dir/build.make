@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/build
+CMAKE_BINARY_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/depend.make
@@ -58,17 +58,17 @@ include navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/pr
 include navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/flags.make
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.o: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/flags.make
-navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/quadratic_calculator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.o"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/quadratic_calculator.cpp
+navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/quadratic_calculator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.o"
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/quadratic_calculator.cpp
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.i"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/quadratic_calculator.cpp > CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.i
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/quadratic_calculator.cpp > CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.i
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.s"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/quadratic_calculator.cpp -o CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.s
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/quadratic_calculator.cpp -o CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.s
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.o.requires:
 
@@ -82,17 +82,17 @@ navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/quadra
 
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/flags.make
-navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/dijkstra.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/dijkstra.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/dijkstra.cpp
+navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/dijkstra.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o"
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/dijkstra.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/dijkstra.cpp
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/global_planner.dir/src/dijkstra.cpp.i"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/dijkstra.cpp > CMakeFiles/global_planner.dir/src/dijkstra.cpp.i
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/dijkstra.cpp > CMakeFiles/global_planner.dir/src/dijkstra.cpp.i
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/global_planner.dir/src/dijkstra.cpp.s"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/dijkstra.cpp -o CMakeFiles/global_planner.dir/src/dijkstra.cpp.s
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/dijkstra.cpp -o CMakeFiles/global_planner.dir/src/dijkstra.cpp.s
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o.requires:
 
@@ -106,17 +106,17 @@ navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/dijkst
 
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/flags.make
-navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/astar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/astar.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/astar.cpp
+navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/astar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o"
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/astar.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/astar.cpp
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/global_planner.dir/src/astar.cpp.i"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/astar.cpp > CMakeFiles/global_planner.dir/src/astar.cpp.i
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/astar.cpp > CMakeFiles/global_planner.dir/src/astar.cpp.i
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/global_planner.dir/src/astar.cpp.s"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/astar.cpp -o CMakeFiles/global_planner.dir/src/astar.cpp.s
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/astar.cpp -o CMakeFiles/global_planner.dir/src/astar.cpp.s
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o.requires:
 
@@ -130,17 +130,17 @@ navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/astar.
 
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/grid_path.cpp.o: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/flags.make
-navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/grid_path.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/grid_path.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/grid_path.cpp.o"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/grid_path.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/grid_path.cpp
+navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/grid_path.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/grid_path.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/grid_path.cpp.o"
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/grid_path.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/grid_path.cpp
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/grid_path.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/global_planner.dir/src/grid_path.cpp.i"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/grid_path.cpp > CMakeFiles/global_planner.dir/src/grid_path.cpp.i
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/grid_path.cpp > CMakeFiles/global_planner.dir/src/grid_path.cpp.i
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/grid_path.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/global_planner.dir/src/grid_path.cpp.s"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/grid_path.cpp -o CMakeFiles/global_planner.dir/src/grid_path.cpp.s
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/grid_path.cpp -o CMakeFiles/global_planner.dir/src/grid_path.cpp.s
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/grid_path.cpp.o.requires:
 
@@ -154,17 +154,17 @@ navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/grid_p
 
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/flags.make
-navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/gradient_path.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/gradient_path.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/gradient_path.cpp
+navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/gradient_path.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o"
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/gradient_path.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/gradient_path.cpp
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/global_planner.dir/src/gradient_path.cpp.i"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/gradient_path.cpp > CMakeFiles/global_planner.dir/src/gradient_path.cpp.i
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/gradient_path.cpp > CMakeFiles/global_planner.dir/src/gradient_path.cpp.i
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/global_planner.dir/src/gradient_path.cpp.s"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/gradient_path.cpp -o CMakeFiles/global_planner.dir/src/gradient_path.cpp.s
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/gradient_path.cpp -o CMakeFiles/global_planner.dir/src/gradient_path.cpp.s
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o.requires:
 
@@ -178,17 +178,17 @@ navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/gradie
 
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/flags.make
-navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/orientation_filter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/orientation_filter.cpp
+navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/orientation_filter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o"
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/orientation_filter.cpp
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/orientation_filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/global_planner.dir/src/orientation_filter.cpp.i"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/orientation_filter.cpp > CMakeFiles/global_planner.dir/src/orientation_filter.cpp.i
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/orientation_filter.cpp > CMakeFiles/global_planner.dir/src/orientation_filter.cpp.i
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/orientation_filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/global_planner.dir/src/orientation_filter.cpp.s"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/orientation_filter.cpp -o CMakeFiles/global_planner.dir/src/orientation_filter.cpp.s
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/orientation_filter.cpp -o CMakeFiles/global_planner.dir/src/orientation_filter.cpp.s
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o.requires:
 
@@ -202,17 +202,17 @@ navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/orient
 
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/flags.make
-navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/planner_core.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/planner_core.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/planner_core.cpp
+navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/planner_core.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o"
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/global_planner.dir/src/planner_core.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/planner_core.cpp
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/global_planner.dir/src/planner_core.cpp.i"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/planner_core.cpp > CMakeFiles/global_planner.dir/src/planner_core.cpp.i
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/planner_core.cpp > CMakeFiles/global_planner.dir/src/planner_core.cpp.i
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/global_planner.dir/src/planner_core.cpp.s"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/planner_core.cpp -o CMakeFiles/global_planner.dir/src/planner_core.cpp.s
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner/src/planner_core.cpp -o CMakeFiles/global_planner.dir/src/planner_core.cpp.s
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o.requires:
 
@@ -238,93 +238,93 @@ global_planner_OBJECTS = \
 # External object files for target global_planner
 global_planner_EXTERNAL_OBJECTS =
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.o
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/grid_path.cpp.o
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/build.make
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libnavfn.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/liblayers.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/liblaser_geometry.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libtf.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libclass_loader.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/libPocoFoundation.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libroslib.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librospack.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/liborocos-kdl.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libactionlib.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libmessage_filters.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libroscpp.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librosconsole.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librostime.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libcostmap_2d.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/liborocos-kdl.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/liblaser_geometry.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libtf.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libvoxel_grid.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libclass_loader.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/libPocoFoundation.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libroslib.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librospack.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2_ros.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libactionlib.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libmessage_filters.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libroscpp.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librosconsole.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librostime.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/global_planner.dir/link.txt --verbose=$(VERBOSE)
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/quadratic_calculator.cpp.o
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/grid_path.cpp.o
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/build.make
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libnavfn.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/liblayers.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/liblaser_geometry.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libtf.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libclass_loader.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/libPocoFoundation.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libroslib.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librospack.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/liborocos-kdl.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libactionlib.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libmessage_filters.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libroscpp.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librosconsole.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librostime.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libcostmap_2d.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/liborocos-kdl.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/liblaser_geometry.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libtf.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libvoxel_grid.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libclass_loader.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/libPocoFoundation.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libroslib.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librospack.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2_ros.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libactionlib.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libmessage_filters.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libroscpp.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librosconsole.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/librostime.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so: navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so"
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/global_planner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/build: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so
+navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/build: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libglobal_planner.so
 
 .PHONY : navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/build
 
@@ -339,10 +339,10 @@ navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/requires: 
 .PHONY : navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/requires
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/clean:
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && $(CMAKE_COMMAND) -P CMakeFiles/global_planner.dir/cmake_clean.cmake
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner && $(CMAKE_COMMAND) -P CMakeFiles/global_planner.dir/cmake_clean.cmake
 .PHONY : navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/clean
 
 navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/depend:
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotics/TungNV/DevelopAgv/catkin_ws/src /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner /home/robotics/TungNV/DevelopAgv/catkin_ws/build /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/global_planner /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : navigation-melodic-devel/global_planner/CMakeFiles/global_planner.dir/depend
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosbridge_msgs_generate_messages_cpp"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/rosbridge_msgs/ConnectedClient.h"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/rosbridge_msgs/ConnectedClients.h"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/rosbridge_msgs/ConnectedClients.h"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/rosbridge_msgs/ConnectedClient.h"
 )
 
 # Per-language clean rules from dependency scanning.

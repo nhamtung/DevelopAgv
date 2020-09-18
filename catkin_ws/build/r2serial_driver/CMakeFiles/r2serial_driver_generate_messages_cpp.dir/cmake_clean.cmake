@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/r2serial_driver_generate_messages_cpp"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/r2serial_driver/Num.h"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/r2serial_driver/Num.h"
 )
 
 # Per-language clean rules from dependency scanning.
