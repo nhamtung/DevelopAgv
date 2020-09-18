@@ -166,6 +166,7 @@ namespace move_base {
 ////// Add by TungNV
       ros::Subscriber mode_;
       bool isReachGoal;
+      bool isRotate;
       void getMode(const std_msgs::Int32::ConstPtr& msgMode);
       std::list<move_base_msgs::MoveBaseActionGoal> listActionGoal;
       void goalPos(const geometry_msgs::PoseStamped::ConstPtr& goal);

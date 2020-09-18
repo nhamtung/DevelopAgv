@@ -858,19 +858,25 @@ namespace move_base {
       int sizeofListActionGoal = listActionGoal.size();
       ROS_INFO("move_base.cpp-858-sizeofListActionGoal: %d", sizeofListActionGoal);
 
-      isReachGoal = true;
-      for (auto goal=listActionGoal.begin(); goal!=listActionGoal.end(); ++goal) {
-        action_goal = *goal;
-        ROS_INFO("move_base.cpp-858-action_goal.x: %f", action_goal.goal.target_pose.pose.position.x);
-        ROS_INFO("move_base.cpp-858-action_goal.y: %f", action_goal.goal.target_pose.pose.position.y);
-        // if(isReachGoal){
-          action_goal_pub_.publish(action_goal);  //publish the action_goal, call myExecute()]
-          ROS_INFO("move_base.cpp-869- Publish action_goal");
-        //   isReachGoal = false;
-        //   while(!isReachGoal);
-        // }
-      }
-      RemoveAllList(listActionGoal);
+      // isReachGoal = true;
+      // for (auto goal=listActionGoal.begin(); goal!=listActionGoal.end(); ++goal) {
+      //   action_goal = *goal;
+      //   ROS_INFO("move_base.cpp-858-action_goal.x: %f", action_goal.goal.target_pose.pose.position.x);
+      //   ROS_INFO("move_base.cpp-858-action_goal.y: %f", action_goal.goal.target_pose.pose.position.y);
+      //   // if(isReachGoal){
+      //     action_goal_pub_.publish(action_goal);  //publish the action_goal, call myExecute()]
+      //     ROS_INFO("move_base.cpp-869- Publish action_goal");
+      //   //   isReachGoal = false;
+      //   //   while(!isReachGoal);
+      //   // }
+      // }
+      // RemoveAllList(listActionGoal);
+
+      auto action_goal_ = listActionGoal.begin();
+      action_goal_pub_.publish(*action_goal_);  //publish the action_goal, call myExecute()]
+      ROS_INFO("move_base.cpp-877- Publish action_goal");
+      listActionGoal.erase(listActionGoal.begin(), ++listActionGoal.begin());
+      ROS_INFO("move_base.cpp-879- Erase action_goal");
     }else{
       publishZeroVelocity();
     }
@@ -909,8 +915,10 @@ namespace move_base {
     current_position.pose.orientation.z = q.z;
     current_position.pose.orientation.w = q.w;
 
-    execute(current_position);
-    execute(goal);
+    isRotate = true;
+    execute(current_position);  //rotate to goal
+    isRotate = false;
+    execute(goal);  //move to goal
 
     return;
   }
@@ -1099,8 +1107,19 @@ namespace move_base {
       //if we're done, then we'll return from execute
       if(done)
       {
-        ROS_INFO("TungNV-move_base-1031-While done: REACH Goal");
-        isReachGoal = true;
+        // isReachGoal = true;
+        if(isRotate == false){
+          ROS_INFO("TungNV-move_base-1031-While done: REACH Goal");
+          int sizeofListActionGoal = listActionGoal.size();
+          ROS_INFO("move_base.cpp-858-sizeofListActionGoal: %d", sizeofListActionGoal);
+          if(sizeofListActionGoal != 0){
+            auto action_goal_ = listActionGoal.begin();
+            action_goal_pub_.publish(*action_goal_);  //publish the action_goal, call myExecute()]
+            ROS_INFO("move_base.cpp-1117- Publish action_goal");
+            listActionGoal.erase(listActionGoal.begin(), ++listActionGoal.begin());
+            ROS_INFO("move_base.cpp-1119- Erase action_goal");
+          }
+        }
         return;
       }
 
