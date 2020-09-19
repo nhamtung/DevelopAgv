@@ -156,12 +156,12 @@ namespace dwa_local_planner {
       return false;
     }
     if ( ! costmap_ros_->getRobotPose(current_pose_)) {
-      ROS_ERROR("Could not get robot pose");
+      ROS_ERROR("dwa_planner_ros.cpp-159-Could not get robot pose");
       return false;
     }
 
     if(latchedStopRotateController_.isGoalReached(&planner_util_, odom_helper_, current_pose_)) {
-      ROS_INFO("Goal reached");
+      ROS_INFO("dwa_planner_ros.cpp-164-Goal reached");
       return true;
     } else {
       return false;

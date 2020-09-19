@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"voxel_grid\" -Dvoxel_grid_EXPORTS
 
-CXX_INCLUDES = -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/voxel_grid/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/voxel_grid/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

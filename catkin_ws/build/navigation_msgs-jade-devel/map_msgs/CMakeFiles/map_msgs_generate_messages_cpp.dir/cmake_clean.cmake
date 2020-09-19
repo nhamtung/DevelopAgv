@@ -1,15 +1,15 @@
 file(REMOVE_RECURSE
   "CMakeFiles/map_msgs_generate_messages_cpp"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/OccupancyGridUpdate.h"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/ProjectedMap.h"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/PointCloud2Update.h"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/ProjectedMapInfo.h"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/GetPointMapROI.h"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/ProjectedMapsInfo.h"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/GetMapROI.h"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/GetPointMap.h"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/SaveMap.h"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/SetMapProjections.h"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/ProjectedMap.h"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/PointCloud2Update.h"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/OccupancyGridUpdate.h"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/ProjectedMapInfo.h"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/GetMapROI.h"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/SaveMap.h"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/ProjectedMapsInfo.h"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/SetMapProjections.h"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/GetPointMapROI.h"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/GetPointMap.h"
 )
 
 # Per-language clean rules from dependency scanning.

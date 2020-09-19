@@ -177,7 +177,7 @@ namespace move_base {
       double RadToDegree (double angle);
       double DegreeToRad (double angle);
       void RemoveAllList(std::list<move_base_msgs::MoveBaseActionGoal> list);
-      void execute(geometry_msgs::PoseStamped goal);
+      bool execute(geometry_msgs::PoseStamped goal);
 ////////////////////////////////////////////////////////////////////////
 
       bool isQuaternionValid(const geometry_msgs::Quaternion& q);

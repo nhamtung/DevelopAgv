@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosauth_generate_messages_py"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/rosauth/srv/_Authentication.py"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/rosauth/srv/__init__.py"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/rosauth/srv/_Authentication.py"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/rosauth/srv/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

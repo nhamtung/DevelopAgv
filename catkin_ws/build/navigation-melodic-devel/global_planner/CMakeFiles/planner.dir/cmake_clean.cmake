@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/planner.dir/src/plan_node.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/global_planner/planner.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/global_planner/planner"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/global_planner/planner.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/global_planner/planner"
 )
 
 # Per-language clean rules from dependency scanning.

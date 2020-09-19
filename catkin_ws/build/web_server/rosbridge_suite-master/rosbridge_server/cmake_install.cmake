@@ -1,8 +1,8 @@
-# Install script for directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosbridge_server
+# Install script for directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosbridge_server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robotics/TungNV/DevelopAgv/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,53 +38,53 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/safe_execute_install.cmake")
+  include("/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_server.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_server.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/cmake" TYPE FILE FILES
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_serverConfig.cmake"
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_serverConfig-version.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_serverConfig.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_serverConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosbridge_server/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosbridge_server/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_websocket.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_websocket.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_websocket")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_websocket")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_tcp.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_tcp.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_tcp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_tcp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_udp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_udp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_udp.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosbridge_server" TYPE PROGRAM FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/web_server/rosbridge_suite-master/rosbridge_server/catkin_generated/installspace/rosbridge_udp.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbridge_server/launch" TYPE FILE FILES
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosbridge_server/launch/rosbridge_websocket.launch"
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosbridge_server/launch/rosbridge_tcp.launch"
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosbridge_server/launch/rosbridge_udp.launch"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosbridge_server/launch/rosbridge_websocket.launch"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosbridge_server/launch/rosbridge_tcp.launch"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosbridge_server/launch/rosbridge_udp.launch"
     )
 endif()
 

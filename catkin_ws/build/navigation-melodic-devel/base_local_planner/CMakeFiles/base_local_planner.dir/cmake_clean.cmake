@@ -18,8 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/base_local_planner.dir/src/trajectory.cpp.o"
   "CMakeFiles/base_local_planner.dir/src/twirling_cost_function.cpp.o"
   "CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libbase_local_planner.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libbase_local_planner.so"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libbase_local_planner.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libbase_local_planner.so"
 )
 
 # Per-language clean rules from dependency scanning.

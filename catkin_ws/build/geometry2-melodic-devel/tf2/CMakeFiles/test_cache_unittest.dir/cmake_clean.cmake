@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_cache_unittest.dir/test/cache_unittest.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/tf2/test_cache_unittest.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/tf2/test_cache_unittest"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/tf2/test_cache_unittest.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/tf2/test_cache_unittest"
 )
 
 # Per-language clean rules from dependency scanning.

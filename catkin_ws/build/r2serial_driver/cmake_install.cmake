@@ -1,8 +1,8 @@
-# Install script for directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/r2serial_driver
+# Install script for directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/r2serial_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robotics/TungNV/DevelopAgv/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,53 +38,53 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2serial_driver/msg" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/r2serial_driver/msg/Num.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2serial_driver/msg" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/r2serial_driver/msg/Num.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2serial_driver/cmake" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver/catkin_generated/installspace/r2serial_driver-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2serial_driver/cmake" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver/catkin_generated/installspace/r2serial_driver-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/r2serial_driver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/r2serial_driver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/roseus/ros/r2serial_driver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/roseus/ros/r2serial_driver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/r2serial_driver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/r2serial_driver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/gennodejs/ros/r2serial_driver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/gennodejs/ros/r2serial_driver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/r2serial_driver")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/r2serial_driver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/r2serial_driver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/r2serial_driver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver/catkin_generated/installspace/r2serial_driver.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver/catkin_generated/installspace/r2serial_driver.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2serial_driver/cmake" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver/catkin_generated/installspace/r2serial_driver-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2serial_driver/cmake" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver/catkin_generated/installspace/r2serial_driver-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2serial_driver/cmake" TYPE FILE FILES
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver/catkin_generated/installspace/r2serial_driverConfig.cmake"
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver/catkin_generated/installspace/r2serial_driverConfig-version.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver/catkin_generated/installspace/r2serial_driverConfig.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver/catkin_generated/installspace/r2serial_driverConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2serial_driver" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/r2serial_driver/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2serial_driver" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/r2serial_driver/package.xml")
 endif()
 
