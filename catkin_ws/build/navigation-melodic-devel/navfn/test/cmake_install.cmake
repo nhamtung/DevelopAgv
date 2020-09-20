@@ -1,8 +1,8 @@
-# Install script for directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/test
+# Install script for directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robotics/TungNV/DevelopAgv/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

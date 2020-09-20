@@ -1030,9 +1030,9 @@ namespace move_base {
       }
 
       if(as_->isPreemptRequested()){
-        ROS_INFO("TungNV-move_base-958-isPreemptRequested");
+        ROS_INFO("move_base.cpp-1033-isPreemptRequested");
         if(as_->isNewGoalAvailable()){
-          ROS_INFO("TungNV-move_base-960-isNewGoalAvailable");
+          ROS_INFO("move_base.cpp-1035-isNewGoalAvailable");
           //if we're active and a new goal is available, we'll accept it, but we won't shut anything down
           move_base_msgs::MoveBaseGoal new_goal = *as_->acceptNewGoal();
 
@@ -1046,6 +1046,7 @@ namespace move_base {
           //we'll make sure that we reset our state for the next execution cycle
           recovery_index_ = 0;
           state_ = PLANNING;
+          ROS_INFO("move_base.cpp-1049-state_: ", state_);
 
           //we have a new goal so make sure the planner is awake
           lock.lock();
@@ -1114,17 +1115,17 @@ namespace move_base {
       //if we're done, then we'll return from execute
       if(done)
       {
-        ROS_INFO("move_base.cpp-1116-While DONE");
+        ROS_INFO("move_base.cpp-1118-While DONE");
         if(isRotate == false){
-          ROS_INFO("TungNV-move_base-1114-While done: REACH Goal");
+          ROS_INFO("move_base.cpp-1120-While done: REACH Goal");
           int sizeofListActionGoal = listActionGoal.size();
-          ROS_INFO("move_base.cpp-1116-sizeofListActionGoal: %d", sizeofListActionGoal);
+          ROS_INFO("move_base.cpp-1122-sizeofListActionGoal: %d", sizeofListActionGoal);
           if(sizeofListActionGoal != 0){
             auto action_goal_ = listActionGoal.begin();
             action_goal_pub_.publish(*action_goal_);  //publish the action_goal, call myExecute()]
-            ROS_INFO("move_base.cpp-1120- Publish action_goal");
+            ROS_INFO("move_base.cpp-1126- Publish action_goal");
             listActionGoal.erase(listActionGoal.begin(), ++listActionGoal.begin());
-            ROS_INFO("move_base.cpp-1122- Erase action_goal");
+            ROS_INFO("move_base.cpp-1128- Erase action_goal");
           }
         }
         return true;

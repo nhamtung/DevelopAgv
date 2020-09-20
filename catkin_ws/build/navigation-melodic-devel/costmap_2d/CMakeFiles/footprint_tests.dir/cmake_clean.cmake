@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/footprint_tests.dir/test/footprint_tests.cpp.o"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/costmap_2d/footprint_tests.pdb"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/costmap_2d/footprint_tests"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/costmap_2d/footprint_tests.pdb"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/costmap_2d/footprint_tests"
 )
 
 # Per-language clean rules from dependency scanning.

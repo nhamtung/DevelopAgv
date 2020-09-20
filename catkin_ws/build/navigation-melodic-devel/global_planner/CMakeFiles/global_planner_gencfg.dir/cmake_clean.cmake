@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/global_planner_gencfg"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/global_planner/GlobalPlannerConfig.h"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/global_planner/docs/GlobalPlannerConfig.dox"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/global_planner/docs/GlobalPlannerConfig-usage.dox"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/global_planner/cfg/GlobalPlannerConfig.py"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/global_planner/docs/GlobalPlannerConfig.wikidoc"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/global_planner/GlobalPlannerConfig.h"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/global_planner/docs/GlobalPlannerConfig.dox"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/global_planner/docs/GlobalPlannerConfig-usage.dox"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/global_planner/cfg/GlobalPlannerConfig.py"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/global_planner/docs/GlobalPlannerConfig.wikidoc"
 )
 
 # Per-language clean rules from dependency scanning.

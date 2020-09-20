@@ -5,8 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tf2_ros.dir/src/buffer_server.cpp.o"
   "CMakeFiles/tf2_ros.dir/src/transform_broadcaster.cpp.o"
   "CMakeFiles/tf2_ros.dir/src/static_transform_broadcaster.cpp.o"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2_ros.pdb"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2_ros.so"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2_ros.pdb"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2_ros.so"
 )
 
 # Per-language clean rules from dependency scanning.

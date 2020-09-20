@@ -1,4 +1,4 @@
-prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/install
+prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install
 
 Name: rosbridge_msgs
 Description: Description of rosbridge_msgs

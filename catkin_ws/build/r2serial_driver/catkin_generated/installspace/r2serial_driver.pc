@@ -1,4 +1,4 @@
-prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/install
+prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install
 
 Name: r2serial_driver
 Description: Description of r2serial_driver

@@ -67,14 +67,14 @@ set(laser_scan_sparsifier_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(laser_scan_sparsifier_SOURCE_PREFIX /home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier)
-  set(laser_scan_sparsifier_DEVEL_PREFIX /home/robotics/TungNV/DevelopAgv/catkin_ws/devel)
+  set(laser_scan_sparsifier_SOURCE_PREFIX /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier)
+  set(laser_scan_sparsifier_DEVEL_PREFIX /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel)
   set(laser_scan_sparsifier_INSTALL_PREFIX "")
   set(laser_scan_sparsifier_PREFIX ${laser_scan_sparsifier_DEVEL_PREFIX})
 else()
   set(laser_scan_sparsifier_SOURCE_PREFIX "")
   set(laser_scan_sparsifier_DEVEL_PREFIX "")
-  set(laser_scan_sparsifier_INSTALL_PREFIX /home/robotics/TungNV/DevelopAgv/catkin_ws/install)
+  set(laser_scan_sparsifier_INSTALL_PREFIX /home/nhamtung/TungNV/DevelopAgv/catkin_ws/install)
   set(laser_scan_sparsifier_PREFIX ${laser_scan_sparsifier_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(laser_scan_sparsifier_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/include " STREQUAL " ")
+if(NOT "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/include " STREQUAL " ")
   set(laser_scan_sparsifier_INCLUDE_DIRS "")
-  set(_include_dirs "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/include")
+  set(_include_dirs "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://wiki.ros.org/laser_scan_matcher " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_spa
         message(FATAL_ERROR "Project 'laser_scan_sparsifier' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'laser_scan_sparsifier' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'laser_scan_sparsifier' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/${idir}'.  ${_report}")
     endif()
     _list_append_unique(laser_scan_sparsifier_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

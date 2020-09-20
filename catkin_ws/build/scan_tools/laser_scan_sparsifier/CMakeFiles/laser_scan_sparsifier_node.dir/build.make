@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/build
+CMAKE_BINARY_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/depend.make
@@ -58,17 +58,17 @@ include scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.d
 include scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/flags.make
 
 scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.o: scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/flags.make
-scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/src/laser_scan_sparsifier_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.o"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/src/laser_scan_sparsifier_node.cpp
+scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/src/laser_scan_sparsifier_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.o"
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/src/laser_scan_sparsifier_node.cpp
 
 scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.i"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/src/laser_scan_sparsifier_node.cpp > CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.i
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/src/laser_scan_sparsifier_node.cpp > CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.i
 
 scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.s"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/src/laser_scan_sparsifier_node.cpp -o CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.s
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/src/laser_scan_sparsifier_node.cpp -o CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.s
 
 scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.o.requires:
 
@@ -88,44 +88,44 @@ laser_scan_sparsifier_node_OBJECTS = \
 # External object files for target laser_scan_sparsifier_node
 laser_scan_sparsifier_node_EXTERNAL_OBJECTS =
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.o
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/build.make
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_sparsifier.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libnodeletlib.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libbondcpp.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libclass_loader.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/libPocoFoundation.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libroslib.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/librospack.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libroscpp.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/librosconsole.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/librostime.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libcpp_common.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node"
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/laser_scan_sparsifier_node.dir/link.txt --verbose=$(VERBOSE)
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.o
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/build.make
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_sparsifier.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libnodeletlib.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libbondcpp.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libclass_loader.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/libPocoFoundation.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libroslib.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/librospack.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libroscpp.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/librosconsole.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/librostime.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /opt/ros/melodic/lib/libcpp_common.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node: scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node"
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/laser_scan_sparsifier_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/build: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node
+scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/build: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node
 
 .PHONY : scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/build
 
@@ -134,10 +134,10 @@ scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/requi
 .PHONY : scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/requires
 
 scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/clean:
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier && $(CMAKE_COMMAND) -P CMakeFiles/laser_scan_sparsifier_node.dir/cmake_clean.cmake
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier && $(CMAKE_COMMAND) -P CMakeFiles/laser_scan_sparsifier_node.dir/cmake_clean.cmake
 .PHONY : scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/clean
 
 scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/depend:
-	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotics/TungNV/DevelopAgv/catkin_ws/src /home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier /home/robotics/TungNV/DevelopAgv/catkin_ws/build /home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier /home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : scan_tools/laser_scan_sparsifier/CMakeFiles/laser_scan_sparsifier_node.dir/depend
 

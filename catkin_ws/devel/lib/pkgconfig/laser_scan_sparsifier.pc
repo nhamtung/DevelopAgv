@@ -1,8 +1,8 @@
-prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/devel
+prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel
 
 Name: laser_scan_sparsifier
 Description: Description of laser_scan_sparsifier
 Version: 0.3.2
-Cflags: -I/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/include
+Cflags: -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_scan_sparsifier/include
 Libs: -L${prefix}/lib -llaser_scan_sparsifier
 Requires: roscpp nodelet sensor_msgs

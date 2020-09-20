@@ -67,14 +67,14 @@ set(joint_state_publisher_gui_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(joint_state_publisher_gui_SOURCE_PREFIX /home/robotics/TungNV/DevelopAgv/catkin_ws/src/joint_state_publisher/joint_state_publisher_gui)
-  set(joint_state_publisher_gui_DEVEL_PREFIX /home/robotics/TungNV/DevelopAgv/catkin_ws/devel)
+  set(joint_state_publisher_gui_SOURCE_PREFIX /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/joint_state_publisher/joint_state_publisher_gui)
+  set(joint_state_publisher_gui_DEVEL_PREFIX /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel)
   set(joint_state_publisher_gui_INSTALL_PREFIX "")
   set(joint_state_publisher_gui_PREFIX ${joint_state_publisher_gui_DEVEL_PREFIX})
 else()
   set(joint_state_publisher_gui_SOURCE_PREFIX "")
   set(joint_state_publisher_gui_DEVEL_PREFIX "")
-  set(joint_state_publisher_gui_INSTALL_PREFIX /home/robotics/TungNV/DevelopAgv/catkin_ws/install)
+  set(joint_state_publisher_gui_INSTALL_PREFIX /home/nhamtung/TungNV/DevelopAgv/catkin_ws/install)
   set(joint_state_publisher_gui_PREFIX ${joint_state_publisher_gui_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/robotics/TungNV/DevelopAgv/catkin_ws/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/nhamtung/TungNV/DevelopAgv/catkin_ws/install/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
