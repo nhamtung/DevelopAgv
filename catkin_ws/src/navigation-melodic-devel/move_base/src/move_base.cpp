@@ -858,20 +858,6 @@ namespace move_base {
       int sizeofListActionGoal = listActionGoal.size();
       ROS_INFO("move_base.cpp-858-sizeofListActionGoal: %d", sizeofListActionGoal);
 
-      // isReachGoal = true;
-      // for (auto goal=listActionGoal.begin(); goal!=listActionGoal.end(); ++goal) {
-      //   action_goal = *goal;
-      //   ROS_INFO("move_base.cpp-858-action_goal.x: %f", action_goal.goal.target_pose.pose.position.x);
-      //   ROS_INFO("move_base.cpp-858-action_goal.y: %f", action_goal.goal.target_pose.pose.position.y);
-      //   // if(isReachGoal){
-      //     action_goal_pub_.publish(action_goal);  //publish the action_goal, call myExecute()]
-      //     ROS_INFO("move_base.cpp-869- Publish action_goal");
-      //   //   isReachGoal = false;
-      //   //   while(!isReachGoal);
-      //   // }
-      // }
-      // RemoveAllList(listActionGoal);
-
       if(sizeofListActionGoal != 0){
         auto action_goal_ = listActionGoal.begin();
         action_goal_pub_.publish(*action_goal_);  //publish the action_goal, call myExecute()]
@@ -1131,7 +1117,6 @@ namespace move_base {
       }
 
       //check if execution of the goal has completed in some way
-
       ros::WallDuration t_diff = ros::WallTime::now() - start;
       ROS_DEBUG_NAMED("move_base","Full control cycle time: %.9f\n", t_diff.toSec());
 
