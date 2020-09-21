@@ -59,7 +59,7 @@ namespace move_base {
     runPlanner_(false), p_freq_change_(false), c_freq_change_(false), new_global_plan_(false), 
     setup_(true) // Enable reconfig paramater
     {
-    ROS_INFO("TungNV-move_base-61-MoveBase");
+    ROS_INFO("move_base.cpp-62-MoveBase");
 
     // as_ = new MoveBaseActionServer(ros::NodeHandle(), "move_base", boost::bind(&MoveBase::executeCb, this, _1), false);
     as_ = new MoveBaseActionServer(ros::NodeHandle(), "move_base", boost::bind(&MoveBase::myExecute, this, _1), false);  //TungNV
@@ -68,16 +68,16 @@ namespace move_base {
     // double yaw;
     // yaw = GetOrientation(1, 1, 3, 3);
     // geometry_msgs::Quaternion q = GetQuaternion(yaw, 0, 0);
-    // ROS_INFO("TungNV-move_base-67-q: q.z = %0.3f, q.w = %0.3f", q.z, q.w);
+    // ROS_INFO("move_base.cpp-71-q: q.z = %0.3f, q.w = %0.3f", q.z, q.w);
     // yaw = RadToDegree(yaw);
-    // ROS_INFO("TungNV-move_base-69-yaw: %0.3f", yaw);
+    // ROS_INFO("move_base.cpp-73-yaw: %0.3f", yaw);
     // yaw = GetYaw(0, 0, 0.383, 0.924);
-    // ROS_INFO("TungNV-move_base-71-yaw: %0.3f", yaw);
+    // ROS_INFO("move_base.cpp-75-yaw: %0.3f", yaw);
 
     ros::NodeHandle n("");
     //Subscribe the topic /client_count
     mode_ = n.subscribe<std_msgs::Int32>("client_count", 1, boost::bind(&MoveBase::getMode, this, _1));
-    ROS_INFO("move_base.cpp-77-Subscriber topic /client_count");
+    ROS_INFO("move_base.cpp-80-Subscriber topic /client_count");
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     ros::NodeHandle private_nh("~");
@@ -88,7 +88,7 @@ namespace move_base {
     //get some parameters that will be global to the move base node
     std::string global_planner, local_planner;
     private_nh.param("base_global_planner", global_planner, std::string("navfn/NavfnROS"));
-    ROS_INFO("TungNV-move_base-85-global_planner: %s", global_planner.c_str());
+    ROS_INFO("move_base.cpp-91-global_planner: %s", global_planner.c_str());
     private_nh.param("base_local_planner", local_planner, std::string("base_local_planner/TrajectoryPlannerROS"));
     private_nh.param("global_costmap/robot_base_frame", robot_base_frame_, std::string("base_link"));
     private_nh.param("global_costmap/global_frame", global_frame_, std::string("map"));
@@ -146,9 +146,9 @@ namespace move_base {
     //initialize the global planner
     try {
       planner_ = bgp_loader_.createInstance(global_planner);
-      ROS_INFO("TungNV-move_base-142-global_planner: %s", global_planner.c_str());
+      ROS_INFO("move_base.cpp-149-global_planner: %s", global_planner.c_str());
       planner_->initialize(bgp_loader_.getName(global_planner), planner_costmap_ros_);
-      ROS_INFO("TungNV-move_base-144-Created global_planner: %s", global_planner.c_str());
+      ROS_INFO("move_base.cpp-151-Created global_planner: %s", global_planner.c_str());
     } catch (const pluginlib::PluginlibException& ex) {
       ROS_FATAL("Failed to create the %s planner, are you sure it is properly registered and that the containing library is built? Exception: %s", global_planner.c_str(), ex.what());
       exit(1);
@@ -161,7 +161,7 @@ namespace move_base {
     //create a local planner
     try {
       tc_ = blp_loader_.createInstance(local_planner);
-      ROS_INFO("TungNV-move_base-150-Created local_planner: %s", local_planner.c_str());
+      ROS_INFO("move_base.cpp-164-Created local_planner: %s", local_planner.c_str());
       tc_->initialize(blp_loader_.getName(local_planner), &tf_, controller_costmap_ros_);
     } catch (const pluginlib::PluginlibException& ex) {
       ROS_FATAL("Failed to create the %s planner, are you sure it is properly registered and that the containing library is built? Exception: %s", local_planner.c_str(), ex.what());
@@ -174,15 +174,15 @@ namespace move_base {
 
     //advertise a service for getting a plan
     make_plan_srv_ = private_nh.advertiseService("make_plan", &MoveBase::planService, this);
-    ROS_INFO("TungNV-move_base-163-advertise a service for getting a plan");
+    ROS_INFO("move_base.cpp-177-advertise a service for getting a plan");
 
     //advertise a service for clearing the costmaps
     clear_costmaps_srv_ = private_nh.advertiseService("clear_costmaps", &MoveBase::clearCostmapsService, this);
-    ROS_INFO("TungNV-move_base-167-advertise a service for clearing the costmaps");
+    ROS_INFO("move_base.cpp-181-advertise a service for clearing the costmaps");
 
     //if we shutdown our costmaps when we're deactivated... we'll do that now
     if(shutdown_costmaps_){
-      ROS_INFO("TungNV-move_base-171-shutdown_costmaps_");
+      ROS_INFO("move_base.cpp-185-shutdown_costmaps_");
       ROS_DEBUG_NAMED("move_base","Stopping costmaps initially");
       planner_costmap_ros_->stop();
       controller_costmap_ros_->stop();
@@ -214,14 +214,14 @@ namespace move_base {
     //original configuration
     if(!setup_)
     {
-      ROS_INFO("TungNV-move_base-204-original configuration");
+      ROS_INFO("move_base.cpp-217-original configuration");
       last_config_ = config;
       default_config_ = config;
       setup_ = true;
       return;
     }
 
-    ROS_INFO("TungNV-move_base-210-reconfigureCB");
+    ROS_INFO("move_base.cpp-224-reconfigureCB");
     if(config.restore_defaults) {
       config = default_config_;
       //if someone sets restore defaults on the parameter server, prevent looping
@@ -258,7 +258,7 @@ namespace move_base {
       ROS_INFO("Loading global planner %s", config.base_global_planner.c_str());
       try {
         planner_ = bgp_loader_.createInstance(config.base_global_planner);
-        ROS_INFO("TungNV-move_base-247-Create global_planner: %s", config.base_global_planner.c_str());
+        ROS_INFO("move_base.cpp-261-Create global_planner: %s", config.base_global_planner.c_str());
 
         // wait for the current planner to finish planning
         boost::unique_lock<boost::recursive_mutex> lock(planner_mutex_);
@@ -284,7 +284,7 @@ namespace move_base {
       //create a local planner
       try {
         tc_ = blp_loader_.createInstance(config.base_local_planner);
-        ROS_INFO("TungNV-move_base-275-Create local_planner: %s", config.base_local_planner.c_str());
+        ROS_INFO("move_base.cpp-287-Create local_planner: %s", config.base_local_planner.c_str());
         // Clean up before initializing the new planner
         planner_plan_->clear();
         latest_plan_->clear();
@@ -306,7 +306,7 @@ namespace move_base {
   }
 
   void MoveBase::goalCB(const geometry_msgs::PoseStamped::ConstPtr& goal){
-    ROS_INFO("TungNV-move_base-297-goalCB");
+    ROS_INFO("move_base.cpp-309-goalCB");
     ROS_DEBUG_NAMED("move_base","In ROS goal callback, wrapping the PoseStamped in the action message and re-sending to the server.");
     move_base_msgs::MoveBaseActionGoal action_goal;
     action_goal.header.stamp = ros::Time::now();
@@ -316,7 +316,7 @@ namespace move_base {
   }
 
   void MoveBase::clearCostmapWindows(double size_x, double size_y){
-    ROS_INFO("TungNV-move_base-307-clearCostmapWindows");
+    ROS_INFO("move_base.cpp-319-clearCostmapWindows");
     geometry_msgs::PoseStamped global_pose;
 
     //clear the planner's costmap
@@ -373,7 +373,7 @@ namespace move_base {
 
   bool MoveBase::clearCostmapsService(std_srvs::Empty::Request &req, std_srvs::Empty::Response &resp){
     //clear the costmaps
-    ROS_INFO("TungNV-move_base-364-clearCostmapsService");
+    ROS_INFO("move_base.cpp-376-clearCostmapsService");
     boost::unique_lock<costmap_2d::Costmap2D::mutex_t> lock_controller(*(controller_costmap_ros_->getCostmap()->getMutex()));
     controller_costmap_ros_->resetLayers();
 
@@ -383,7 +383,7 @@ namespace move_base {
   }
 
   bool MoveBase::planService(nav_msgs::GetPlan::Request &req, nav_msgs::GetPlan::Response &resp){
-    ROS_INFO("TungNV-move_base-375-planService");
+    ROS_INFO("move_base.cpp-386-planService");
     if(as_->isActive()){
       ROS_ERROR("move_base must be in an inactive state to make a plan for an external user");
       return false;
@@ -481,7 +481,7 @@ namespace move_base {
   }
 
   MoveBase::~MoveBase(){
-    ROS_INFO("TungNV-move_base-474-~MoveBase");
+    ROS_INFO("move_base.cpp-484-~MoveBase");
     recovery_behaviors_.clear();
 
     delete dsrv_;
@@ -509,7 +509,7 @@ namespace move_base {
   }
 
   bool MoveBase::makePlan(const geometry_msgs::PoseStamped& goal, std::vector<geometry_msgs::PoseStamped>& plan){
-    ROS_INFO("TungNV-move_base-502-makePlan");
+    ROS_INFO("move_base.cpp-512-makePlan");
     boost::unique_lock<costmap_2d::Costmap2D::mutex_t> lock(*(planner_costmap_ros_->getCostmap()->getMutex()));
 
     //make sure to set the plan to be empty initially
@@ -532,7 +532,7 @@ namespace move_base {
 
     //if the planner fails or returns a zero length plan, planning failed
     if(!planner_->makePlan(start, goal, plan) || plan.empty()){
-      ROS_WARN("TungNV-move_base-525-Failed to find a  plan to point (%.2f, %.2f)", goal.pose.position.x, goal.pose.position.y);
+      ROS_WARN("move_base.cpp-535-Failed to find a  plan to point (%.2f, %.2f)", goal.pose.position.x, goal.pose.position.y);
       ROS_DEBUG_NAMED("move_base","Failed to find a  plan to point (%.2f, %.2f)", goal.pose.position.x, goal.pose.position.y);
       return false;
     }
@@ -541,7 +541,7 @@ namespace move_base {
   }
 
   void MoveBase::publishZeroVelocity(){
-    ROS_INFO("TungNV-move_base-545-publishZeroVelocity: STOP ROBOT!");
+    ROS_INFO("move_base.cpp-544-publishZeroVelocity: STOP ROBOT!");
     geometry_msgs::Twist cmd_vel;
     cmd_vel.linear.x = 0.0;
     cmd_vel.linear.y = 0.0;
@@ -550,7 +550,7 @@ namespace move_base {
   }
 
   bool MoveBase::isQuaternionValid(const geometry_msgs::Quaternion& q){
-    ROS_INFO("TungNV-move_base-542-isQuaternionValid");
+    ROS_INFO("move_base.cpp-553-isQuaternionValid");
     //first we need to check if the quaternion has nan's or infs
     if(!std::isfinite(q.x) || !std::isfinite(q.y) || !std::isfinite(q.z) || !std::isfinite(q.w)){
       ROS_ERROR("Quaternion has nans or infs... discarding as a navigation goal");
@@ -581,7 +581,7 @@ namespace move_base {
   }
 
   geometry_msgs::PoseStamped MoveBase::goalToGlobalFrame(const geometry_msgs::PoseStamped& goal_pose_msg){
-    ROS_INFO("TungNV-move_base-573-goalToGlobalFrame");
+    ROS_INFO("move_base.cpp-584-goalToGlobalFrame");
     std::string global_frame = planner_costmap_ros_->getGlobalFrameID();
     geometry_msgs::PoseStamped goal_pose, global_pose;
     goal_pose = goal_pose_msg;
@@ -610,7 +610,7 @@ namespace move_base {
   }
 
   void MoveBase::planThread(){
-    ROS_INFO("TungNV-move_base-602-planThread");
+    ROS_INFO("move_base.cpp-613-planThread");
     ROS_DEBUG_NAMED("move_base_plan_thread","Starting planner thread...");
     ros::NodeHandle n;
     ros::Timer timer;
@@ -694,13 +694,13 @@ namespace move_base {
 
   void MoveBase::executeCb(const move_base_msgs::MoveBaseGoalConstPtr& move_base_goal)
   {
-    ROS_INFO("TungNV-move_base-685-executeCb");
+    ROS_INFO("move_base.cpp-697-executeCb");
     if(!isQuaternionValid(move_base_goal->target_pose.pose.orientation)){
       as_->setAborted(move_base_msgs::MoveBaseResult(), "Aborting on goal because it was sent with an invalid quaternion");
       return;
     }
     geometry_msgs::PoseStamped goal = goalToGlobalFrame(move_base_goal->target_pose);
-    ROS_WARN("move_base-666-goal.x=%.2f, goal.y=%.2f, goal.z=%.2f, goal.w=%.2f", goal.pose.position.x, goal.pose.position.y, goal.pose.orientation.z, goal.pose.orientation.w);
+    ROS_INFO("move_base.cpp-703-goal.x=%.2f, goal.y=%.2f, goal.z=%.2f, goal.w=%.2f", goal.pose.position.x, goal.pose.position.y, goal.pose.orientation.z, goal.pose.orientation.w);
 
     publishZeroVelocity();
     //we have a goal so start the planner
@@ -818,7 +818,7 @@ namespace move_base {
       //if we're done, then we'll return from execute
       if(done)
       {
-        ROS_WARN("move_base-774-While done");
+        ROS_INFO("move_base.cpp-821-MOVE DONE!");
         return;
       }
 
@@ -848,42 +848,42 @@ namespace move_base {
 
   // Add by TungNV   ////////////////////////////////////////////////////////////////////////////////////////////////////
   void MoveBase::getMode(const std_msgs::Int32::ConstPtr& msgMode){
-    ROS_INFO("move_base.cpp-857-getMode");
+    ROS_INFO("move_base.cpp-851-getMode");
     int32_t mode = msgMode->data;
-    ROS_INFO("move_base.cpp-858-Mode: %d", mode);
+    ROS_INFO("move_base.cpp-853-Mode: %d", mode);
     if(mode == 1)
     {
       move_base_msgs::MoveBaseActionGoal action_goal;
       listActionGoal.reverse();  // reverse the list
       int sizeofListActionGoal = listActionGoal.size();
-      ROS_INFO("move_base.cpp-858-sizeofListActionGoal: %d", sizeofListActionGoal);
+      ROS_INFO("move_base.cpp-859-sizeofListActionGoal: %d", sizeofListActionGoal);
 
       if(sizeofListActionGoal != 0){
         auto action_goal_ = listActionGoal.begin();
         action_goal_pub_.publish(*action_goal_);  //publish the action_goal, call myExecute()]
-        ROS_INFO("move_base.cpp-877- Publish action_goal");
+        ROS_INFO("move_base.cpp-864- Publish action_goal");
         listActionGoal.erase(listActionGoal.begin(), ++listActionGoal.begin());
-        ROS_INFO("move_base.cpp-879- Erase action_goal");
+        ROS_INFO("move_base.cpp-866- Erase action_goal");
       }
     }else{
       publishZeroVelocity();
     }
   }
   void MoveBase::goalPos(const geometry_msgs::PoseStamped::ConstPtr& goal){
-    ROS_INFO("move_base.cpp-865-goalPos");
+    ROS_INFO("move_base.cpp-873-goalPos");
     
     move_base_msgs::MoveBaseActionGoal action_goal;
     action_goal.header.stamp = ros::Time::now();
     action_goal.goal.target_pose = *goal;
-    ROS_INFO("move_base.cpp-858-action_goal.x: %f", action_goal.goal.target_pose.pose.position.x);
-    ROS_INFO("move_base.cpp-858-action_goal.y: %f", action_goal.goal.target_pose.pose.position.y);
+    ROS_INFO("move_base.cpp-878-action_goal.x: %f", action_goal.goal.target_pose.pose.position.x);
+    ROS_INFO("move_base.cpp-879-action_goal.y: %f", action_goal.goal.target_pose.pose.position.y);
     
     listActionGoal.insert(listActionGoal.begin(), action_goal);
-    ROS_INFO("move_base.cpp-858- Add action_goal to listActionGoal");
+    ROS_INFO("move_base.cpp-882- Add action_goal to listActionGoal");
   }
   void MoveBase::myExecute(const move_base_msgs::MoveBaseGoalConstPtr& move_base_goal)
   {
-    ROS_INFO("move_base.cpp-900-myExecute");
+    ROS_INFO("move_base.cpp-886-myExecute");
     if(!isQuaternionValid(move_base_goal->target_pose.pose.orientation)){
       as_->setAborted(move_base_msgs::MoveBaseResult(), "Aborting on goal because it was sent with an invalid quaternion");
       return;
@@ -892,23 +892,23 @@ namespace move_base {
     geometry_msgs::PoseStamped global_pose;
     getRobotPose(global_pose, planner_costmap_ros_);
     geometry_msgs::PoseStamped& current_position = global_pose;
-    ROS_INFO("move_base.cpp-909-current_position.x=%.2f, current_position.y=%.2f, current_position.z=%.2f, current_position.w=%.2f", current_position.pose.position.x, current_position.pose.position.y, current_position.pose.orientation.z, current_position.pose.orientation.w);
+    ROS_INFO("move_base.cpp-895-current_position.x=%.2f, current_position.y=%.2f, current_position.z=%.2f, current_position.w=%.2f", current_position.pose.position.x, current_position.pose.position.y, current_position.pose.orientation.z, current_position.pose.orientation.w);
   
     geometry_msgs::PoseStamped goal = goalToGlobalFrame(move_base_goal->target_pose);
 
     double yaw = GetOrientation(current_position.pose.position.x, current_position.pose.position.y, goal.pose.position.x, goal.pose.position.y);
     geometry_msgs::Quaternion q = GetQuaternion(yaw, 0, 0);
-    ROS_INFO("move_base.cpp-915-q: q.z = %0.3f, q.w = %0.3f", q.z, q.w);
+    ROS_INFO("move_base.cpp-901-q: q.z = %0.3f, q.w = %0.3f", q.z, q.w);
     current_position.pose.orientation.z = q.z;
     current_position.pose.orientation.w = q.w;
 
     isRotate = true;
     if(execute(current_position) == true){    //rotate to goal
-      ROS_INFO("move_base.cpp-922-  ROTATE DONE");
+      ROS_INFO("move_base.cpp-907-  ROTATE DONE");
       isRotate = false;
     }
     if(isRotate == false){
-      ROS_INFO("move_base.cpp-925-goal.x=%.2f, goal.y=%.2f, goal.z=%.2f, goal.w=%.2f", goal.pose.position.x, goal.pose.position.y, goal.pose.orientation.z, goal.pose.orientation.w);
+      ROS_INFO("move_base.cpp-911-goal.x=%.2f, goal.y=%.2f, goal.z=%.2f, goal.w=%.2f", goal.pose.position.x, goal.pose.position.y, goal.pose.orientation.z, goal.pose.orientation.w);
       execute(goal);  //move to goal
     }
 
@@ -916,7 +916,7 @@ namespace move_base {
   }
   double MoveBase::GetOrientation(double current_x, double current_y, double goal_x, double goal_y)
   {
-    ROS_INFO("TungNV-move_base-868-GetOrientation");
+    ROS_INFO("move_base.cpp-919-GetOrientation");
     double deltaY = goal_y - current_y;
     double deltaX = goal_x - current_x;
     double angle;
@@ -933,7 +933,7 @@ namespace move_base {
   }
   geometry_msgs::Quaternion MoveBase::GetQuaternion(double yaw, double pitch, double roll) // yaw (Z), pitch (Y), roll (X)
   {
-    ROS_INFO("TungNV-move_base-885-GetQuaternion");
+    ROS_INFO("move_base.cpp-936-GetQuaternion");
     // Abbreviations for the various angular functions
     double cy = cos(yaw * 0.5);
     double sy = sin(yaw * 0.5);
@@ -951,7 +951,7 @@ namespace move_base {
     return q;
   }
   double MoveBase::GetYaw(double x, double y, double z, double w) {
-    ROS_INFO("TungNV-move_base-903-GetYaw");
+    ROS_INFO("move_base.cpp-954-GetYaw");
     // yaw (z-axis rotation)
     double siny_cosp = 2 * (w * z + x * y);
     double cosy_cosp = 1 - 2 * (y * y + z * z);
@@ -960,26 +960,26 @@ namespace move_base {
     return yaw;
   }
   double MoveBase::RadToDegree (double angle){
-    ROS_INFO("TungNV-move_base-912-RadToDegree");
+    ROS_INFO("move_base.cpp-963-RadToDegree");
     return (180*angle)/M_PI;
   }
   double MoveBase::DegreeToRad (double angle){
-    ROS_INFO("TungNV-move_base-916-DegreeToRad");
+    ROS_INFO("move_base.cpp-967-DegreeToRad");
     return (M_PI*angle)/180;
   }
   void MoveBase::RemoveAllList(std::list<move_base_msgs::MoveBaseActionGoal> list){
     // ROS_INFO("move_base.cpp-966-RemoveAllList");
     list.erase (list.begin(), list.end());
     if(!list.size()){
-      ROS_INFO("move_base.cpp-969-RemoveAllList Success");
+      ROS_INFO("move_base.cpp-974-RemoveAllList Success");
     }else{
-      ROS_WARN("move_base.cpp-972-RemoveAllList Failed");
+      ROS_WARN("move_base.cpp-976-RemoveAllList Failed");
     }
   }
   bool MoveBase::execute(geometry_msgs::PoseStamped goal)
   {
-    ROS_INFO("TungNV-move_base-921-execute");
-    ROS_INFO("move_base.cpp-925-goal.x=%.2f, goal.y=%.2f, goal.z=%.2f, goal.w=%.2f", goal.pose.position.x, goal.pose.position.y, goal.pose.orientation.z, goal.pose.orientation.w);
+    ROS_INFO("move_base.cpp-981-execute");
+    ROS_INFO("move_base.cpp-982-goal.x=%.2f, goal.y=%.2f, goal.z=%.2f, goal.w=%.2f", goal.pose.position.x, goal.pose.position.y, goal.pose.orientation.z, goal.pose.orientation.w);
     publishZeroVelocity();
     //we have a goal so start the planner
     boost::unique_lock<boost::recursive_mutex> lock(planner_mutex_);
@@ -993,7 +993,7 @@ namespace move_base {
 
     ros::Rate r(controller_frequency_);
     if(shutdown_costmaps_){
-      ROS_INFO("TungNV-move_base-935-shutdown_costmaps_: Starting up costmaps that were shut down previously");
+      ROS_INFO("move_base.cpp-996-shutdown_costmaps_: Starting up costmaps that were shut down previously");
       ROS_DEBUG_NAMED("move_base","Starting up costmaps that were shut down previously");
       planner_costmap_ros_->start();
       controller_costmap_ros_->start();
@@ -1016,9 +1016,9 @@ namespace move_base {
       }
 
       if(as_->isPreemptRequested()){
-        ROS_INFO("move_base.cpp-1033-isPreemptRequested");
+        ROS_INFO("move_base.cpp-1019-isPreemptRequested");
         if(as_->isNewGoalAvailable()){
-          ROS_INFO("move_base.cpp-1035-isNewGoalAvailable");
+          ROS_INFO("move_base.cpp-1021-isNewGoalAvailable");
           //if we're active and a new goal is available, we'll accept it, but we won't shut anything down
           move_base_msgs::MoveBaseGoal new_goal = *as_->acceptNewGoal();
 
@@ -1032,7 +1032,7 @@ namespace move_base {
           //we'll make sure that we reset our state for the next execution cycle
           recovery_index_ = 0;
           state_ = PLANNING;
-          ROS_INFO("move_base.cpp-1049-state_: ", state_);
+          ROS_INFO("move_base.cpp-1035-state_: ", state_);
 
           //we have a new goal so make sure the planner is awake
           lock.lock();
@@ -1066,7 +1066,7 @@ namespace move_base {
 
       //we also want to check if we've changed global frames because we need to transform our goal pose
       if(goal.header.frame_id != planner_costmap_ros_->getGlobalFrameID()){
-        ROS_INFO("move_base.cpp-1007-getGlobalFrameID");
+        ROS_INFO("move_base.cpp-1069-getGlobalFrameID");
         goal = goalToGlobalFrame(goal);
 
         //we want to go back to the planning state for the next execution cycle
@@ -1101,17 +1101,17 @@ namespace move_base {
       //if we're done, then we'll return from execute
       if(done)
       {
-        ROS_INFO("move_base.cpp-1118-While DONE");
+        ROS_INFO("move_base.cpp-1104-While DONE");
         if(isRotate == false){
-          ROS_INFO("move_base.cpp-1120-While done: REACH Goal");
+          ROS_INFO("move_base.cpp-1106-While done: REACH Goal");
           int sizeofListActionGoal = listActionGoal.size();
-          ROS_INFO("move_base.cpp-1122-sizeofListActionGoal: %d", sizeofListActionGoal);
+          ROS_INFO("move_base.cpp-1108-sizeofListActionGoal: %d", sizeofListActionGoal);
           if(sizeofListActionGoal != 0){
             auto action_goal_ = listActionGoal.begin();
             action_goal_pub_.publish(*action_goal_);  //publish the action_goal, call myExecute()]
-            ROS_INFO("move_base.cpp-1126- Publish action_goal");
+            ROS_INFO("move_base.cpp-1112- Publish action_goal");
             listActionGoal.erase(listActionGoal.begin(), ++listActionGoal.begin());
-            ROS_INFO("move_base.cpp-1128- Erase action_goal");
+            ROS_INFO("move_base.cpp-1114- Erase action_goal");
           }
         }
         return true;
@@ -1141,13 +1141,13 @@ namespace move_base {
 
   double MoveBase::distance(const geometry_msgs::PoseStamped& p1, const geometry_msgs::PoseStamped& p2)
   {
-    ROS_INFO("move_base.cpp-1158-distance");
+    ROS_INFO("move_base.cpp-1144-distance");
     return hypot(p1.pose.position.x - p2.pose.position.x, p1.pose.position.y - p2.pose.position.y);
   }
 
   bool MoveBase::executeCycle(geometry_msgs::PoseStamped& goal, std::vector<geometry_msgs::PoseStamped>& global_plan){
-    ROS_INFO("move_base.cpp-1163-executeCycle");
-    ROS_INFO("move_base.cpp-1164-goal.x=%.2f, goal.y=%.2f, goal.z=%.2f, goal.w=%.2f", goal.pose.position.x, goal.pose.position.y, goal.pose.orientation.z, goal.pose.orientation.w);
+    ROS_INFO("move_base.cpp-1149-executeCycle");
+    ROS_INFO("move_base.cpp-1150-goal.x=%.2f, goal.y=%.2f, goal.z=%.2f, goal.w=%.2f", goal.pose.position.x, goal.pose.position.y, goal.pose.orientation.z, goal.pose.orientation.w);
     boost::recursive_mutex::scoped_lock ecl(configuration_mutex_);
     //we need to be able to publish velocity commands
     geometry_msgs::Twist cmd_vel;
@@ -1171,21 +1171,21 @@ namespace move_base {
 
       //if our last recovery was caused by oscillation, we want to reset the recovery index 
       if(recovery_trigger_ == OSCILLATION_R){
-        ROS_INFO("move_base.cpp-1188-recovery_trigger_=OSCILLATION_R");
+        ROS_INFO("move_base.cpp-1174-recovery_trigger_=OSCILLATION_R");
         recovery_index_ = 0;
       }
     }
 
     //check that the observation buffers for the costmap are current, we don't want to drive blind
     if(!controller_costmap_ros_->isCurrent()){
-      ROS_WARN("move_base.cpp-1195-[%s]:Sensor data is out of date, we're not going to allow commanding of the base for safety",ros::this_node::getName().c_str());
+      ROS_WARN("move_base.cpp-1181-[%s]:Sensor data is out of date, we're not going to allow commanding of the base for safety",ros::this_node::getName().c_str());
       publishZeroVelocity();
       return false;
     }
 
     //if we have a new plan then grab it and give it to the controller
     if(new_global_plan_){
-      ROS_INFO("move_base.cpp-1202-new_global_plan_ = true");
+      ROS_INFO("move_base.cpp-1188-new_global_plan_ = true");
       //make sure to set the new plan flag to false
       new_global_plan_ = false;
 
@@ -1224,7 +1224,7 @@ namespace move_base {
       //if we are in a planning state, then we'll attempt to make a plan
       case PLANNING:
         {
-        ROS_WARN("move_base.cpp-1241-PLANNING");
+        ROS_WARN("move_base.cpp-1227-PLANNING");
           boost::recursive_mutex::scoped_lock lock(planner_mutex_);
           runPlanner_ = true;
           planner_cond_.notify_one();
@@ -1240,7 +1240,7 @@ namespace move_base {
 
         //check to see if we've reached our goal
         if(tc_->isGoalReached()){
-          ROS_INFO("move_base.cpp-1257-Goal reached!");
+          ROS_INFO("move_base.cpp-1243-Goal reached!");
           ROS_DEBUG_NAMED("move_base","Goal reached!");
           resetState();
 
@@ -1267,7 +1267,7 @@ namespace move_base {
 
         if(tc_->computeVelocityCommands(cmd_vel)){
           ROS_DEBUG_NAMED( "move_base", "Got a valid command from the local planner:  %.3lf, %.3lf, %.3lf", cmd_vel.linear.x, cmd_vel.linear.y, cmd_vel.angular.z);
-          ROS_INFO("TungNV-move_base-1196-cmd_vel: %.3lf, %.3lf, %.3lf", cmd_vel.linear.x, cmd_vel.linear.y, cmd_vel.angular.z);
+          ROS_INFO("move_base.cpp-1270-cmd_vel: %.3lf, %.3lf, %.3lf", cmd_vel.linear.x, cmd_vel.linear.y, cmd_vel.angular.z);
 
           last_valid_control_ = ros::Time::now();
           //make sure that we send the velocity command to the base
@@ -1307,7 +1307,7 @@ namespace move_base {
       //we'll try to clear out space with any user-provided recovery behaviors
       case CLEARING:
       {
-        ROS_WARN("TungNV-CLEARING");
+        ROS_WARN("move_base.cpp-1310-CLEARING");
         ROS_DEBUG_NAMED("move_base","In clearing/recovery state");
         //we'll invoke whatever recovery behavior we're currently on if they're enabled
         if(recovery_behavior_enabled_ && recovery_index_ < recovery_behaviors_.size()){
@@ -1369,7 +1369,7 @@ namespace move_base {
   }
 
   bool MoveBase::loadRecoveryBehaviors(ros::NodeHandle node){
-    ROS_INFO("TungNV-move_base-1285-loadRecoveryBehaviors");
+    ROS_INFO("move_base.cpp-1372-loadRecoveryBehaviors");
     XmlRpc::XmlRpcValue behavior_list;
     if(node.getParam("recovery_behaviors", behavior_list)){
       if(behavior_list.getType() == XmlRpc::XmlRpcValue::TypeArray){
@@ -1455,7 +1455,7 @@ namespace move_base {
 
   //we'll load our default recovery behaviors here
   void MoveBase::loadDefaultRecoveryBehaviors(){
-    ROS_INFO("TungNV-move_base-1371-loadDefaultRecoveryBehaviors");
+    ROS_INFO("move_base.cpp-1458-loadDefaultRecoveryBehaviors");
     recovery_behaviors_.clear();
     try{
       //we need to set some parameters based on what's been passed in to us to maintain backwards compatibility
@@ -1492,7 +1492,7 @@ namespace move_base {
   }
 
   void MoveBase::resetState(){
-    ROS_INFO("TungNV-move_base-1407-resetState");
+    ROS_INFO("move_base.cpp-1495-resetState");
     // Disable the planner thread
     boost::unique_lock<boost::recursive_mutex> lock(planner_mutex_);
     runPlanner_ = false;
@@ -1514,7 +1514,7 @@ namespace move_base {
 
   bool MoveBase::getRobotPose(geometry_msgs::PoseStamped& global_pose, costmap_2d::Costmap2DROS* costmap)
   {
-    ROS_INFO("TungNV-move_base-1430-getRobotPose");
+    ROS_INFO("move_base.cpp-1517-getRobotPose");
     tf2::toMsg(tf2::Transform::getIdentity(), global_pose.pose);
     geometry_msgs::PoseStamped robot_pose;
     tf2::toMsg(tf2::Transform::getIdentity(), robot_pose.pose);
