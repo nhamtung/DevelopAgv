@@ -1,8 +1,8 @@
-# Install script for directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/kit_agv_bringup
+# Install script for directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/kit_agv_bringup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robotics/TungNV/DevelopAgv/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/kit_agv_bringup/catkin_generated/installspace/kit_agv_bringup.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/kit_agv_bringup/catkin_generated/installspace/kit_agv_bringup.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kit_agv_bringup/cmake" TYPE FILE FILES
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/kit_agv_bringup/catkin_generated/installspace/kit_agv_bringupConfig.cmake"
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/kit_agv_bringup/catkin_generated/installspace/kit_agv_bringupConfig-version.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/kit_agv_bringup/catkin_generated/installspace/kit_agv_bringupConfig.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/kit_agv_bringup/catkin_generated/installspace/kit_agv_bringupConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kit_agv_bringup" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/kit_agv_bringup/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kit_agv_bringup" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/kit_agv_bringup/package.xml")
 endif()
 

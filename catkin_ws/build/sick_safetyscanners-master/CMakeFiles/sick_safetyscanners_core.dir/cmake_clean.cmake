@@ -90,8 +90,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sick_safetyscanners_core.dir/src/datastructure/StatusOverview.cpp.o"
   "CMakeFiles/sick_safetyscanners_core.dir/src/datastructure/TypeCode.cpp.o"
   "CMakeFiles/sick_safetyscanners_core.dir/src/datastructure/UserName.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_safetyscanners_core.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_safetyscanners_core.so"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_safetyscanners_core.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_safetyscanners_core.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,4 +1,4 @@
-prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel
+prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/devel
 
 Name: joint_state_publisher
 Description: Description of joint_state_publisher

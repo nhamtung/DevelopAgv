@@ -44,9 +44,9 @@
   <!-- <include file="$(find webServer)/launch/kit_agv_webserver.launch"/> -->
 
   <!-- Motor Driver -->
-  <!-- <include file="$(find r2serial_driver)/launch/r2serial_driver.launch">
+  <include file="$(find r2serial_driver)/launch/r2serial_driver.launch">
     <arg name="port" value="$(arg port)"/>
-  </include> -->
+  </include>
 
   <!-- rviz -->
   <group if="$(arg open_rviz)"> 

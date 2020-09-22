@@ -1,4 +1,4 @@
-prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install
+prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/install
 
 Name: fake_localization
 Description: Description of fake_localization

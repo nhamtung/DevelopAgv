@@ -1,4 +1,4 @@
-prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install
+prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/install
 
 Name: global_planner
 Description: Description of global_planner

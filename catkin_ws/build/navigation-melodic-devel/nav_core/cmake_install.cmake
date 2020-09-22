@@ -1,8 +1,8 @@
-# Install script for directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core
+# Install script for directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robotics/TungNV/DevelopAgv/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/nav_core/catkin_generated/installspace/nav_core.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/nav_core/catkin_generated/installspace/nav_core.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nav_core/cmake" TYPE FILE FILES
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/nav_core/catkin_generated/installspace/nav_coreConfig.cmake"
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/nav_core/catkin_generated/installspace/nav_coreConfig-version.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/nav_core/catkin_generated/installspace/nav_coreConfig.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/nav_core/catkin_generated/installspace/nav_coreConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nav_core" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nav_core" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/nav_core" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core/include/nav_core/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/nav_core" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core/include/nav_core/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
 endif()
 

@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b635b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b635b.dir/build.make CMakeFiles/cmTC_b635b.dir/build
-make[1]: Entering directory '/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b635b.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_b635b.dir/CheckSymbolExists.c.o   -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_b635b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b635b.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b635b.dir/CheckSymbolExists.c.o  -o cmTC_b635b 
-CMakeFiles/cmTC_b635b.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_23af1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_23af1.dir/build.make CMakeFiles/cmTC_23af1.dir/build
+make[1]: Entering directory '/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23af1.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_23af1.dir/CheckSymbolExists.c.o   -c /home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_23af1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23af1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_23af1.dir/CheckSymbolExists.c.o  -o cmTC_23af1 
+CMakeFiles/cmTC_23af1.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_b635b.dir/build.make:97: recipe for target 'cmTC_b635b' failed
-make[1]: *** [cmTC_b635b] Error 1
-make[1]: Leaving directory '/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_b635b/fast' failed
-make: *** [cmTC_b635b/fast] Error 2
+CMakeFiles/cmTC_23af1.dir/build.make:97: recipe for target 'cmTC_23af1' failed
+make[1]: *** [cmTC_23af1] Error 1
+make[1]: Leaving directory '/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_23af1/fast' failed
+make: *** [cmTC_23af1/fast] Error 2
 
-File /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,41 +34,41 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_63b07/fast"
-/usr/bin/make -f CMakeFiles/cmTC_63b07.dir/build.make CMakeFiles/cmTC_63b07.dir/build
-make[1]: Entering directory '/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_63b07.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_63b07.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_63b07
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63b07.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_63b07.dir/CheckFunctionExists.c.o  -o cmTC_63b07 -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_a21c6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a21c6.dir/build.make CMakeFiles/cmTC_a21c6.dir/build
+make[1]: Entering directory '/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a21c6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a21c6.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a21c6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a21c6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_a21c6.dir/CheckFunctionExists.c.o  -o cmTC_a21c6 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_63b07.dir/build.make:97: recipe for target 'cmTC_63b07' failed
-make[1]: *** [cmTC_63b07] Error 1
-make[1]: Leaving directory '/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_63b07/fast' failed
-make: *** [cmTC_63b07/fast] Error 2
+CMakeFiles/cmTC_a21c6.dir/build.make:97: recipe for target 'cmTC_a21c6' failed
+make[1]: *** [cmTC_a21c6] Error 1
+make[1]: Leaving directory '/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a21c6/fast' failed
+make: *** [cmTC_a21c6/fast] Error 2
 
 
 Determining if the include file pgm.h exists failed with the following output:
-Change Dir: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp
+Change Dir: /home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_44aa4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_44aa4.dir/build.make CMakeFiles/cmTC_44aa4.dir/build
-make[1]: Entering directory '/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_44aa4.dir/CheckIncludeFile.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_44aa4.dir/CheckIncludeFile.cxx.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: pgm.h: No such file or directory
+Run Build Command:"/usr/bin/make" "cmTC_4e01b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4e01b.dir/build.make CMakeFiles/cmTC_4e01b.dir/build
+make[1]: Entering directory '/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4e01b.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_4e01b.dir/CheckIncludeFile.cxx.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: pgm.h: No such file or directory
  #include <pgm.h>
           ^~~~~~~
 compilation terminated.
-CMakeFiles/cmTC_44aa4.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_44aa4.dir/CheckIncludeFile.cxx.o' failed
-make[1]: *** [CMakeFiles/cmTC_44aa4.dir/CheckIncludeFile.cxx.o] Error 1
-make[1]: Leaving directory '/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_44aa4/fast' failed
-make: *** [cmTC_44aa4/fast] Error 2
+CMakeFiles/cmTC_4e01b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4e01b.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_4e01b.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4e01b/fast' failed
+make: *** [cmTC_4e01b/fast] Error 2
 
 

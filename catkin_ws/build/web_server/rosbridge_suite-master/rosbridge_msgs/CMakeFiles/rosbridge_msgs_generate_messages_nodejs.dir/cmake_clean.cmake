@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosbridge_msgs_generate_messages_nodejs"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/gennodejs/ros/rosbridge_msgs/msg/ConnectedClients.js"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/gennodejs/ros/rosbridge_msgs/msg/ConnectedClient.js"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/gennodejs/ros/rosbridge_msgs/msg/ConnectedClient.js"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/gennodejs/ros/rosbridge_msgs/msg/ConnectedClients.js"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build
+CMAKE_BINARY_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/build
 
 # Utility rule file for r2serial_driver_gennodejs.
 
@@ -63,10 +63,10 @@ r2serial_driver/CMakeFiles/r2serial_driver_gennodejs.dir/build: r2serial_driver_
 .PHONY : r2serial_driver/CMakeFiles/r2serial_driver_gennodejs.dir/build
 
 r2serial_driver/CMakeFiles/r2serial_driver_gennodejs.dir/clean:
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver && $(CMAKE_COMMAND) -P CMakeFiles/r2serial_driver_gennodejs.dir/cmake_clean.cmake
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver && $(CMAKE_COMMAND) -P CMakeFiles/r2serial_driver_gennodejs.dir/cmake_clean.cmake
 .PHONY : r2serial_driver/CMakeFiles/r2serial_driver_gennodejs.dir/clean
 
 r2serial_driver/CMakeFiles/r2serial_driver_gennodejs.dir/depend:
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/r2serial_driver /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver/CMakeFiles/r2serial_driver_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotics/TungNV/DevelopAgv/catkin_ws/src /home/robotics/TungNV/DevelopAgv/catkin_ws/src/r2serial_driver /home/robotics/TungNV/DevelopAgv/catkin_ws/build /home/robotics/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver /home/robotics/TungNV/DevelopAgv/catkin_ws/build/r2serial_driver/CMakeFiles/r2serial_driver_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : r2serial_driver/CMakeFiles/r2serial_driver_gennodejs.dir/depend
 

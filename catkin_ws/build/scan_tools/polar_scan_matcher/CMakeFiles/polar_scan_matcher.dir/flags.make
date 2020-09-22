@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"polar_scan_matcher\" -Dpolar_scan_matcher_EXPORTS
 
-CXX_INCLUDES = -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/polar_scan_matcher/include -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_ros/include -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_msgs/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/polar_scan_matcher/include -I/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include -I/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_ros/include -I/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include -I/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_msgs/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 
