@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosbridge_msgs_generate_messages_eus"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/roseus/ros/rosbridge_msgs/msg/ConnectedClient.l"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/roseus/ros/rosbridge_msgs/msg/ConnectedClients.l"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/roseus/ros/rosbridge_msgs/manifest.l"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/roseus/ros/rosbridge_msgs/msg/ConnectedClients.l"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/roseus/ros/rosbridge_msgs/msg/ConnectedClient.l"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/roseus/ros/rosbridge_msgs/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

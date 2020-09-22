@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/move_base_gencfg"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/move_base/MoveBaseConfig.h"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/move_base/docs/MoveBaseConfig.dox"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/move_base/docs/MoveBaseConfig-usage.dox"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/move_base/cfg/MoveBaseConfig.py"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/move_base/docs/MoveBaseConfig.wikidoc"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/move_base/MoveBaseConfig.h"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/move_base/docs/MoveBaseConfig.dox"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/move_base/docs/MoveBaseConfig-usage.dox"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/move_base/cfg/MoveBaseConfig.py"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/move_base/docs/MoveBaseConfig.wikidoc"
 )
 
 # Per-language clean rules from dependency scanning.

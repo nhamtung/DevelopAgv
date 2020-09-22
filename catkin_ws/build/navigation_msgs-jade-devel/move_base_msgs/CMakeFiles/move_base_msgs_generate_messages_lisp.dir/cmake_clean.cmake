@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/move_base_msgs_generate_messages_lisp"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseActionFeedback.lisp"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseActionGoal.lisp"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseGoal.lisp"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseResult.lisp"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseAction.lisp"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseFeedback.lisp"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseActionResult.lisp"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseResult.lisp"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseGoal.lisp"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseActionGoal.lisp"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseActionResult.lisp"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseActionFeedback.lisp"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseAction.lisp"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseFeedback.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

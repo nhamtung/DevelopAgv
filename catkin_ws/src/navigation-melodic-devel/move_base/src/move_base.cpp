@@ -42,6 +42,7 @@
 #include <geometry_msgs/Twist.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 #include "std_msgs/Int32.h"
+#include "sick_lidar_localization/SickLocResultPortTelegramMsg.h"
 #include "ros/ros.h"
 #include <iterator>
 #include <iostream>
@@ -75,9 +76,13 @@ namespace move_base {
     // ROS_INFO("move_base.cpp-75-yaw: %0.3f", yaw);
 
     ros::NodeHandle n("");
+
     //Subscribe the topic /client_count
     mode_ = n.subscribe<std_msgs::Int32>("client_count", 1, boost::bind(&MoveBase::getMode, this, _1));
-    ROS_INFO("move_base.cpp-80-Subscriber topic /client_count");
+    ROS_INFO("move_base.cpp-82-Subscriber topic: /client_count");
+    //Subscribe the topic /sick_lidar_localization/driver/result_telegrams
+    pose_ = n.subscribe<sick_lidar_localization::SickLocResultPortTelegramMsg>("sick_lidar_localization/driver/result_telegrams", 1, boost::bind(&MoveBase::getCurrentPose, this, _1));
+    ROS_INFO("move_base.cpp-85-Subscriber topic: /sick_lidar_localization/driver/result_telegrams");
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     ros::NodeHandle private_nh("~");
@@ -847,8 +852,19 @@ namespace move_base {
 
 
   // Add by TungNV   ////////////////////////////////////////////////////////////////////////////////////////////////////
+  void MoveBase::getCurrentPose(const sick_lidar_localization::SickLocResultPortTelegramMsg::ConstPtr& msgPose){
+    // ROS_INFO("move_base.cpp-856-getCurrentPose");
+    // geometry_msgs::PoseStamped robot_current_pose;
+    robot_current_pose.header = msgPose->header;
+    robot_current_pose.pose.position.x = msgPose->telegram_payload.PoseX;
+    robot_current_pose.pose.position.y = msgPose->telegram_payload.PoseY;
+    // ROS_INFO("move_base.cpp-861-robot_pose.x: %.3f", robot_current_pose.pose.position.x);
+    // ROS_INFO("move_base.cpp-862-robot_pose.y: %.3f", robot_current_pose.pose.position.y);
+  }
   void MoveBase::getMode(const std_msgs::Int32::ConstPtr& msgMode){
     ROS_INFO("move_base.cpp-851-getMode");
+    ROS_INFO("move_base.cpp-861-robot_current_pose.x: %.3f", robot_current_pose.pose.position.x);
+    ROS_INFO("move_base.cpp-862-robot_current_pose.y: %.3f", robot_current_pose.pose.position.y);
     int32_t mode = msgMode->data;
     ROS_INFO("move_base.cpp-853-Mode: %d", mode);
     if(mode == 1)
@@ -1032,7 +1048,7 @@ namespace move_base {
           //we'll make sure that we reset our state for the next execution cycle
           recovery_index_ = 0;
           state_ = PLANNING;
-          ROS_INFO("move_base.cpp-1035-state_: ", state_);
+          // ROS_INFO("move_base.cpp-1035-state_: ", state_);
 
           //we have a new goal so make sure the planner is awake
           lock.lock();

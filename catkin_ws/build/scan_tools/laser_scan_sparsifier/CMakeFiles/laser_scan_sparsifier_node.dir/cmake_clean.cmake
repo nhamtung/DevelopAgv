@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/laser_scan_sparsifier_node.dir/src/laser_scan_sparsifier_node.cpp.o"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node.pdb"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node.pdb"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_scan_sparsifier/laser_scan_sparsifier_node"
 )
 
 # Per-language clean rules from dependency scanning.

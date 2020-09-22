@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/base_local_planner_generate_messages_py"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/base_local_planner/msg/_Position2DInt.py"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/base_local_planner/msg/__init__.py"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/base_local_planner/msg/_Position2DInt.py"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/base_local_planner/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

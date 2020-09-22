@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosauth_generate_messages_lisp"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/rosauth/srv/Authentication.lisp"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/rosauth/srv/Authentication.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

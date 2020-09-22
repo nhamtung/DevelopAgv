@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/costmap_2d/Costmap2DConfig.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/costmap_2d/Costmap2DConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -24,7 +24,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/OccupancyGridUpdate.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/map_msgs/OccupancyGridUpdate.h
 string
 -
 vector
@@ -42,7 +42,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/move_base/MoveBaseConfig.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/move_base/MoveBaseConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -60,7 +60,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseAction.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseAction.h
 string
 -
 vector
@@ -82,7 +82,7 @@ move_base_msgs/MoveBaseActionResult.h
 move_base_msgs/MoveBaseActionFeedback.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseActionFeedback.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseActionFeedback.h
 string
 -
 vector
@@ -104,7 +104,7 @@ actionlib_msgs/GoalStatus.h
 move_base_msgs/MoveBaseFeedback.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseActionGoal.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseActionGoal.h
 string
 -
 vector
@@ -126,7 +126,7 @@ actionlib_msgs/GoalID.h
 move_base_msgs/MoveBaseGoal.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseActionResult.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseActionResult.h
 string
 -
 vector
@@ -148,7 +148,7 @@ actionlib_msgs/GoalStatus.h
 move_base_msgs/MoveBaseResult.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseFeedback.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseFeedback.h
 string
 -
 vector
@@ -166,7 +166,7 @@ ros/message_operations.h
 geometry_msgs/PoseStamped.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseGoal.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseGoal.h
 string
 -
 vector
@@ -184,7 +184,7 @@ ros/message_operations.h
 geometry_msgs/PoseStamped.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseResult.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/move_base_msgs/MoveBaseResult.h
 string
 -
 vector
@@ -200,7 +200,79 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/tf2_msgs/FrameGraph.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/sick_lidar_localization/SickLocResultPortCrcMsg.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/sick_lidar_localization/SickLocResultPortHeaderMsg.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/sick_lidar_localization/SickLocResultPortPayloadMsg.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/sick_lidar_localization/SickLocResultPortTelegramMsg.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+sick_lidar_localization/SickLocResultPortHeaderMsg.h
+-
+sick_lidar_localization/SickLocResultPortPayloadMsg.h
+-
+sick_lidar_localization/SickLocResultPortCrcMsg.h
+-
+
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/tf2_msgs/FrameGraph.h
 ros/service_traits.h
 -
 tf2_msgs/FrameGraphRequest.h
@@ -208,7 +280,7 @@ tf2_msgs/FrameGraphRequest.h
 tf2_msgs/FrameGraphResponse.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/tf2_msgs/FrameGraphRequest.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/tf2_msgs/FrameGraphRequest.h
 string
 -
 vector
@@ -224,7 +296,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/tf2_msgs/FrameGraphResponse.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/tf2_msgs/FrameGraphResponse.h
 string
 -
 vector
@@ -240,33 +312,33 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Matrix3x3.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Matrix3x3.h
 Vector3.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Vector3.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Vector3.h
 Quaternion.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Quaternion.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Quaternion.h
 ros/macros.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/MinMax.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/MinMax.h
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/QuadWord.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/QuadWord.h
 Scalar.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Scalar.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Scalar.h
 MinMax.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/MinMax.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/MinMax.h
 altivec.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Quaternion.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Quaternion.h
 Vector3.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Vector3.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Vector3.h
 QuadWord.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/QuadWord.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/QuadWord.h
 ros/macros.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Scalar.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Scalar.h
 math.h
 -
 stdlib.h
@@ -288,29 +360,29 @@ assert.h
 assert.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Transform.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Transform.h
 Matrix3x3.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Matrix3x3.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Matrix3x3.h
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Vector3.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Vector3.h
 Scalar.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Scalar.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/Scalar.h
 MinMax.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/MinMax.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/LinearMath/MinMax.h
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/buffer_core.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/buffer_core.h
 transform_storage.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/transform_storage.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/transform_storage.h
 boost/signals2.hpp
 -
 string
 -
 ros/duration.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/ros/duration.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/ros/duration.h
 ros/time.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/ros/time.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/ros/time.h
 geometry_msgs/TransformStamped.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/geometry_msgs/TransformStamped.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/geometry_msgs/TransformStamped.h
 boost/unordered_map.hpp
 -
 boost/thread/mutex.hpp
@@ -320,7 +392,7 @@ boost/function.hpp
 boost/shared_ptr.hpp
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/convert.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/convert.h
 tf2/transform_datatypes.h
 -
 tf2/exceptions.h
@@ -330,19 +402,19 @@ geometry_msgs/TransformStamped.h
 tf2/impl/convert.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/exceptions.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/exceptions.h
 stdexcept
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/impl/convert.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/impl/convert.h
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/transform_datatypes.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/transform_datatypes.h
 string
 -
 ros/time.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/ros/time.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/ros/time.h
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/transform_storage.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2/include/tf2/transform_storage.h
 tf2/LinearMath/Vector3.h
 -
 tf2/LinearMath/Quaternion.h
@@ -354,7 +426,7 @@ ros/time.h
 ros/types.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_geometry_msgs/include/tf2_geometry_msgs/tf2_geometry_msgs.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_geometry_msgs/include/tf2_geometry_msgs/tf2_geometry_msgs.h
 tf2/convert.h
 -
 tf2/LinearMath/Quaternion.h
@@ -384,9 +456,9 @@ kdl/frames.hpp
 array
 -
 ros/macros.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_geometry_msgs/include/tf2_geometry_msgs/ros/macros.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_geometry_msgs/include/tf2_geometry_msgs/ros/macros.h
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_ros/include/tf2_ros/buffer.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_ros/include/tf2_ros/buffer.h
 tf2_ros/buffer_interface.h
 -
 tf2/buffer_core.h
@@ -398,7 +470,7 @@ ros/ros.h
 tf2/convert.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_ros/include/tf2_ros/buffer_interface.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/geometry2-melodic-devel/tf2_ros/include/tf2_ros/buffer_interface.h
 tf2/buffer_core.h
 -
 tf2/transform_datatypes.h
@@ -412,9 +484,9 @@ sstream
 tf2/convert.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/cost_values.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/cost_values.h
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/costmap_2d.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/costmap_2d.h
 vector
 -
 queue
@@ -424,7 +496,7 @@ geometry_msgs/Point.h
 boost/thread.hpp
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/costmap_2d_publisher.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/costmap_2d_publisher.h
 ros/ros.h
 -
 costmap_2d/costmap_2d.h
@@ -434,7 +506,7 @@ nav_msgs/OccupancyGrid.h
 map_msgs/OccupancyGridUpdate.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/costmap_2d_ros.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/costmap_2d_ros.h
 costmap_2d/layered_costmap.h
 -
 costmap_2d/layer.h
@@ -458,7 +530,7 @@ pluginlib/class_loader.hpp
 tf2/LinearMath/Transform.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/footprint.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/footprint.h
 ros/ros.h
 -
 geometry_msgs/Polygon.h
@@ -470,7 +542,7 @@ geometry_msgs/Point.h
 geometry_msgs/Point32.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/layer.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/layer.h
 costmap_2d/costmap_2d.h
 -
 costmap_2d/layered_costmap.h
@@ -480,7 +552,7 @@ string
 tf2_ros/buffer.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/layered_costmap.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/costmap_2d/include/costmap_2d/layered_costmap.h
 costmap_2d/cost_values.h
 -
 costmap_2d/layer.h
@@ -492,7 +564,7 @@ vector
 string
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/include/move_base/move_base.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/include/move_base/move_base.h
 vector
 -
 string
@@ -517,6 +589,8 @@ costmap_2d/costmap_2d.h
 -
 nav_msgs/GetPlan.h
 -
+sick_lidar_localization/SickLocResultPortTelegramMsg.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/include/move_base/sick_lidar_localization/SickLocResultPortTelegramMsg.h
 pluginlib/class_loader.hpp
 -
 std_srvs/Empty.h
@@ -524,11 +598,11 @@ std_srvs/Empty.h
 dynamic_reconfigure/server.h
 -
 move_base/MoveBaseConfig.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/include/move_base/move_base/MoveBaseConfig.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/include/move_base/move_base/MoveBaseConfig.h
 std_msgs/Int32.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/include/move_base/std_msgs/Int32.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/include/move_base/std_msgs/Int32.h
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/src/move_base.cpp
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/src/move_base.cpp
 move_base/move_base.h
 -
 cmath
@@ -542,9 +616,11 @@ geometry_msgs/Twist.h
 tf2_geometry_msgs/tf2_geometry_msgs.h
 -
 std_msgs/Int32.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/src/std_msgs/Int32.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/src/std_msgs/Int32.h
+sick_lidar_localization/SickLocResultPortTelegramMsg.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/src/sick_lidar_localization/SickLocResultPortTelegramMsg.h
 ros/ros.h
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/src/ros/ros.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/move_base/src/ros/ros.h
 iterator
 -
 iostream
@@ -552,13 +628,13 @@ iostream
 array
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core/include/nav_core/base_global_planner.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core/include/nav_core/base_global_planner.h
 geometry_msgs/PoseStamped.h
 -
 costmap_2d/costmap_2d_ros.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core/include/nav_core/base_local_planner.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core/include/nav_core/base_local_planner.h
 geometry_msgs/PoseStamped.h
 -
 geometry_msgs/Twist.h
@@ -568,7 +644,7 @@ costmap_2d/costmap_2d_ros.h
 tf2_ros/buffer.h
 -
 
-/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core/include/nav_core/recovery_behavior.h
+/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/nav_core/include/nav_core/recovery_behavior.h
 costmap_2d/costmap_2d_ros.h
 -
 tf2_ros/buffer.h

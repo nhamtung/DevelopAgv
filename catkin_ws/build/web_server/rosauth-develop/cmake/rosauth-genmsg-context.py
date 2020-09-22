@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosauth-develop/srv/Authentication.srv"
+services_str = "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosauth-develop/srv/Authentication.srv"
 pkg_name = "rosauth"
 dependencies_str = ""
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

@@ -1,8 +1,8 @@
-# Install script for directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/kit_agv_slam
+# Install script for directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/kit_agv_slam
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robotics/TungNV/DevelopAgv/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/kit_agv_slam/catkin_generated/installspace/kit_agv_slam.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/kit_agv_slam/catkin_generated/installspace/kit_agv_slam.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kit_agv_slam/cmake" TYPE FILE FILES
-    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/kit_agv_slam/catkin_generated/installspace/kit_agv_slamConfig.cmake"
-    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/kit_agv_slam/catkin_generated/installspace/kit_agv_slamConfig-version.cmake"
+    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/kit_agv_slam/catkin_generated/installspace/kit_agv_slamConfig.cmake"
+    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/kit_agv_slam/catkin_generated/installspace/kit_agv_slamConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kit_agv_slam" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/kit_agv_slam/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kit_agv_slam" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/kit_agv_slam/package.xml")
 endif()
 

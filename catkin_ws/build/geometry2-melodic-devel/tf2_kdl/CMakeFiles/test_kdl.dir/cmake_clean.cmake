@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_kdl.dir/test/test_tf2_kdl.cpp.o"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/tf2_kdl/test_kdl.pdb"
-  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/tf2_kdl/test_kdl"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/tf2_kdl/test_kdl.pdb"
+  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/tf2_kdl/test_kdl"
 )
 
 # Per-language clean rules from dependency scanning.

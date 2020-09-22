@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src
-# Build directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/build
+# Source directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src
+# Build directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
@@ -39,6 +39,7 @@ subdirs("scan_tools/laser_ortho_projector")
 subdirs("scan_tools/laser_scan_matcher")
 subdirs("scan_tools/polar_scan_matcher")
 subdirs("scan_tools/scan_to_cloud_converter")
+subdirs("sick_lidar_localization-master")
 subdirs("geometry2-melodic-devel/tf2_geometry_msgs")
 subdirs("navigation-melodic-devel/amcl")
 subdirs("navigation-melodic-devel/fake_localization")

@@ -4,6 +4,7 @@
         "string": "cpp",
         "string_view": "cpp",
         "iterator": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "unordered_map": "cpp"
     }
 }

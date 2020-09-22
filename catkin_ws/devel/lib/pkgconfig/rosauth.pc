@@ -1,8 +1,8 @@
-prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/devel
+prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel
 
 Name: rosauth
 Description: Description of rosauth
 Version: 1.0.1
-Cflags: -I/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include
+Cflags: -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include
 Libs: -L${prefix}/lib 
 Requires: roscpp message_runtime
