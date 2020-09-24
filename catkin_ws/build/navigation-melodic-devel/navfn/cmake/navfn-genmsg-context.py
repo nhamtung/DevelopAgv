@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/srv/MakeNavPlan.srv;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/srv/SetCostmap.srv"
+services_str = "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/srv/MakeNavPlan.srv;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/srv/SetCostmap.srv"
 pkg_name = "navfn"
 dependencies_str = "geometry_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

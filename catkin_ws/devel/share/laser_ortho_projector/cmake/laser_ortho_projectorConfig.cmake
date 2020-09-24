@@ -67,14 +67,14 @@ set(laser_ortho_projector_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(laser_ortho_projector_SOURCE_PREFIX /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_ortho_projector)
-  set(laser_ortho_projector_DEVEL_PREFIX /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel)
+  set(laser_ortho_projector_SOURCE_PREFIX /home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_ortho_projector)
+  set(laser_ortho_projector_DEVEL_PREFIX /home/robotics/TungNV/DevelopAgv/catkin_ws/devel)
   set(laser_ortho_projector_INSTALL_PREFIX "")
   set(laser_ortho_projector_PREFIX ${laser_ortho_projector_DEVEL_PREFIX})
 else()
   set(laser_ortho_projector_SOURCE_PREFIX "")
   set(laser_ortho_projector_DEVEL_PREFIX "")
-  set(laser_ortho_projector_INSTALL_PREFIX /home/nhamtung/TungNV/DevelopAgv/catkin_ws/install)
+  set(laser_ortho_projector_INSTALL_PREFIX /home/robotics/TungNV/DevelopAgv/catkin_ws/install)
   set(laser_ortho_projector_PREFIX ${laser_ortho_projector_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(laser_ortho_projector_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_ortho_projector/include " STREQUAL " ")
+if(NOT "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_ortho_projector/include " STREQUAL " ")
   set(laser_ortho_projector_INCLUDE_DIRS "")
-  set(_include_dirs "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_ortho_projector/include")
+  set(_include_dirs "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_ortho_projector/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://wiki.ros.org/laser_scan_matcher " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_ortho_pr
         message(FATAL_ERROR "Project 'laser_ortho_projector' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'laser_ortho_projector' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_ortho_projector/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'laser_ortho_projector' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/laser_ortho_projector/${idir}'.  ${_report}")
     endif()
     _list_append_unique(laser_ortho_projector_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib;/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

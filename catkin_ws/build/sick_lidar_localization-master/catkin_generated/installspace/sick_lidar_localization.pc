@@ -1,4 +1,4 @@
-prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install
+prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/install
 
 Name: sick_lidar_localization
 Description: Description of sick_lidar_localization

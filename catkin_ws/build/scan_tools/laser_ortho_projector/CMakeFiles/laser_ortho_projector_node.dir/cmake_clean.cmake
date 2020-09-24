@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/laser_ortho_projector_node.dir/src/laser_ortho_projector_node.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_ortho_projector/laser_ortho_projector_node.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_ortho_projector/laser_ortho_projector_node"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_ortho_projector/laser_ortho_projector_node.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/laser_ortho_projector/laser_ortho_projector_node"
 )
 
 # Per-language clean rules from dependency scanning.

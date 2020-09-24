@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/laser_scan_matcher_nodelet.dir/src/laser_scan_matcher_nodelet.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_matcher_nodelet.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_matcher_nodelet.so"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_matcher_nodelet.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_matcher_nodelet.so"
 )
 
 # Per-language clean rules from dependency scanning.

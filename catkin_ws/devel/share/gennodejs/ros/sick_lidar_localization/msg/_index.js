@@ -1,20 +1,20 @@
 
 "use strict";
 
-let SickLocResultPortTestcaseMsg = require('./SickLocResultPortTestcaseMsg.js');
-let SickLocResultPortHeaderMsg = require('./SickLocResultPortHeaderMsg.js');
-let SickLocDiagnosticMsg = require('./SickLocDiagnosticMsg.js');
 let SickLocResultPortPayloadMsg = require('./SickLocResultPortPayloadMsg.js');
-let SickLocResultPortTelegramMsg = require('./SickLocResultPortTelegramMsg.js');
+let SickLocResultPortTestcaseMsg = require('./SickLocResultPortTestcaseMsg.js');
 let SickLocColaTelegramMsg = require('./SickLocColaTelegramMsg.js');
+let SickLocResultPortHeaderMsg = require('./SickLocResultPortHeaderMsg.js');
+let SickLocResultPortTelegramMsg = require('./SickLocResultPortTelegramMsg.js');
+let SickLocDiagnosticMsg = require('./SickLocDiagnosticMsg.js');
 let SickLocResultPortCrcMsg = require('./SickLocResultPortCrcMsg.js');
 
 module.exports = {
-  SickLocResultPortTestcaseMsg: SickLocResultPortTestcaseMsg,
-  SickLocResultPortHeaderMsg: SickLocResultPortHeaderMsg,
-  SickLocDiagnosticMsg: SickLocDiagnosticMsg,
   SickLocResultPortPayloadMsg: SickLocResultPortPayloadMsg,
-  SickLocResultPortTelegramMsg: SickLocResultPortTelegramMsg,
+  SickLocResultPortTestcaseMsg: SickLocResultPortTestcaseMsg,
   SickLocColaTelegramMsg: SickLocColaTelegramMsg,
+  SickLocResultPortHeaderMsg: SickLocResultPortHeaderMsg,
+  SickLocResultPortTelegramMsg: SickLocResultPortTelegramMsg,
+  SickLocDiagnosticMsg: SickLocDiagnosticMsg,
   SickLocResultPortCrcMsg: SickLocResultPortCrcMsg,
 };

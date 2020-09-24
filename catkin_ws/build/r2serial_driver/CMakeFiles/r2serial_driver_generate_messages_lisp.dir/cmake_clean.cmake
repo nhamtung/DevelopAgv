@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/r2serial_driver_generate_messages_lisp"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/r2serial_driver/msg/Num.lisp"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/r2serial_driver/msg/Num.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

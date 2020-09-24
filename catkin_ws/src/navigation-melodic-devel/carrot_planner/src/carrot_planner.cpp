@@ -54,7 +54,7 @@ namespace carrot_planner {
   }
   
   void CarrotPlanner::initialize(std::string name, costmap_2d::Costmap2DROS* costmap_ros){
-    ROS_INFO("TungNV-carrot_planner-57-initialize");
+    ROS_INFO("carrot_planner.cpp-57-initialize");
     if(!initialized_){
       costmap_ros_ = costmap_ros;
       costmap_ = costmap_ros_->getCostmap();
@@ -72,7 +72,7 @@ namespace carrot_planner {
 
   //we need to take the footprint of the robot into account when we calculate cost to obstacles
   double CarrotPlanner::footprintCost(double x_i, double y_i, double theta_i){
-    ROS_INFO("TungNV-carrot_planner-75-footprintCost");
+    ROS_INFO("carrot_planner.cpp-75-footprintCost");
     if(!initialized_){
       ROS_ERROR("The planner has not been initialized, please call initialize() to use the planner");
       return -1.0;
@@ -90,13 +90,13 @@ namespace carrot_planner {
 
 
   bool CarrotPlanner::makePlan(const geometry_msgs::PoseStamped& start, const geometry_msgs::PoseStamped& goal, std::vector<geometry_msgs::PoseStamped>& plan){
-    ROS_INFO("TungNV-carrot_planner-93-makePlan");
+    ROS_INFO("carrot_planner.cpp-93-makePlan");
 
     if(!initialized_){
       ROS_ERROR("The planner has not been initialized, please call initialize() to use the planner");
       return false;
     }
-    ROS_INFO("TungNV-carrot_planner-99-Got a start: %.2f, %.2f, and a goal: %.2f, %.2f", start.pose.position.x, start.pose.position.y, goal.pose.position.x, goal.pose.position.y);
+    ROS_INFO("carrot_planner.cpp-99-Got a start: %.2f, %.2f, and a goal: %.2f, %.2f", start.pose.position.x, start.pose.position.y, goal.pose.position.x, goal.pose.position.y);
     ROS_DEBUG("Got a start: %.2f, %.2f, and a goal: %.2f, %.2f", start.pose.position.x, start.pose.position.y, goal.pose.position.x, goal.pose.position.y);
 
     plan.clear();
@@ -136,7 +136,7 @@ namespace carrot_planner {
         target_x = start_x;
         target_y = start_y;
         target_yaw = start_yaw;
-        ROS_WARN("The carrot planner could not find a valid plan for this goal");
+        ROS_WARN("carrot_planner.cpp-139-The carrot planner could not find a valid plan for this goal");
         break;
       }
       target_x = start_x + scale * diff_x;

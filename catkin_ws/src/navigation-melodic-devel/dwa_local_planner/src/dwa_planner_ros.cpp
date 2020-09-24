@@ -55,7 +55,7 @@ PLUGINLIB_EXPORT_CLASS(dwa_local_planner::DWAPlannerROS, nav_core::BaseLocalPlan
 namespace dwa_local_planner {
 
   void DWAPlannerROS::reconfigureCB(DWAPlannerConfig &config, uint32_t level) {
-    ROS_INFO("TungNV-dwa_planner_ros-58-reconfigureCB");
+    ROS_INFO("dwa_planner_ros.cpp-58-reconfigureCB");
       if (setup_ && config.restore_defaults) {
         config = default_config_;
         config.restore_defaults = false;
@@ -95,7 +95,7 @@ namespace dwa_local_planner {
   }
 
   void DWAPlannerROS::initialize(std::string name, tf2_ros::Buffer* tf, costmap_2d::Costmap2DROS* costmap_ros) {
-    ROS_INFO("TungNV-dwa_planner_ros-98-initialize");
+    ROS_INFO("dwa_planner_ros.cpp-98-initialize");
     if (! isInitialized()) {
 
       ros::NodeHandle private_nh("~/" + name);
@@ -137,7 +137,7 @@ namespace dwa_local_planner {
   }
   
   bool DWAPlannerROS::setPlan(const std::vector<geometry_msgs::PoseStamped>& orig_global_plan) {
-    ROS_INFO("TungNV-dwa_planner_ros-141-setPlan");
+    ROS_INFO("dwa_planner_ros.cpp-141-setPlan");
     if (! isInitialized()) {
       ROS_ERROR("This planner has not been initialized, please call initialize() before using this planner");
       return false;
@@ -185,7 +185,7 @@ namespace dwa_local_planner {
 
 
   bool DWAPlannerROS::dwaComputeVelocityCommands(geometry_msgs::PoseStamped &global_pose, geometry_msgs::Twist& cmd_vel) {
-    ROS_INFO("TungNV-dwa_planner_ros-189-dwaComputeVelocityCommands");
+    ROS_INFO("dwa_planner_ros.cpp-189-dwaComputeVelocityCommands");
     // dynamic window sampling approach to get useful velocity commands
     if(! isInitialized()){
       ROS_ERROR("This planner has not been initialized, please call initialize() before using this planner");
@@ -262,7 +262,7 @@ namespace dwa_local_planner {
 
 
   bool DWAPlannerROS::computeVelocityCommands(geometry_msgs::Twist& cmd_vel) {
-    ROS_INFO("TungNV-dwa_planner_ros-266-computeVelocityCommands");
+    ROS_INFO("dwa_planner_ros.cpp-266-computeVelocityCommands");
     // dispatches to either dwa sampling control or stop and rotate control, depending on whether we have been close enough to goal
     if ( ! costmap_ros_->getRobotPose(current_pose_)) {
       ROS_ERROR("Could not get robot pose");

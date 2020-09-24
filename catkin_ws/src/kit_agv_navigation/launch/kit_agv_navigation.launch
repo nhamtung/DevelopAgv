@@ -6,7 +6,7 @@
   <arg name="angle_start" default="-1.9"/>    <!-- Start angle of scan in radians, if both start and end angle are equal, all angels are regarded  -->
   <arg name="angle_end" default="1.9"/>      <!-- End angle of scan in radians, if both start and end angle are equal, all angels are regarded -->
 
-  <arg name="map_file" default="$(find kit_agv_navigation)/maps/map_709a1_1.yaml"/>
+  <arg name="map_file" default="$(find kit_agv_navigation)/maps/map_709a1.yaml"/>
   <!-- <arg name="map_file" default="$(find kit_agv_navigation)/maps/map_709_out.yaml"/> -->
   <!-- <arg name="map_file" default="$(find kit_agv_navigation)/maps/SIM1000/test_sim1000.yaml"/> -->
   <!-- <arg name="open_rviz" default="true"/> -->
@@ -40,13 +40,10 @@
 
   <node pkg="joint_state_publisher" type="joint_state_publisher" respawn="false" name="joint_state_publisher" output="screen"/>
 
-  <!-- WebServer -->
-  <!-- <include file="$(find webServer)/launch/kit_agv_webserver.launch"/> -->
-
   <!-- Motor Driver -->
-  <!-- <include file="$(find r2serial_driver)/launch/r2serial_driver.launch">
+  <include file="$(find r2serial_driver)/launch/r2serial_driver.launch">
     <arg name="port" value="$(arg port)"/>
-  </include> -->
+  </include>
 
   <!-- rviz -->
   <group if="$(arg open_rviz)"> 

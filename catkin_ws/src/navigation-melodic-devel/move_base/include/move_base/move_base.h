@@ -166,10 +166,7 @@ namespace move_base {
 
 ////// Add by TungNV
       ros::Subscriber mode_;
-      ros::Subscriber pose_;
       bool isRotate;
-      geometry_msgs::PoseStamped robot_current_pose;
-      void getCurrentPose(const sick_lidar_localization::SickLocResultPortTelegramMsg::ConstPtr& msgPose);
       void getMode(const std_msgs::Int32::ConstPtr& msgMode);
       std::list<move_base_msgs::MoveBaseActionGoal> listActionGoal;
       void goalPos(const geometry_msgs::PoseStamped::ConstPtr& goal);

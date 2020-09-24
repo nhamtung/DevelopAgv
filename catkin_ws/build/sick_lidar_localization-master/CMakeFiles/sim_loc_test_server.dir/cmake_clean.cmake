@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.o"
   "CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server"
 )
 
 # Per-language clean rules from dependency scanning.

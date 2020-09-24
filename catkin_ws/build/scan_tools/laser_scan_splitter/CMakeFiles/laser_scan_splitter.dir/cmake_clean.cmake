@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/laser_scan_splitter.dir/src/laser_scan_splitter.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_splitter.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_splitter.so"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_splitter.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_splitter.so"
 )
 
 # Per-language clean rules from dependency scanning.

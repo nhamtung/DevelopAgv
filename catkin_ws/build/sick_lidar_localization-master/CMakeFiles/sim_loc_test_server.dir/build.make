@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build
+CMAKE_BINARY_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/depend.make
@@ -58,17 +58,17 @@ include sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/progre
 include sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/flags.make
 
 sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.o: sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server.cpp
+sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server.cpp
 
 sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server.cpp > CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server.cpp > CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server.cpp -o CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server.cpp -o CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.o.requires:
 
@@ -82,17 +82,17 @@ sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_
 
 
 sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.o: sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server_thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server_thread.cpp
+sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server_thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server_thread.cpp
 
 sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server_thread.cpp > CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server_thread.cpp > CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server_thread.cpp -o CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/test/src/test_server_thread.cpp -o CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.o.requires:
 
@@ -113,41 +113,41 @@ sim_loc_test_server_OBJECTS = \
 # External object files for target sim_loc_test_server
 sim_loc_test_server_EXTERNAL_OBJECTS =
 
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/build.make
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libtf.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2_ros.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libactionlib.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libmessage_filters.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libroscpp.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/librosconsole.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/librostime.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libcpp_common.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sim_loc_test_server.dir/link.txt --verbose=$(VERBOSE)
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/test/src/test_server_thread.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/build.make
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libtf.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2_ros.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libactionlib.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libmessage_filters.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libroscpp.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/librosconsole.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/librostime.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /opt/ros/melodic/lib/libcpp_common.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server: sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sim_loc_test_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/build: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server
+sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/build: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_test_server
 
 .PHONY : sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/build
 
@@ -157,10 +157,10 @@ sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/requires: sick
 .PHONY : sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/requires
 
 sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/clean:
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && $(CMAKE_COMMAND) -P CMakeFiles/sim_loc_test_server.dir/cmake_clean.cmake
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && $(CMAKE_COMMAND) -P CMakeFiles/sim_loc_test_server.dir/cmake_clean.cmake
 .PHONY : sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/clean
 
 sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/depend:
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotics/TungNV/DevelopAgv/catkin_ws/src /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master /home/robotics/TungNV/DevelopAgv/catkin_ws/build /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sick_lidar_localization-master/CMakeFiles/sim_loc_test_server.dir/depend
 

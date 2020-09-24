@@ -80,9 +80,6 @@ namespace move_base {
     //Subscribe the topic /client_count
     mode_ = n.subscribe<std_msgs::Int32>("client_count", 1, boost::bind(&MoveBase::getMode, this, _1));
     ROS_INFO("move_base.cpp-82-Subscriber topic: /client_count");
-    //Subscribe the topic /sick_lidar_localization/driver/result_telegrams
-    pose_ = n.subscribe<sick_lidar_localization::SickLocResultPortTelegramMsg>("sick_lidar_localization/driver/result_telegrams", 1, boost::bind(&MoveBase::getCurrentPose, this, _1));
-    ROS_INFO("move_base.cpp-85-Subscriber topic: /sick_lidar_localization/driver/result_telegrams");
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     ros::NodeHandle private_nh("~");
@@ -131,7 +128,6 @@ namespace move_base {
     //Subscribe the /move_base/goal topic
     ros::NodeHandle simple_nh("move_base_simple");
     // goal_sub_ = simple_nh.subscribe<geometry_msgs::PoseStamped>("goal", 1, boost::bind(&MoveBase::goalCB, this, _1));
-    // ros::NodeHandle simple_nh("move_base_simple");
     goal_sub_ = simple_nh.subscribe<geometry_msgs::PoseStamped>("goal", 1, boost::bind(&MoveBase::goalPos, this, _1));  //TungNV
 
     //we'll assume the radius of the robot to be consistent with what's specified for the costmaps
@@ -852,19 +848,10 @@ namespace move_base {
 
 
   // Add by TungNV   ////////////////////////////////////////////////////////////////////////////////////////////////////
-  void MoveBase::getCurrentPose(const sick_lidar_localization::SickLocResultPortTelegramMsg::ConstPtr& msgPose){
-    // ROS_INFO("move_base.cpp-856-getCurrentPose");
-    // geometry_msgs::PoseStamped robot_current_pose;
-    robot_current_pose.header = msgPose->header;
-    robot_current_pose.pose.position.x = msgPose->telegram_payload.PoseX;
-    robot_current_pose.pose.position.y = msgPose->telegram_payload.PoseY;
-    // ROS_INFO("move_base.cpp-861-robot_pose.x: %.3f", robot_current_pose.pose.position.x);
-    // ROS_INFO("move_base.cpp-862-robot_pose.y: %.3f", robot_current_pose.pose.position.y);
-  }
   void MoveBase::getMode(const std_msgs::Int32::ConstPtr& msgMode){
     ROS_INFO("move_base.cpp-851-getMode");
-    ROS_INFO("move_base.cpp-861-robot_current_pose.x: %.3f", robot_current_pose.pose.position.x);
-    ROS_INFO("move_base.cpp-862-robot_current_pose.y: %.3f", robot_current_pose.pose.position.y);
+    // ROS_INFO("move_base.cpp-861-robot_current_pose.x: %.3f", robot_current_pose.pose.position.x);
+    // ROS_INFO("move_base.cpp-862-robot_current_pose.y: %.3f", robot_current_pose.pose.position.y);
     int32_t mode = msgMode->data;
     ROS_INFO("move_base.cpp-853-Mode: %d", mode);
     if(mode == 1)
@@ -1136,11 +1123,12 @@ namespace move_base {
       //check if execution of the goal has completed in some way
       ros::WallDuration t_diff = ros::WallTime::now() - start;
       ROS_DEBUG_NAMED("move_base","Full control cycle time: %.9f\n", t_diff.toSec());
+      ROS_INFO("move_base.cpp-1140- Full control cycle time: %.9f\n", t_diff.toSec());
 
       r.sleep();
       //make sure to sleep for the remainder of our cycle time
       if(r.cycleTime() > ros::Duration(1 / controller_frequency_) && state_ == CONTROLLING)
-        ROS_WARN("Control loop missed its desired rate of %.4fHz... the loop actually took %.4f seconds", controller_frequency_, r.cycleTime().toSec());
+        ROS_WARN("move_base.cpp-1131-Control loop missed its desired rate of %.4fHz... the loop actually took %.4f seconds", controller_frequency_, r.cycleTime().toSec());
     }
 
     //wake up the planner thread so that it can exit cleanly

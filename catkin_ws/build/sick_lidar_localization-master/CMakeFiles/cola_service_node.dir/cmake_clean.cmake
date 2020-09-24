@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cola_service_node.dir/src/cola_service_node.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/cola_service_node.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/cola_service_node"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/cola_service_node.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/cola_service_node"
 )
 
 # Per-language clean rules from dependency scanning.

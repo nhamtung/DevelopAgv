@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/move_base/move_base.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/move_base/move_base"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/move_base/move_base.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/move_base/move_base"
 )
 
 # Per-language clean rules from dependency scanning.

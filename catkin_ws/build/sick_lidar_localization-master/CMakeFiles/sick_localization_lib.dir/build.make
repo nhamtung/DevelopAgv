@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build
+CMAKE_BINARY_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/depend.make
@@ -58,17 +58,17 @@ include sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/prog
 include sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/client_socket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/client_socket.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/client_socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/client_socket.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/client_socket.cpp > CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/client_socket.cpp > CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/client_socket.cpp -o CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/client_socket.cpp -o CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.o.requires:
 
@@ -82,17 +82,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/client_s
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_configuration.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_configuration.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_configuration.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_configuration.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_configuration.cpp > CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_configuration.cpp > CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_configuration.cpp -o CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_configuration.cpp -o CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.o.requires:
 
@@ -106,17 +106,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_con
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_converter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_converter.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_converter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_converter.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_converter.cpp > CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_converter.cpp > CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_converter.cpp -o CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_converter.cpp -o CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.o.requires:
 
@@ -130,17 +130,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_con
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_parser.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_parser.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_parser.cpp > CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_parser.cpp > CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_parser.cpp -o CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_parser.cpp -o CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.o.requires:
 
@@ -154,17 +154,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_par
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_services.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_services.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_services.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_services.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_services.cpp > CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_services.cpp > CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_services.cpp -o CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_services.cpp -o CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.o.requires:
 
@@ -178,17 +178,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_ser
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_transmitter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_transmitter.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_transmitter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_transmitter.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_transmitter.cpp > CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_transmitter.cpp > CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_transmitter.cpp -o CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/cola_transmitter.cpp -o CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.o.requires:
 
@@ -202,17 +202,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_tra
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_check_thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_check_thread.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_check_thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_check_thread.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_check_thread.cpp > CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_check_thread.cpp > CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_check_thread.cpp -o CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_check_thread.cpp -o CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.o.requires:
 
@@ -226,17 +226,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_c
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_monitor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_monitor.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_monitor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_monitor.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_monitor.cpp > CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_monitor.cpp > CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_monitor.cpp -o CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_monitor.cpp -o CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.o.requires:
 
@@ -250,17 +250,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_m
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_thread.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_thread.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_thread.cpp > CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_thread.cpp > CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_thread.cpp -o CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/driver_thread.cpp -o CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.o.requires:
 
@@ -274,17 +274,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_t
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/pointcloud_converter_thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/pointcloud_converter_thread.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/pointcloud_converter_thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/pointcloud_converter_thread.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/pointcloud_converter_thread.cpp > CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/pointcloud_converter_thread.cpp > CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/pointcloud_converter_thread.cpp -o CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/pointcloud_converter_thread.cpp -o CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.o.requires:
 
@@ -298,17 +298,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/pointclo
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/random_generator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/random_generator.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/random_generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/random_generator.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/random_generator.cpp > CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/random_generator.cpp > CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/random_generator.cpp -o CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/random_generator.cpp -o CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.o.requires:
 
@@ -322,17 +322,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/random_g
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/result_port_parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/result_port_parser.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/result_port_parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/result_port_parser.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/result_port_parser.cpp > CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/result_port_parser.cpp > CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/result_port_parser.cpp -o CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/result_port_parser.cpp -o CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.o.requires:
 
@@ -346,17 +346,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/result_p
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/SoftwarePLL.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/SoftwarePLL.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/SoftwarePLL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/SoftwarePLL.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/SoftwarePLL.cpp > CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/SoftwarePLL.cpp > CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/SoftwarePLL.cpp -o CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/SoftwarePLL.cpp -o CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.o.requires:
 
@@ -370,17 +370,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/Software
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/testcase_generator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/testcase_generator.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/testcase_generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/testcase_generator.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/testcase_generator.cpp > CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/testcase_generator.cpp > CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/testcase_generator.cpp -o CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/testcase_generator.cpp -o CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.o.requires:
 
@@ -394,17 +394,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/testcase
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/time_sync_service.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/time_sync_service.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/time_sync_service.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/time_sync_service.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/time_sync_service.cpp > CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/time_sync_service.cpp > CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/time_sync_service.cpp -o CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/time_sync_service.cpp -o CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.o.requires:
 
@@ -418,17 +418,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/time_syn
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/utils.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/utils.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/utils.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/utils.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/utils.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/utils.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/utils.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/utils.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/utils.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/utils.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/utils.cpp > CMakeFiles/sick_localization_lib.dir/src/utils.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/utils.cpp > CMakeFiles/sick_localization_lib.dir/src/utils.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/utils.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/utils.cpp -o CMakeFiles/sick_localization_lib.dir/src/utils.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/utils.cpp -o CMakeFiles/sick_localization_lib.dir/src/utils.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/utils.cpp.o.requires:
 
@@ -442,17 +442,17 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/utils.cp
 
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.o: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/flags.make
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.o: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/crc/crc16ccitt_false.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.o"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.o -c /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/crc/crc16ccitt_false.cpp
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.o: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/crc/crc16ccitt_false.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.o"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.o -c /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/crc/crc16ccitt_false.cpp
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.i"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/crc/crc16ccitt_false.cpp > CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.i
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/crc/crc16ccitt_false.cpp > CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.i
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.s"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/crc/crc16ccitt_false.cpp -o CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.s
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/src/crc/crc16ccitt_false.cpp -o CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.s
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.o.requires:
 
@@ -488,55 +488,55 @@ sick_localization_lib_OBJECTS = \
 # External object files for target sick_localization_lib
 sick_localization_lib_EXTERNAL_OBJECTS =
 
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/utils.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.o
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/build.make
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libtf.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2_ros.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libactionlib.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libmessage_filters.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libroscpp.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/librosconsole.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/librostime.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so"
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sick_localization_lib.dir/link.txt --verbose=$(VERBOSE)
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/client_socket.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_configuration.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_converter.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_parser.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_services.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/cola_transmitter.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_check_thread.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_monitor.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/driver_thread.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/pointcloud_converter_thread.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/random_generator.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/result_port_parser.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/SoftwarePLL.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/testcase_generator.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/utils.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.o
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/build.make
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libtf.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2_ros.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libactionlib.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libmessage_filters.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libroscpp.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libtf2.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/librosconsole.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/librostime.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so: sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robotics/TungNV/DevelopAgv/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so"
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sick_localization_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/build: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so
+sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/build: /home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so
 
 .PHONY : sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/build
 
@@ -561,10 +561,10 @@ sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/requires: si
 .PHONY : sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/requires
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/clean:
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && $(CMAKE_COMMAND) -P CMakeFiles/sick_localization_lib.dir/cmake_clean.cmake
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master && $(CMAKE_COMMAND) -P CMakeFiles/sick_localization_lib.dir/cmake_clean.cmake
 .PHONY : sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/clean
 
 sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/depend:
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotics/TungNV/DevelopAgv/catkin_ws/src /home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master /home/robotics/TungNV/DevelopAgv/catkin_ws/build /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master /home/robotics/TungNV/DevelopAgv/catkin_ws/build/sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sick_lidar_localization-master/CMakeFiles/sick_localization_lib.dir/depend
 

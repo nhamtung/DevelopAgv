@@ -2,7 +2,7 @@
 
 message(STATUS "sick_lidar_localization: 7 messages, 15 services")
 
-set(MSG_I_FLAGS "-Isick_lidar_localization:/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Isick_lidar_localization:/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,114 +17,114 @@ add_custom_target(sick_lidar_localization_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" "sick_lidar_localization/SickLocResultPortPayloadMsg:sick_lidar_localization/SickLocResultPortHeaderMsg:sick_lidar_localization/SickLocResultPortCrcMsg:sick_lidar_localization/SickLocResultPortTelegramMsg:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" "sick_lidar_localization/SickLocResultPortPayloadMsg:sick_lidar_localization/SickLocResultPortCrcMsg:sick_lidar_localization/SickLocResultPortHeaderMsg:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" "sick_lidar_localization/SickLocResultPortCrcMsg:sick_lidar_localization/SickLocResultPortTelegramMsg:sick_lidar_localization/SickLocResultPortPayloadMsg:sick_lidar_localization/SickLocResultPortHeaderMsg:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" "sick_lidar_localization/SickLocResultPortCrcMsg:sick_lidar_localization/SickLocResultPortHeaderMsg:sick_lidar_localization/SickLocResultPortPayloadMsg:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" NAME_WE)
 add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sick_lidar_localization" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" ""
 )
 
 #
@@ -134,135 +134,135 @@ add_custom_target(_sick_lidar_localization_generate_messages_check_deps_${_filen
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
+)
+_generate_msg_cpp(sick_lidar_localization
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
+)
+_generate_msg_cpp(sick_lidar_localization
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
-)
-_generate_msg_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
-)
-_generate_msg_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 
 ### Generating Services
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_cpp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sick_lidar_localization
@@ -280,49 +280,49 @@ add_custom_target(sick_lidar_localization_generate_messages_cpp
 add_dependencies(sick_lidar_localization_generate_messages sick_lidar_localization_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_cpp _sick_lidar_localization_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -335,135 +335,135 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS sick_lidar_localization_generate_me
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
+)
+_generate_msg_eus(sick_lidar_localization
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
+)
+_generate_msg_eus(sick_lidar_localization
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
-)
-_generate_msg_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
-)
-_generate_msg_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 
 ### Generating Services
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_eus(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sick_lidar_localization
@@ -481,49 +481,49 @@ add_custom_target(sick_lidar_localization_generate_messages_eus
 add_dependencies(sick_lidar_localization_generate_messages sick_lidar_localization_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_eus _sick_lidar_localization_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -536,135 +536,135 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS sick_lidar_localization_generate_me
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
+)
+_generate_msg_lisp(sick_lidar_localization
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
+)
+_generate_msg_lisp(sick_lidar_localization
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
-)
-_generate_msg_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
-)
-_generate_msg_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 
 ### Generating Services
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_lisp(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sick_lidar_localization
@@ -682,49 +682,49 @@ add_custom_target(sick_lidar_localization_generate_messages_lisp
 add_dependencies(sick_lidar_localization_generate_messages sick_lidar_localization_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_lisp _sick_lidar_localization_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -737,135 +737,135 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS sick_lidar_localization_generate_me
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
+)
+_generate_msg_nodejs(sick_lidar_localization
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
+)
+_generate_msg_nodejs(sick_lidar_localization
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
-)
-_generate_msg_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
-)
-_generate_msg_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 
 ### Generating Services
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_nodejs(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sick_lidar_localization
@@ -883,49 +883,49 @@ add_custom_target(sick_lidar_localization_generate_messages_nodejs
 add_dependencies(sick_lidar_localization_generate_messages sick_lidar_localization_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_nodejs _sick_lidar_localization_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -938,135 +938,135 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS sick_lidar_localization_generate_me
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
+)
+_generate_msg_py(sick_lidar_localization
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_msg_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
+)
+_generate_msg_py(sick_lidar_localization
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
-)
-_generate_msg_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
-)
-_generate_msg_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg;/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 
 ### Generating Services
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
 )
 _generate_srv_py(sick_lidar_localization
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sick_lidar_localization
@@ -1084,49 +1084,49 @@ add_custom_target(sick_lidar_localization_generate_messages_py
 add_dependencies(sick_lidar_localization_generate_messages sick_lidar_localization_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocIsSystemReadySrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetPoseSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocDiagnosticMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseIntervalSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestTimestampSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultEndiannessSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultModeSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPortSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortCrcMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocTimeSyncSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopAndSaveSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocRequestResultDataSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocColaTelegramMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortPayloadMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTestcaseMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocSetResultPoseEnabledSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortTelegramMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStartLocalizingSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocColaTelegramSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/msg/SickLocResultPortHeaderMsg.msg" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStateSrv.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/srv/SickLocStopSrv.srv" NAME_WE)
 add_dependencies(sick_lidar_localization_generate_messages_py _sick_lidar_localization_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

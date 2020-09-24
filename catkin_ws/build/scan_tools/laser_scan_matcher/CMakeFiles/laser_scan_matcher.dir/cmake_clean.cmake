@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/laser_scan_matcher.dir/src/laser_scan_matcher.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_matcher.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_matcher.so"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_matcher.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/liblaser_scan_matcher.so"
 )
 
 # Per-language clean rules from dependency scanning.

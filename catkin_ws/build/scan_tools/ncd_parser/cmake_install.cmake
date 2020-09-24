@@ -1,8 +1,8 @@
-# Install script for directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/ncd_parser
+# Install script for directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/ncd_parser
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robotics/TungNV/DevelopAgv/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/ncd_parser/catkin_generated/installspace/ncd_parser.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/ncd_parser/catkin_generated/installspace/ncd_parser.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ncd_parser/cmake" TYPE FILE FILES
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/ncd_parser/catkin_generated/installspace/ncd_parserConfig.cmake"
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/scan_tools/ncd_parser/catkin_generated/installspace/ncd_parserConfig-version.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/ncd_parser/catkin_generated/installspace/ncd_parserConfig.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/scan_tools/ncd_parser/catkin_generated/installspace/ncd_parserConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ncd_parser" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/ncd_parser/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ncd_parser" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/ncd_parser/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,12 +59,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ncd_parser/ncd_parser"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ncd_parser" TYPE EXECUTABLE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/ncd_parser/ncd_parser")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ncd_parser" TYPE EXECUTABLE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/ncd_parser/ncd_parser")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ncd_parser/ncd_parser" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ncd_parser/ncd_parser")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ncd_parser/ncd_parser"
-         OLD_RPATH "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
+         OLD_RPATH "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ncd_parser/ncd_parser")
@@ -73,6 +73,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ncd_parser" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/scan_tools/ncd_parser/demo")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ncd_parser" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/scan_tools/ncd_parser/demo")
 endif()
 

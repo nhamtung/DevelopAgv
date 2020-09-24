@@ -16,8 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sick_localization_lib.dir/src/time_sync_service.cpp.o"
   "CMakeFiles/sick_localization_lib.dir/src/utils.cpp.o"
   "CMakeFiles/sick_localization_lib.dir/src/crc/crc16ccitt_false.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libsick_localization_lib.so"
 )
 
 # Per-language clean rules from dependency scanning.

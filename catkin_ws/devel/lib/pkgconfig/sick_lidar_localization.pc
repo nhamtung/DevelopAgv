@@ -1,8 +1,8 @@
-prefix=/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel
+prefix=/home/robotics/TungNV/DevelopAgv/catkin_ws/devel
 
 Name: sick_lidar_localization
 Description: Description of sick_lidar_localization
 Version: 0.0.0
-Cflags: -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include -I/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/include
+Cflags: -I/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include -I/home/robotics/TungNV/DevelopAgv/catkin_ws/src/sick_lidar_localization-master/include
 Libs: -L${prefix}/lib -lsick_localization_lib
 Requires: message_runtime roscpp rospy geometry_msgs sensor_msgs std_msgs

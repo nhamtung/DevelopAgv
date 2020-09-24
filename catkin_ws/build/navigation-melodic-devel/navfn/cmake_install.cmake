@@ -1,8 +1,8 @@
-# Install script for directory: /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn
+# Install script for directory: /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robotics/TungNV/DevelopAgv/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,56 +39,56 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navfn/srv" TYPE FILE FILES
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/srv/MakeNavPlan.srv"
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/srv/SetCostmap.srv"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/srv/MakeNavPlan.srv"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/srv/SetCostmap.srv"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navfn/cmake" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/catkin_generated/installspace/navfn-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navfn/cmake" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/catkin_generated/installspace/navfn-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/include/navfn")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/include/navfn")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/roseus/ros/navfn")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/roseus/ros/navfn")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/navfn")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/common-lisp/ros/navfn")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/share/gennodejs/ros/navfn")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/share/gennodejs/ros/navfn")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/navfn")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/navfn")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/navfn")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/python2.7/dist-packages/navfn")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/catkin_generated/installspace/navfn.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/catkin_generated/installspace/navfn.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navfn/cmake" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/catkin_generated/installspace/navfn-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navfn/cmake" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/catkin_generated/installspace/navfn-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navfn/cmake" TYPE FILE FILES
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/catkin_generated/installspace/navfnConfig.cmake"
-    "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/catkin_generated/installspace/navfnConfig-version.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/catkin_generated/installspace/navfnConfig.cmake"
+    "/home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/catkin_generated/installspace/navfnConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navfn" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navfn" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -98,12 +98,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/navfn/navfn_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/navfn" TYPE EXECUTABLE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/navfn/navfn_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/navfn" TYPE EXECUTABLE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/navfn/navfn_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/navfn/navfn_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/navfn/navfn_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/navfn/navfn_node"
-         OLD_RPATH "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
+         OLD_RPATH "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/navfn/navfn_node")
@@ -118,12 +118,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libnavfn.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/libnavfn.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/libnavfn.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libnavfn.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libnavfn.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libnavfn.so"
-         OLD_RPATH "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
+         OLD_RPATH "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libnavfn.so")
@@ -132,16 +132,16 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/navfn" TYPE DIRECTORY FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/include/navfn/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/navfn" TYPE DIRECTORY FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/include/navfn/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navfn" TYPE FILE FILES "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/bgp_plugin.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navfn" TYPE FILE FILES "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn/bgp_plugin.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/test/cmake_install.cmake")
+  include("/home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/test/cmake_install.cmake")
 
 endif()
 

@@ -2,7 +2,7 @@
 
 message(STATUS "rosapi: 1 messages, 25 services")
 
-set(MSG_I_FLAGS "-Irosapi:/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg")
+set(MSG_I_FLAGS "-Irosapi:/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,134 +17,134 @@ add_custom_target(rosapi_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" "rosapi/TypeDef"
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" "rosapi/TypeDef"
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" "rosapi/TypeDef"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" "rosapi/TypeDef"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" "rosapi/TypeDef"
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" ""
 )
 
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" NAME_WE)
 add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" "rosapi/TypeDef"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rosapi" "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" ""
 )
 
 #
@@ -154,7 +154,7 @@ add_custom_target(_rosapi_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
@@ -162,153 +162,153 @@ _generate_msg_cpp(rosapi
 
 ### Generating Services
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
+)
+_generate_srv_cpp(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
+)
+_generate_srv_cpp(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
-)
-_generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
-)
-_generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
+)
+_generate_srv_cpp(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 _generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv"
   "${MSG_I_FLAGS}"
   ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
-)
-_generate_srv_cpp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rosapi
 )
 
@@ -324,57 +324,57 @@ add_custom_target(rosapi_generate_messages_cpp
 add_dependencies(rosapi_generate_messages rosapi_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_cpp _rosapi_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -387,7 +387,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rosapi_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
@@ -395,153 +395,153 @@ _generate_msg_eus(rosapi
 
 ### Generating Services
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
+)
+_generate_srv_eus(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
+)
+_generate_srv_eus(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
-)
-_generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
-)
-_generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
+)
+_generate_srv_eus(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 _generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv"
   "${MSG_I_FLAGS}"
   ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
-)
-_generate_srv_eus(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rosapi
 )
 
@@ -557,57 +557,57 @@ add_custom_target(rosapi_generate_messages_eus
 add_dependencies(rosapi_generate_messages rosapi_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_eus _rosapi_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -620,7 +620,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rosapi_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
@@ -628,153 +628,153 @@ _generate_msg_lisp(rosapi
 
 ### Generating Services
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
+)
+_generate_srv_lisp(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
+)
+_generate_srv_lisp(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
-)
-_generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
-)
-_generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
+)
+_generate_srv_lisp(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 _generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv"
   "${MSG_I_FLAGS}"
   ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
-)
-_generate_srv_lisp(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rosapi
 )
 
@@ -790,57 +790,57 @@ add_custom_target(rosapi_generate_messages_lisp
 add_dependencies(rosapi_generate_messages rosapi_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_lisp _rosapi_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -853,7 +853,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rosapi_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
@@ -861,153 +861,153 @@ _generate_msg_nodejs(rosapi
 
 ### Generating Services
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
+)
+_generate_srv_nodejs(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
+)
+_generate_srv_nodejs(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
-)
-_generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
-)
-_generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
+)
+_generate_srv_nodejs(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 _generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv"
   "${MSG_I_FLAGS}"
   ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
-)
-_generate_srv_nodejs(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rosapi
 )
 
@@ -1023,57 +1023,57 @@ add_custom_target(rosapi_generate_messages_nodejs
 add_dependencies(rosapi_generate_messages rosapi_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_nodejs _rosapi_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1086,7 +1086,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rosapi_generate_messages_nodejs)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
@@ -1094,153 +1094,153 @@ _generate_msg_py(rosapi
 
 ### Generating Services
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
+)
+_generate_srv_py(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
+)
+_generate_srv_py(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
-)
-_generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
-)
-_generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv"
+  "${MSG_I_FLAGS}"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
+)
+_generate_srv_py(rosapi
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 _generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv"
   "${MSG_I_FLAGS}"
   ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
-)
-_generate_srv_py(rosapi
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv"
-  "${MSG_I_FLAGS}"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rosapi
 )
 
@@ -1256,57 +1256,57 @@ add_custom_target(rosapi_generate_messages_py
 add_dependencies(rosapi_generate_messages rosapi_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Subscribers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceProviders.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/HasParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetActionServers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Topics.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SetParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceRequestDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceHost.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/DeleteParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServicesForType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Services.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParam.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/NodeDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsAndRawTypes.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/TopicsForType.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceResponseDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/msg/TypeDef.msg" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Nodes.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetTime.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/Publishers.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/SearchParam.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/ServiceNode.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/MessageDetails.srv" NAME_WE)
+get_filename_component(_filename "/home/robotics/TungNV/DevelopAgv/catkin_ws/src/web_server/rosbridge_suite-master/rosapi/srv/GetParamNames.srv" NAME_WE)
 add_dependencies(rosapi_generate_messages_py _rosapi_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

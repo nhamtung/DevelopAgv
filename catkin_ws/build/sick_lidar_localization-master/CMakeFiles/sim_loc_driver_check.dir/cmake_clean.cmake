@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sim_loc_driver_check.dir/src/driver_check.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_driver_check.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_driver_check"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_driver_check.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_driver_check"
 )
 
 # Per-language clean rules from dependency scanning.

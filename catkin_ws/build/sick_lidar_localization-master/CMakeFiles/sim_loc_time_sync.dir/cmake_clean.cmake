@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sim_loc_time_sync.dir/src/time_sync.cpp.o"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_time_sync.pdb"
-  "/home/nhamtung/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_time_sync"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_time_sync.pdb"
+  "/home/robotics/TungNV/DevelopAgv/catkin_ws/devel/lib/sick_lidar_localization/sim_loc_time_sync"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build
+CMAKE_BINARY_DIR = /home/robotics/TungNV/DevelopAgv/catkin_ws/build
 
 # Utility rule file for navfn_geneus.
 
@@ -63,10 +63,10 @@ navigation-melodic-devel/navfn/CMakeFiles/navfn_geneus.dir/build: navfn_geneus
 .PHONY : navigation-melodic-devel/navfn/CMakeFiles/navfn_geneus.dir/build
 
 navigation-melodic-devel/navfn/CMakeFiles/navfn_geneus.dir/clean:
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn && $(CMAKE_COMMAND) -P CMakeFiles/navfn_geneus.dir/cmake_clean.cmake
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn && $(CMAKE_COMMAND) -P CMakeFiles/navfn_geneus.dir/cmake_clean.cmake
 .PHONY : navigation-melodic-devel/navfn/CMakeFiles/navfn_geneus.dir/clean
 
 navigation-melodic-devel/navfn/CMakeFiles/navfn_geneus.dir/depend:
-	cd /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src /home/nhamtung/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn /home/nhamtung/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/CMakeFiles/navfn_geneus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robotics/TungNV/DevelopAgv/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robotics/TungNV/DevelopAgv/catkin_ws/src /home/robotics/TungNV/DevelopAgv/catkin_ws/src/navigation-melodic-devel/navfn /home/robotics/TungNV/DevelopAgv/catkin_ws/build /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn /home/robotics/TungNV/DevelopAgv/catkin_ws/build/navigation-melodic-devel/navfn/CMakeFiles/navfn_geneus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : navigation-melodic-devel/navfn/CMakeFiles/navfn_geneus.dir/depend
 
